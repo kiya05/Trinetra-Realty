@@ -178,45 +178,6 @@ Implemented/considered features include:
 * Fast-loading assets
 
 ---
-
-## ⚙️ Installation
-
-Clone the repository:
-
-```bash
-git clone https://github.com/your-username/trinetra-realty.git
-```
-
-Navigate to the project:
-
-```bash
-cd trinetra-realty
-```
-
-Open the project using your preferred code editor.
-
-For example:
-
-```text
-VS Code → Open Folder → trinetra-realty
-```
-
----
-
-## ▶️ Run Locally
-
-Since this is a frontend website, it can be opened directly in a browser.
-
-You can also use **VS Code Live Server**:
-
-```text
-Right Click → Open with Live Server
-```
-
-Then visit the local development URL provided by Live Server.
-
----
-
 ## 📸 Website Sections
 
 The website includes sections such as:
@@ -236,13 +197,6 @@ The website includes sections such as:
 
 ---
 
-## 📞 Contact
-
-For project-related enquiries, please visit:
-
-🌐 **Website:** https://trinetrarealty.in/
-
----
 
 ## 👨‍💻 Development
 
