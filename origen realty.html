@@ -1,0 +1,5494 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>THE AURELIA | Luxury Residences</title>
+
+    <meta name="description"
+          content="Discover The Aurelia, an architectural landmark offering luxury residences, curated amenities, exceptional design and seamless connectivity.">
+
+    <meta name="keywords"
+          content="luxury apartments, premium residences, luxury real estate, residential project, luxury homes, Gurgaon property">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+          rel="stylesheet">
+  <link rel="stylesheet" href="styles.css">
+
+<style>
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+.header {
+
+    position: fixed;
+
+    top: 0;
+
+    left: 0;
+
+    width: 100%;
+
+    z-index: 2000;
+
+    transition: .4s ease;
+
+}
+
+
+.header.scrolled {
+
+    background: rgba(16,16,15,.94);
+
+    backdrop-filter: blur(18px);
+
+    box-shadow: 0 10px 35px rgba(0,0,0,.15);
+
+}
+
+/* 
+.nav {
+
+    height: 85px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: space-between;
+
+}
+
+
+.logo {
+
+    color: white;
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 26px;
+
+    letter-spacing: 4px;
+
+}
+
+
+.logo small {
+
+    display: block;
+
+    font-family: "DM Sans", sans-serif;
+
+    font-size: 7px;
+
+    letter-spacing: 3px;
+
+    color: var(--gold);
+
+    text-align: center;
+
+    margin-top: 2px;
+
+}
+
+
+.nav-menu {
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 30px;
+
+    color: white;
+
+}
+
+
+.nav-menu a {
+
+    font-size: 12px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 1px;
+
+    position: relative;
+
+}
+
+
+.nav-menu a::after {
+
+    content: "";
+
+    position: absolute;
+
+    left: 0;
+
+    bottom: -7px;
+
+    width: 0;
+
+    height: 1px;
+
+    background: var(--gold);
+
+    transition: .3s;
+
+}
+
+
+.nav-menu a:hover::after {
+
+    width: 100%;
+
+}
+
+
+.nav-enquire {
+
+    border: 1px solid var(--gold);
+
+    padding: 12px 22px;
+
+}
+
+
+.nav-enquire:hover {
+
+    background: var(--gold);
+
+    color: var(--black);
+
+}
+
+
+.menu-toggle {
+
+    display: none;
+
+    border: 0;
+
+    background: transparent;
+
+    color: white;
+
+    font-size: 28px;
+
+    cursor: pointer;
+
+} */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero {
+
+    height: 60vh;
+
+    min-height: 700px;
+
+    position: relative;
+
+    overflow: hidden;
+
+    color: white;
+
+}
+
+
+.hero-image {
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.78),
+            rgba(0,0,0,.38),
+            rgba(0,0,0,.1)
+        ),
+
+        url(assets/Origenrealty/hero2.webp)
+        center/cover no-repeat;
+
+    animation: heroScale 14s ease-in-out infinite alternate;
+
+}
+
+
+@keyframes heroScale {
+
+    from {
+        transform: scale(1);
+    }
+
+    to {
+        transform: scale(1.08);
+    }
+
+}
+
+
+.hero-content {
+
+    position: relative;
+
+    z-index: 2;
+
+    height: 100%;
+
+    display: flex;
+
+    align-items: flex-end;
+
+    padding-bottom: 100px;
+
+}
+
+
+.hero-inner {
+
+    max-width: 850px;
+
+}
+
+
+.hero-label {
+
+    color: var(--gold-light);
+
+    text-transform: uppercase;
+
+    font-size: 11px;
+
+    letter-spacing: 5px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.hero-title {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(55px, 8vw, 110px);
+
+    font-weight: 400;
+
+    line-height: .95;
+
+    margin-bottom: 28px;
+
+}
+
+
+.hero-title span {
+
+    color: var(--gold-light);
+
+}
+
+
+.hero-description {
+
+    max-width: 650px;
+
+    color: rgba(255,255,255,.75);
+
+    line-height: 1.8;
+
+    font-size: 15px;
+
+}
+
+
+.hero-scroll {
+
+    position: absolute;
+
+    bottom: 30px;
+
+    right: 5%;
+
+    z-index: 3;
+
+    display: flex;
+
+    align-items: center;
+
+    gap: 12px;
+
+    color: rgba(255,255,255,.7);
+
+    font-size: 9px;
+
+    letter-spacing: 3px;
+
+    text-transform: uppercase;
+
+}
+
+
+.hero-scroll-line {
+
+    height: 55px;
+
+    width: 1px;
+
+    background: rgba(255,255,255,.4);
+
+    overflow: hidden;
+
+}
+
+
+.hero-scroll-line::after {
+
+    content: "";
+
+    display: block;
+
+    width: 100%;
+
+    height: 45%;
+
+    background: white;
+
+    animation: scrollLine 1.8s infinite;
+
+}
+
+
+@keyframes scrollLine {
+
+    from {
+        transform: translateY(-100%);
+    }
+
+    to {
+        transform: translateY(250%);
+    }
+
+}
+
+
+/* =========================================================
+   QUICK FACTS
+========================================================= */
+
+.quick-facts {
+
+    background: white;
+
+    border-bottom: 1px solid var(--border);
+
+}
+
+
+.fact-grid {
+
+    display: grid;
+
+    grid-template-columns: repeat(4,1fr);
+
+}
+
+
+.fact {
+
+    padding: 30px;
+
+    border-right: 1px solid var(--border);
+
+}
+
+
+.fact:last-child {
+
+    border-right: 0;
+
+}
+
+
+.fact-label {
+
+    color: var(--muted);
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    margin-bottom: 8px;
+
+}
+
+
+.fact-value {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 22px;
+
+}
+
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+section {
+
+    padding: 120px 0;
+
+}
+
+
+.section-label {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 4px;
+
+    font-weight: 600;
+
+    margin-bottom: 18px;
+
+}
+
+
+.section-title {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: clamp(42px, 5vw, 72px);
+
+    font-weight: 400;
+
+    line-height: 1.05;
+
+}
+
+
+.section-title span {
+
+    color: var(--gold-dark);
+
+}
+
+
+.section-intro {
+
+    color: var(--muted);
+
+    font-size: 15px;
+
+    line-height: 1.9;
+
+    max-width: 720px;
+
+    margin-top: 22px;
+
+}
+
+
+.gold {
+
+    color: var(--gold);
+
+}
+
+
+/* =========================================================
+   ABOUT
+========================================================= */
+/* =========================
+   IMAGE + TEXT SECTION
+========================= */
+
+.image-text-section {
+    width: 100%;
+    padding: 100px 5%;
+    background: #fff;
+    overflow: hidden;
+}
+
+.image-text-container {
+    max-width: 1250px;
+    margin: 0 auto;
+
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    align-items: stretch;
+
+    min-height: 550px;
+}
+
+/* IMAGE PART */
+.section-image {
+    width: 100%;
+    height: 100%;
+    min-height: 550px;
+    overflow: hidden;
+}
+
+.section-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    transition: transform 0.7s ease;
+}
+
+.section-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* TEXT PART */
+.section-content {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 70px;
+    background: #f7f5ef;
+}
+
+.section-label {
+    display: inline-block;
+
+    margin-bottom: 18px;
+
+    font-size: 13px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #a5823d;
+}
+
+.section-content h2 {
+    margin: 0 0 25px;
+
+    font-size: clamp(35px, 4vw, 58px);
+    line-height: 1.05;
+    font-weight: 600;
+
+    color: #171717;
+}
+
+.section-content p {
+    max-width: 520px;
+
+    margin: 0 0 18px;
+
+    font-size: 16px;
+    line-height: 1.8;
+
+    color: #666;
+}
+
+
+/* BUTTON */
+.section-btn {
+    width: fit-content;
+
+    display: inline-flex;
+    align-items: center;
+    gap: 15px;
+
+    margin-top: 20px;
+    padding: 14px 24px;
+
+    background: #171717;
+    color: #fff;
+
+    text-decoration: none;
+    font-size: 14px;
+    font-weight: 600;
+
+    border-radius: 3px;
+
+    transition: all 0.3s ease;
+}
+
+.section-btn span {
+    font-size: 20px;
+    transition: transform 0.3s ease;
+}
+
+.section-btn:hover {
+    background: #a5823d;
+    transform: translateY(-3px);
+}
+
+.section-btn:hover span {
+    transform: translateX(5px);
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .image-text-section {
+        padding: 70px 5%;
+    }
+
+    .image-text-container {
+        grid-template-columns: 1fr 1fr;
+        min-height: 450px;
+    }
+
+    .section-image {
+        min-height: 450px;
+    }
+
+    .section-content {
+        padding: 45px;
+    }
+
+    .section-content h2 {
+        font-size: 38px;
+    }
+
+    .section-content p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+  
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .image-text-section {
+        padding: 60px 20px;
+    }
+
+    .image-text-container {
+        grid-template-columns: 1fr;
+        min-height: auto;
+    }
+
+    .section-image {
+        height: 350px;
+        min-height: 350px;
+    }
+
+    .section-content {
+        padding: 40px 30px;
+    }
+
+    .section-content h2 {
+        font-size: 34px;
+    }
+
+    .section-content p {
+        font-size: 15px;
+    }
+}
+
+
+/* SMALL MOBILE */
+@media (max-width: 400px) {
+
+    .section-image {
+        height: 280px;
+        min-height: 280px;
+    }
+
+    .section-content {
+        padding: 30px 22px;
+    }
+
+    .section-content h2 {
+        font-size: 30px;
+    }
+
+    .section-btn {
+        padding: 12px 20px;
+    }
+}
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.highlights {
+
+    background: var(--black);
+
+    color: white;
+
+}
+
+
+.highlights .section-title {
+
+    color: rgb(0, 0, 0);
+
+}
+
+
+.highlight-intro {
+
+    color: rgba(255,255,255,.6);
+
+}
+
+
+.highlight-grid {
+
+    margin-top: 70px;
+
+    display: grid;
+
+    grid-template-columns: repeat(3,1fr);
+
+    gap: 2px;
+
+}
+
+
+.highlight {
+
+    min-height: 620px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+.highlight-image {
+
+    position: absolute;
+
+    inset: 0;
+
+}
+
+
+.highlight-image img {
+
+    height: 100%;
+
+    object-fit: cover;
+
+    transition: .8s ease;
+
+}
+
+
+.highlight:hover .highlight-image img {
+
+    transform: scale(1.08);
+
+}
+
+
+.highlight::after {
+
+    content: "";
+
+    position: absolute;
+
+    inset: 0;
+
+    background:
+
+        linear-gradient(
+            transparent 30%,
+            rgba(0,0,0,.9)
+        );
+
+}
+
+
+.highlight-content {
+
+    position: absolute;
+
+    left: 35px;
+
+    right: 35px;
+
+    bottom: 35px;
+
+    z-index: 2;
+
+}
+
+
+.highlight-number {
+
+    color: var(--gold);
+
+    font-size: 10px;
+
+    letter-spacing: 3px;
+
+}
+
+
+.highlight h3 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 34px;
+
+    font-weight: 400;
+
+    margin: 10px 0;
+
+}
+
+
+.highlight p {
+
+    color: rgba(255,255,255,.7);
+
+    line-height: 1.7;
+
+    font-size: 13px;
+
+}
+
+
+
+/* =========================================================
+   PLANS
+========================================================= */
+
+.plans {
+
+    background: var(--cream);
+
+}
+
+
+.plan-switch {
+
+    display: flex;
+
+    gap: 5px;
+
+    margin-top: 35px;
+
+}
+
+
+.plan-btn {
+
+    border: 1px solid var(--black);
+
+    background: transparent;
+
+    padding: 13px 25px;
+
+    cursor: pointer;
+
+}
+
+
+.plan-btn.active {
+
+    background: var(--black);
+
+    color: white;
+
+}
+
+
+.plan-view {
+
+    display: none;
+
+    margin-top: 50px;
+
+}
+
+
+.plan-view.active {
+
+    display: block;
+
+    animation: fadePanel .5s ease;
+
+}
+
+/* =========================
+   RESPONSIVE PLAN IMAGE FIX
+========================= */
+
+.plan-image {
+    width: 100%;
+    max-width: 1000px;
+    height: 600px;
+    margin: 50px auto 0;
+    padding: 20px;
+
+    background: #fff;
+    box-sizing: border-box;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    overflow: hidden;
+    border-radius: 18px;
+
+    box-shadow: 0 25px 70px rgba(0,0,0,.08);
+}
+
+.plan-image img {
+    display: block;
+
+    width: 100%;
+    height: 100%;
+
+    max-width: 100%;
+    max-height: 100%;
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 8px;
+
+    transition: transform .5s ease;
+}
+
+.plan-image:hover img {
+    transform: scale(1.02);
+}
+
+
+@media (max-width: 900px) {
+
+    .plan-image {
+        width: 100%;
+        height: 500px;
+        padding: 15px;
+    }
+
+    .plan-image img {
+        width: 100%;
+        height: 100%;
+        object-fit: contain;
+    }
+}
+
+
+
+@media (max-width: 600px) {
+
+    .plan-image {
+        width: 100%;
+        height: auto;
+        min-height: 280px;
+        padding: 10px;
+
+        margin-top: 30px;
+        border-radius: 14px;
+    }
+
+    .plan-image img {
+        width: 100%;
+        height: auto;
+        max-width: 100%;
+        max-height: 70vh;
+
+        object-fit: contain;
+        object-position: center;
+    }
+}
+
+
+@media (max-width: 400px) {
+
+    .plan-image {
+        min-height: 220px;
+        padding: 8px;
+    }
+
+    .plan-image img {
+        width: 100%;
+        height: auto;
+        max-height: 60vh;
+    }
+}
+
+/* =========================================================
+   PARALLAX CTA
+========================================================= */
+
+.cta-banner {
+
+    min-height: 650px;
+
+    display: flex;
+
+    align-items: center;
+
+    justify-content: center;
+
+    text-align: center;
+
+    position: relative;
+    
+
+    color: white;
+
+    background:
+
+        linear-gradient(
+            rgba(0,0,0,.58),
+            rgba(0,0,0,.58)
+        ),
+
+        url(assets/Origenrealty/hero.webp)
+        center/cover fixed;
+
+}
+
+
+.cta-inner {
+
+    max-width: 100%;
+
+}
+
+
+.cta-inner .section-title {
+
+    color: white;
+
+}
+
+
+.cta-text {
+
+    color: rgba(255,255,255,.72);
+
+    line-height: 1.8;
+
+    max-width: 650px;
+
+    margin: 25px auto;
+
+}
+
+
+.cta-button {
+
+    display: inline-flex;
+
+    padding: 16px 35px;
+
+    background: var(--gold);
+
+    color: var(--black);
+
+    font-size: 12px;
+    border-radius: 30px;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-weight: 600;
+
+    transition: .3s;
+
+}
+
+
+.cta-button:hover {
+
+    background: rgb(141, 109, 39);
+
+}
+
+
+/* =========================================================
+   LOCATION
+========================================================= */
+/* 
+.location {
+
+    background: white;
+
+}
+
+
+.location-header {
+
+    max-width: 900px;
+
+    margin-bottom: 70px;
+
+}
+
+
+.location-categories {
+
+    display: flex;
+
+    gap: 8px;
+
+    flex-wrap: wrap;
+
+    margin-bottom: 45px;
+
+}
+
+
+.location-tab {
+
+    border: 1px solid var(--border);
+
+    background: transparent;
+
+    padding: 13px 20px;
+
+    cursor: pointer;
+
+    transition: .3s;
+
+}
+
+
+.location-tab.active {
+
+    background: var(--black);
+
+    color: white;
+
+}
+
+
+.location-layout {
+
+    display: grid;
+
+    grid-template-columns: 1.1fr .9fr;
+
+    min-height: 650px;
+
+}
+
+
+.location-image {
+
+    min-height: 650px;
+
+    background:
+
+        linear-gradient(
+            rgba(0,0,0,.1),
+            rgba(0,0,0,.1)
+        ),
+
+        url("https://images.unsplash.com/photo-1526778548025-fa2f459cd5c1?auto=format&fit=crop&w=1600&q=85")
+        center/cover;
+
+}
+
+
+.location-panel {
+
+    background: var(--ink);
+
+    color: white;
+
+    padding: 55px;
+
+}
+
+
+.location-panel-content {
+
+    display: none;
+
+}
+
+
+.location-panel-content.active {
+
+    display: block;
+
+    animation: fadePanel .4s ease;
+
+}
+
+
+.location-panel h3 {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 40px;
+
+    font-weight: 400;
+
+    margin-bottom: 30px;
+
+}
+
+
+.location-item {
+
+    display: flex;
+
+    justify-content: space-between;
+
+    gap: 20px;
+
+    border-bottom: 1px solid rgba(255,255,255,.1);
+
+    padding: 18px 0;
+
+}
+
+
+.location-item-name {
+
+    color: rgba(255,255,255,.78);
+
+    font-size: 13px;
+
+}
+
+
+.location-item-time {
+
+    color: var(--gold);
+
+    white-space: nowrap;
+
+    font-size: 12px;
+
+}
+ */
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact {
+
+    background: var(--cream);
+
+}
+
+
+.contact-grid {
+
+    display: grid;
+
+    grid-template-columns: .8fr 1.2fr;
+
+    gap: 80px;
+
+    align-items: start;
+
+}
+
+
+.contact-info p {
+
+    color: var(--muted);
+
+    line-height: 1.8;
+
+    margin-top: 20px;
+
+}
+
+
+.contact-details {
+
+    margin-top: 40px;
+
+}
+
+
+.contact-detail {
+
+    display: flex;
+
+    gap: 15px;
+
+    margin-bottom: 22px;
+
+}
+
+
+.contact-icon {
+
+    width: 42px;
+
+    height: 42px;
+
+    background: var(--black);
+
+    color: var(--gold);
+
+    display: grid;
+
+    place-items: center;
+
+    flex-shrink: 0;
+
+}
+
+
+.contact-detail small {
+
+    display: block;
+
+    font-size: 9px;
+
+    letter-spacing: 2px;
+
+    color: var(--muted);
+
+    text-transform: uppercase;
+
+    margin-bottom: 4px;
+
+}
+
+
+.contact-form {
+
+    background: white;
+
+    padding: 45px;
+
+    box-shadow: 0 20px 60px rgba(0,0,0,.07);
+
+}
+
+
+.form-title {
+
+    font-family: "Playfair Display", serif;
+
+    font-size: 35px;
+
+    margin-bottom: 25px;
+
+}
+
+
+.form-row {
+
+    display: grid;
+
+    grid-template-columns: 1fr 1fr;
+
+    gap: 15px;
+
+}
+
+
+.form-group {
+
+    margin-bottom: 15px;
+
+}
+
+
+.form-group input,
+.form-group textarea,
+.form-group select {
+
+    width: 100%;
+
+    border: 1px solid #ddd;
+
+    padding: 16px;
+
+    background: white;
+
+    outline: none;
+
+    font-size: 13px;
+
+}
+
+
+.form-group textarea {
+
+    min-height: 130px;
+
+    resize: vertical;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus {
+
+    border-color: var(--gold);
+
+}
+
+
+.submit-btn {
+
+    width: 100%;
+
+    border: 0;
+
+    background: var(--black);
+
+    color: white;
+
+    padding: 17px;
+
+    cursor: pointer;
+
+    text-transform: uppercase;
+
+    letter-spacing: 2px;
+
+    font-size: 11px;
+
+    transition: .3s;
+
+}
+
+
+.submit-btn:hover {
+
+    background: var(--gold);
+
+    color: var(--black);
+
+}
+
+
+
+
+/* =========================================================
+   WHATSAPP
+========================================================= */
+/* 
+.whatsapp {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 25px;
+
+    width: 55px;
+
+    height: 55px;
+
+    border-radius: 50%;
+
+    background: #25d366;
+
+    color: white;
+
+    display: grid;
+
+    place-items: center;
+
+    z-index: 3000;
+
+    font-size: 24px;
+
+    box-shadow: 0 10px 30px rgba(0,0,0,.2);
+
+    animation: pulse 2s infinite;
+
+}
+
+
+@keyframes pulse {
+
+    0% {
+        box-shadow: 0 0 0 0 rgba(37,211,102,.5);
+    }
+
+    70% {
+        box-shadow: 0 0 0 15px rgba(37,211,102,0);
+    }
+
+    100% {
+        box-shadow: 0 0 0 0 rgba(37,211,102,0);
+    }
+
+} */
+
+
+/* =========================================================
+   BACK TO TOP
+========================================================= */
+/* 
+.back-top {
+
+    position: fixed;
+
+    right: 25px;
+
+    bottom: 90px;
+
+    width: 40px;
+
+    height: 40px;
+
+    background: var(--black);
+
+    color: var(--gold);
+
+    border: 1px solid var(--gold);
+
+    cursor: pointer;
+
+    z-index: 3000;
+
+    opacity: 100%;
+
+    visibility: hidden;
+
+    transition: .3s;
+
+}
+
+
+.back-top.show {
+
+    opacity: 1;
+
+    visibility: visible;
+
+} */
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+.reveal {
+
+    opacity: 100%;
+
+    transform: translateY(50px);
+
+    transition:
+
+        opacity .8s ease,
+
+        transform .8s ease;
+
+}
+
+
+.reveal.active {
+
+    opacity: 1;
+
+    transform: translateY(0);
+
+}
+
+
+.reveal-left {
+
+    opacity: 100%;
+
+    transform: translateX(-50px);
+
+    transition: .8s ease;
+
+}
+
+
+.reveal-left.active {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+
+.reveal-right {
+
+    opacity: 100%;
+
+    transform: translateX(50px);
+
+    transition: .8s ease;
+
+}
+
+
+.reveal-right.active {
+
+    opacity: 1;
+
+    transform: translateX(0);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE
+========================================================= */
+
+@media(max-width:900px) {
+
+    /* .nav-menu {
+
+        gap: 17px;
+
+    }
+ */
+/* 
+    .about-grid {
+
+        gap: 45px;
+
+    } */
+
+
+    .highlight-grid {
+
+        grid-template-columns: 1fr 1fr 1fr;
+
+    }
+
+
+    /* .highlight:last-child {
+
+        grid-column: span 2;
+
+    } */
+
+      .highlight {
+
+    min-height: 420px;
+
+    position: relative;
+
+    overflow: hidden;
+
+}
+
+
+}
+
+
+@media(max-width:600px) {
+
+    section {
+
+        padding: 80px 0;
+
+    }
+
+/* 
+    .nav {
+
+        height: 72px;
+
+    }
+
+
+    .menu-toggle {
+
+        display: block;
+
+    }
+
+
+    .nav-menu {
+
+        position: fixed;
+
+        top: 72px;
+
+        right: -100%;
+
+        width: min(85%,360px);
+
+        height: calc(100vh - 72px);
+
+        background: var(--black);
+
+        padding: 35px;
+
+        flex-direction: column;
+
+        align-items: flex-start;
+
+        gap: 25px;
+
+        transition: .4s ease;
+
+    }
+
+
+    .nav-menu.active {
+
+        right: 0;
+
+    }
+
+
+    .nav-menu a {
+
+        font-size: 14px;
+
+    } */
+
+
+    .fact-grid {
+
+        grid-template-columns: 1fr 1fr;
+
+    }
+
+
+    .fact:nth-child(2) {
+
+        border-right: 0;
+
+    }
+
+
+    .fact:nth-child(-n+2) {
+
+        border-bottom: 1px solid var(--border);
+
+    }
+
+/* 
+    .about-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .about-image {
+
+        height: 500px;
+        
+
+    } */
+
+
+    .amenity-heading {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+    }
+
+
+    .amenity-panel.active {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .amenity-large-image {
+
+        height: 450px;
+
+    }
+
+
+    .location-layout {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .location-image {
+
+        min-height: 450px;
+
+    }
+
+
+    .contact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+}
+
+
+@media(max-width:600px) {
+
+    .hero {
+    min-height: 420px
+  }
+
+
+    .hero-content {
+
+        padding-bottom: 90px;
+
+    }
+
+
+    .hero-title {
+
+        font-size: 55px;
+
+    }
+
+
+    .hero-description {
+
+        font-size: 13px;
+
+    }
+
+
+    .fact-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .fact {
+
+        border-right: 0;
+
+        border-bottom: 1px solid var(--border);
+
+    }
+
+
+    .fact:last-child {
+
+        border-bottom: 0;
+
+    }
+
+
+    /* .about-points {
+
+        grid-template-columns: 1fr;
+
+    } */
+
+
+    .highlight-grid {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    .highlight:last-child {
+
+        grid-column: auto;
+
+    }
+
+
+    .highlight {
+
+        min-height: 500px;
+
+    }
+
+
+    .amenity-list {
+
+        grid-template-columns: 1fr;
+
+    }
+
+
+    /* .plan-image {
+
+        height: 400px;
+
+        padding: 10px;
+
+    } */
+
+
+    .cta-banner {
+
+        min-height: 550px;
+
+        background-attachment: scroll;
+
+    }
+
+
+    .location-panel {
+
+        padding: 35px 25px;
+
+    }
+
+
+    .location-item {
+
+        align-items: flex-start;
+
+        flex-direction: column;
+
+        gap: 6px;
+
+    }
+
+
+  
+
+
+}
+
+
+</style>
+
+
+<!-- =========================================================
+     LOCATION ADVANTAGES
+========================================================= -->
+
+<style>
+/* =========================
+   LOCATION SECTION
+========================= */
+
+.location {
+    position: relative;
+    padding: 100px 0;
+    background: #f7f5ef;
+    overflow: hidden;
+}
+
+.location .container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+/* Header */
+.location-header {
+    max-width: 750px;
+    margin-bottom: 45px;
+}
+
+.section-label {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+    margin-bottom: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #9f7a2e;
+}
+
+.section-label::before {
+    content: "";
+    width: 32px;
+    height: 1px;
+    background: #c9a24a;
+}
+
+.section-title {
+    margin: 0;
+    font-size: clamp(38px, 5vw, 68px);
+    line-height: 1.05;
+    font-weight: 500;
+    color: #171717;
+    letter-spacing: -2px;
+}
+
+.section-title span {
+    color: #9f7a2e;
+}
+
+.section-intro {
+    max-width: 650px;
+    margin: 22px 0 0;
+    color: #6d6d6d;
+    font-size: 16px;
+    line-height: 1.8;
+}
+
+
+/* =========================
+   CATEGORY TABS
+========================= */
+
+.location-categories {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin-bottom: 30px;
+}
+
+.location-tab {
+    position: relative;
+    border: 1px solid #ded8ca;
+    background: rgba(255,255,255,.65);
+    color: #555;
+    padding: 13px 22px;
+    border-radius: 50px;
+    cursor: pointer;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease,
+        box-shadow .3s ease;
+}
+
+.location-tab:hover {
+    transform: translateY(-2px);
+    border-color: #c9a24a;
+    color: #9f7a2e;
+}
+
+.location-tab.active {
+    background: #171717;
+    color: #fff;
+    border-color: #171717;
+    box-shadow: 0 10px 25px rgba(0,0,0,.12);
+}
+
+
+/* =========================
+   MAIN LAYOUT
+========================= */
+
+.location-layout {
+    display: grid;
+    grid-template-columns: 1.25fr .75fr;
+    min-height: 520px;
+    border-radius: 24px;
+    overflow: hidden;
+    background: #fff;
+    box-shadow: 0 20px 60px rgba(20,20,20,.10);
+}
+
+
+/* =========================
+   IMAGE
+========================= */
+
+.location-image {
+    position: relative;
+    min-height: 520px;
+
+    background-image:
+        linear-gradient(
+            90deg,
+            rgba(0,0,0,.08),
+            rgba(0,0,0,.02)
+        ),
+        url("https://images.unsplash.com/photo-1600607687939-ce8a6c25118c?auto=format&fit=crop&w=1600&q=85")
+        ;
+
+    background-size: cover;
+    background-position: center;
+    transition: background-position .5s ease;
+}
+
+.location-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background:
+        linear-gradient(
+            180deg,
+            transparent 60%,
+            rgba(0,0,0,.25)
+        );
+}
+
+
+/* =========================
+   RIGHT PANEL
+========================= */
+
+.location-panel {
+    position: relative;
+    padding: 40px;
+    background: #fff;
+    overflow: hidden;
+}
+
+
+/* =========================
+   CONTENT PANELS
+========================= */
+
+.location-panel-content {
+    display: none;
+    opacity: 100%;
+    transform: translateY(15px);
+}
+
+.location-panel-content.active {
+    display: block;
+    animation: locationFade .45s ease forwards;
+}
+
+@keyframes locationFade {
+    from {
+        opacity: 0;
+        transform: translateY(15px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+.location-panel-content h3 {
+    margin: 0 0 25px;
+    font-size: 30px;
+    line-height: 1.2;
+    color: #171717;
+    font-weight: 600;
+}
+
+
+/* =========================
+   LOCATION ITEMS
+========================= */
+
+.location-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 20px;
+
+    padding: 20px 0;
+    border-bottom: 1px solid #e7e2d7;
+
+    transition:
+        padding-left .3s ease,
+        background .3s ease;
+}
+
+.location-item:first-of-type {
+    border-top: 1px solid #e7e2d7;
+}
+
+.location-item:hover {
+    padding-left: 8px;
+}
+
+.location-item-name {
+    color: #292929;
+    font-size: 15px;
+    line-height: 1.4;
+    font-weight: 600;
+}
+
+.location-item-time {
+    flex-shrink: 0;
+    color: #9f7a2e;
+    font-size: 13px;
+    font-weight: 700;
+    white-space: nowrap;
+}
+
+
+/* =========================
+   REVEAL ANIMATION
+========================= */
+
+.reveal {
+    animation: revealUp .8s ease both;
+}
+
+@keyframes revealUp {
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================
+   TABLET
+========================= */
+
+@media (max-width: 900px) {
+
+    .location {
+        padding: 75px 0;
+    }
+
+    .location-layout {
+        grid-template-columns: 1fr;
+    }
+
+    .location-image {
+        min-height: 380px;
+    }
+
+    .location-panel {
+        padding: 35px;
+    }
+}
+
+
+/* =========================
+   MOBILE
+========================= */
+
+@media (max-width: 600px) {
+
+    .location {
+        padding: 60px 0;
+    }
+
+    .location .container {
+        width: min(94%, 1200px);
+    }
+
+    .section-title {
+        font-size: 42px;
+        letter-spacing: -1.5px;
+    }
+
+    .section-intro {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .location-categories {
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
+        gap: 8px;
+    }
+
+    .location-tab {
+        width: 100%;
+        padding: 12px 10px;
+        font-size: 13px;
+    }
+
+    .location-image {
+        min-height: 280px;
+    }
+
+    .location-panel {
+        padding: 25px 20px;
+    }
+
+    .location-panel-content h3 {
+        font-size: 25px;
+        margin-bottom: 18px;
+    }
+
+    .location-item {
+        align-items: flex-start;
+        flex-direction: column;
+        gap: 6px;
+        padding: 17px 0;
+    }
+
+    .location-item-time {
+        font-size: 12px;
+    }
+}
+
+
+/* =========================
+   SMALL MOBILE
+========================= */
+
+/* @media (max-width: 380px) {
+
+    .location-categories {
+        grid-template-columns: 1fr;
+    }
+
+    .section-title {
+        font-size: 36px;
+    }
+} */
+
+/* =========================================
+   PLANS SECTION
+========================================= */
+
+.plans {
+    position: relative;
+    padding: 110px 0;
+    background: #f7f5ef;
+    overflow: hidden;
+}
+
+.plans .container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+
+/* HEADER */
+
+.plans .section-label {
+    margin-bottom: 18px;
+}
+
+.plans .section-title {
+    max-width: 800px;
+    margin-bottom: 20px;
+}
+
+.plans .section-intro {
+    max-width: 650px;
+    margin-bottom: 40px;
+}
+
+
+/* =========================================
+   PLAN SWITCH
+========================================= */
+
+.plan-switch {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 8px;
+
+    width: fit-content;
+    margin: 0 auto 55px;
+
+    padding: 6px;
+
+    background: #fff;
+    border: 1px solid rgba(0,0,0,.08);
+    border-radius: 50px;
+
+    box-shadow: 0 10px 35px rgba(0,0,0,.06);
+}
+
+.plan-btn {
+    border: 0;
+    outline: none;
+
+    padding: 14px 28px;
+
+    border-radius: 40px;
+
+    background: transparent;
+    color: #555;
+
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+.plan-btn:hover {
+    color: #111;
+}
+
+.plan-btn.active {
+    background: #171717;
+    color: #fff;
+}
+
+.plan-btn:active {
+    transform: scale(.97);
+}
+
+
+/* =========================================
+   PLAN VIEW
+========================================= */
+
+.plan-view {
+    display: none;
+
+    width: 100%;
+
+    animation: planFade .5s ease both;
+}
+
+.plan-view.active {
+    display: block;
+}
+
+@keyframes planFade {
+    from {
+        opacity: 0;
+        transform: translateY(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+/* =========================================
+   TWO COLUMN LAYOUT
+========================================= */
+
+.plan-layout {
+    display: grid;
+
+    grid-template-columns: minmax(0, 1.6fr) minmax(320px, .8fr);
+
+    width: 100%;
+
+    min-height: 560px;
+
+    background: #fff;
+
+    border-radius: 24px;
+
+    overflow: hidden;
+
+    box-shadow: 0 25px 70px rgba(20,20,20,.09);
+}
+
+
+/* =========================================
+   IMAGE SIDE
+========================================= */
+
+.plan-image {
+    position: relative;
+
+    width: 100%;
+    /* height: 100%; */
+    min-height: 560px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    padding: 25px;
+
+    background: #fff;
+
+    box-sizing: border-box;
+
+    overflow: hidden;
+}
+
+.plan-image img {
+    display: block;
+
+    /* width: 100%;
+    height: 100%; */
+
+    /* max-width: 100%;
+    max-height: 100%; */
+
+    object-fit: contain;
+    object-position: center;
+
+    border-radius: 12px;
+
+    transition: transform .6s ease;
+}
+
+.plan-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =========================================
+   TEXT SIDE
+========================================= */
+
+.plan-content {
+    position: relative;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+    padding: 60px 50px;
+
+    background: #171717;
+
+    color: #fff;
+}
+
+.plan-number {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+
+    width: 48px;
+    height: 48px;
+
+    margin-bottom: 25px;
+
+    border: 1px solid rgba(255,255,255,.25);
+    border-radius: 50%;
+
+    font-size: 13px;
+    letter-spacing: 1px;
+
+    color: #c9a24a;
+}
+
+.plan-content h3 {
+    margin: 0 0 20px;
+
+    font-size: clamp(32px, 3vw, 48px);
+
+    line-height: 1.1;
+
+    font-weight: 600;
+
+    color: #fff;
+}
+
+.plan-content p {
+    margin: 0 0 35px;
+
+    max-width: 430px;
+
+    font-size: 15px;
+    line-height: 1.8;
+
+    color: rgba(255,255,255,.7);
+}
+
+
+/* =========================================
+   PLAN POINTS
+========================================= */
+
+.plan-points {
+    display: flex;
+    flex-direction: column;
+
+    border-top: 1px solid rgba(255,255,255,.15);
+}
+
+.plan-points div {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    padding: 17px 0;
+
+    border-bottom: 1px solid rgba(255,255,255,.15);
+}
+
+.plan-points strong {
+    min-width: 28px;
+
+    font-size: 12px;
+
+    color: #c9a24a;
+}
+
+.plan-points span {
+    font-size: 14px;
+    color: rgba(255,255,255,.8);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .plans {
+        padding: 80px 0;
+    }
+
+    .plan-layout {
+        grid-template-columns: 1.25fr .75fr;
+        min-height: 380px;
+    }
+
+    .plan-image {
+        min-height: 480px;
+        padding: 18px;
+    }
+
+    .plan-content {
+        padding: 40px 30px;
+    }
+
+    .plan-content h3 {
+        font-size: 34px;
+    }
+
+    .plan-content p {
+        font-size: 14px;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .plans {
+        padding: 70px 0;
+    }
+
+    .plans .container {
+        width: min(94%, 600px);
+    }
+
+    .plan-switch {
+        margin-bottom: 35px;
+    }
+
+    .plan-btn {
+        padding: 12px 20px;
+        font-size: 13px;
+    }
+
+    .plan-layout {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        border-radius: 18px;
+    }
+
+    .plan-image {
+        width: 100%;
+
+        height: auto;
+        min-height: 300px;
+
+        padding: 12px;
+    }
+
+    .plan-image img {
+        width: 100%;
+        height: auto;
+
+        max-width: 100%;
+        max-height: 500px;
+
+        object-fit: contain;
+    }
+
+    .plan-content {
+        padding: 40px 28px;
+    }
+
+    .plan-content h3 {
+        font-size: 32px;
+    }
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 450px) {
+
+    .plan-switch {
+        width: 100%;
+
+        justify-content: stretch;
+    }
+
+    .plan-btn {
+        flex: 1;
+
+        padding: 12px 10px;
+    }
+
+    .plan-image {
+        min-height: 240px;
+        padding: 8px;
+    }
+
+    .plan-content {
+        padding: 35px 22px;
+    }
+
+    .plan-content h3 {
+        font-size: 29px;
+    }
+
+    .plan-content p {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+}
+
+</style>
+
+
+
+
+<!-- ================= AMENITIES CSS ================= -->
+<style>
+
+.amenities {
+    width: 100%;
+    padding: 110px 0;
+    background: #f7f5ef;
+    overflow: hidden;
+}
+
+.amenities-container {
+    width: min(1200px, 92%);
+    margin: auto;
+}
+
+
+/* ---------- Heading ---------- */
+
+.amenity-heading {
+    display: flex;
+    align-items: flex-end;
+    justify-content: space-between;
+    gap: 40px;
+    margin-bottom: 55px;
+}
+
+.section-label {
+    display: inline-block;
+    margin-bottom: 14px;
+    font-size: 12px;
+    font-weight: 700;
+    letter-spacing: 3px;
+    text-transform: uppercase;
+    color: #9f7a2e;
+}
+
+.section-title {
+    margin: 0;
+    font-size: clamp(42px, 5vw, 72px);
+    line-height: .95;
+    font-weight: 500;
+    letter-spacing: -2px;
+    color: #171717;
+}
+
+.section-title span {
+    color: #c9a24a;
+}
+
+
+/* ---------- Tabs ---------- */
+
+.amenity-tabs {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    flex-wrap: wrap;
+}
+
+.amenity-tab {
+    border: 1px solid #dcd6c9;
+    background: transparent;
+    color: #555;
+    padding: 13px 22px;
+    border-radius: 50px;
+    font-family: inherit;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.amenity-tab:hover {
+    border-color: #c9a24a;
+    color: #9f7a2e;
+    transform: translateY(-2px);
+}
+
+.amenity-tab.active {
+    background: #171717;
+    border-color: #171717;
+    color: #fff;
+}
+
+
+/* ---------- Content ---------- */
+
+.amenity-content {
+    position: relative;
+    width: 100%;
+}
+
+.amenity-panel {
+    display: none;
+    grid-template-columns: 1.15fr .85fr;
+    gap: 30px;
+    animation: amenityFade .6s ease forwards;
+}
+
+.amenity-panel.active {
+    display: grid;
+}
+
+
+/* ---------- Main Image ---------- */
+
+.amenity-large-image {
+    position: relative;
+    width: 100%;
+    height: 560px;
+    overflow: hidden;
+    border-radius: 24px;
+    background: #ddd;
+}
+
+.amenity-large-image::after {
+    content: "";
+    position: absolute;
+    inset: 0;
+    background: linear-gradient(
+        180deg,
+        rgba(0,0,0,0) 55%,
+        rgba(0,0,0,.22)
+    );
+    pointer-events: none;
+}
+
+.amenity-large-image img {
+    width: 100%;
+    height: 100%;
+    display: block;
+    object-fit: cover;
+    transition: transform 1s cubic-bezier(.2,.8,.2,1);
+}
+
+.amenity-panel.active .amenity-large-image img {
+    transform: scale(1.02);
+}
+
+
+/* ---------- Cards ---------- */
+
+.amenity-list {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 15px;
+}
+
+.amenity-card {
+    min-height: 265px;
+    padding: 30px 25px;
+    background: #fff;
+    border: 1px solid #e7e2d7;
+    border-radius: 20px;
+
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+
+    transition:
+        transform .35s ease,
+        box-shadow .35s ease,
+        border-color .35s ease;
+}
+
+.amenity-card:hover {
+    transform: translateY(-7px);
+    border-color: #c9a24a;
+    box-shadow: 0 20px 45px rgba(20,20,20,.09);
+}
+
+
+/* ---------- Icons ---------- */
+
+.amenity-icon {
+    width: 52px;
+    height: 52px;
+    margin-bottom: 28px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+    background: #f7f5ef;
+    color: #9f7a2e;
+
+    font-size: 23px;
+    line-height: 1;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        transform .3s ease;
+}
+
+.amenity-card:hover .amenity-icon {
+    background: #c9a24a;
+    color: #fff;
+    transform: rotate(8deg) scale(1.08);
+}
+
+
+/* ---------- Text ---------- */
+
+.amenity-card h4 {
+    margin: 0 0 10px;
+    color: #171717;
+    font-size: 20px;
+    font-weight: 600;
+}
+
+.amenity-card p {
+    margin: 0;
+    color: #6d6d6d;
+    font-size: 14px;
+    line-height: 1.7;
+}
+
+
+/* ---------- Animation ---------- */
+
+@keyframes amenityFade {
+
+    from {
+        opacity: 0;
+        transform: translateY(25px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateY(0);
+    }
+
+}
+
+
+/* ---------- Tablet ---------- */
+
+@media (max-width: 900px) {
+
+    .amenity-heading {
+        align-items: flex-start;
+        flex-direction: column;
+        margin-bottom: 35px;
+    }
+
+    .amenity-panel {
+        grid-template-columns: 1fr;
+    }
+
+    .amenity-large-image {
+        height: 480px;
+    }
+
+}
+
+
+/* ---------- Mobile ---------- */
+
+@media (max-width: 600px) {
+
+    /* .amenities {
+        padding: 75px 0;
+    }
+
+    .amenities-container {
+        width: 90%;
+    } */
+
+    .section-title {
+        font-size: 43px;
+        letter-spacing: -1.5px;
+    }
+
+    .amenity-tabs {
+        width: 100%;
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+    }
+
+    .amenity-tab {
+        width: 100%;
+        padding: 12px 15px;
+    }
+
+    .amenity-large-image {
+        height: 330px;
+        border-radius: 18px;
+    }
+
+    .amenity-list {
+        grid-template-columns: 1fr;
+    }
+
+    .amenity-card {
+        min-height: auto;
+        padding: 25px;
+    }
+
+}
+
+/* =========================================
+   LOCATION SECTION
+========================================= */
+
+.location {
+    position: relative;
+    width: 100%;
+    padding: 110px 5%;
+    background: #f7f5ef;
+    overflow: hidden;
+}
+
+.location .container {
+    width: 100%;
+    max-width: 1250px;
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   HEADER
+========================================= */
+
+.location-header {
+    max-width: 750px;
+    margin-bottom: 45px;
+}
+
+.location-header .section-label {
+    margin-bottom: 15px;
+}
+
+.location-header .section-title {
+    margin: 0 0 20px;
+    font-size: clamp(38px, 5vw, 68px);
+    line-height: 1;
+    font-weight: 600;
+    color: #171717;
+}
+
+.location-header .section-title span {
+    display: block;
+    color: #a5823d;
+}
+
+.location-header .section-intro {
+    max-width: 650px;
+    margin: 0;
+
+    font-size: 16px;
+    line-height: 1.8;
+    color: #6d6d6d;
+}
+
+
+/* =========================================
+   CATEGORY TABS
+========================================= */
+
+.location-categories {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 35px;
+
+    overflow-x: auto;
+    overflow-y: hidden;
+
+    padding-bottom: 8px;
+
+    scrollbar-width: none;
+}
+
+.location-categories::-webkit-scrollbar {
+    display: none;
+}
+
+.location-tab {
+    flex: 0 0 auto;
+
+    padding: 13px 25px;
+
+    border: 1px solid #d8d1c3;
+    border-radius: 50px;
+
+    background: transparent;
+
+    color: #555;
+
+    font-size: 14px;
+    font-weight: 600;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+.location-tab:hover {
+    border-color: #a5823d;
+    color: #a5823d;
+    transform: translateY(-2px);
+}
+
+.location-tab.active {
+    background: #171717;
+    border-color: #171717;
+    color: #fff;
+}
+
+
+/* =========================================
+   MAIN TWO COLUMN LAYOUT
+========================================= */
+
+.location-layout {
+    display: grid;
+    grid-template-columns: minmax(0, 1.15fr) minmax(0, .85fr);
+
+    min-height: 580px;
+
+    background: #fff;
+
+    border-radius: 24px;
+    overflow: hidden;
+
+    box-shadow: 0 25px 70px rgba(20, 20, 20, .08);
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.location-image {
+    position: relative;
+
+    width: 100%;
+    height: 100%;
+    min-height: 580px;
+
+    overflow: hidden;
+
+    background: #ddd;
+}
+
+.location-image img {
+    position: absolute;
+background: url(https://images.unsplash.com/photo-1673933088515-a1956b9d85ea?w=500&auto=format&fit=crop&q=60&ixlib=rb-4.1.0&ixid=M3wxMjA3fDB8MHxzZWFyY2h8MTl8fGRsZiUyMG1hbGwlMjBvZiUyMGluZGlhfGVufDB8fDB8fHww);
+    inset: 0;
+ background-size: cover;
+    background-position: center;
+    width: 100%;
+    height: 100%;
+
+    display: block;
+
+    object-fit: cover;
+    object-position: center;
+
+    opacity: 1;
+
+    transform: scale(1.01);
+
+    transition:
+        opacity .45s ease,
+        transform .8s ease;
+}
+
+.location-image img.changing {
+    opacity: 100%;
+    transform: scale(1.06);
+}
+
+
+/* =========================================
+   IMAGE OVERLAY
+========================================= */
+
+.image-overlay {
+    position: absolute;
+
+    inset: 0;
+
+    background:
+        linear-gradient(
+            to top,
+            rgba(0, 0, 0, .65),
+            rgba(0, 0, 0, .05) 55%,
+            transparent
+        );
+
+    pointer-events: none;
+}
+
+
+/* =========================================
+   IMAGE CAPTION
+========================================= */
+
+.image-caption {
+    position: absolute;
+
+    left: 35px;
+    bottom: 30px;
+
+    display: flex;
+    flex-direction: column;
+    gap: 6px;
+
+    color: #fff;
+
+    z-index: 2;
+}
+
+.image-caption span {
+    font-size: 11px;
+    letter-spacing: 2px;
+    font-weight: 700;
+
+    opacity: .75;
+}
+
+.image-caption strong {
+    font-size: 26px;
+    font-weight: 500;
+}
+
+
+/* =========================================
+   RIGHT PANEL
+========================================= */
+
+.location-panel {
+    position: relative;
+
+    padding: 55px 50px;
+
+    background: #fff;
+
+    display: flex;
+    align-items: center;
+}
+
+
+/* =========================================
+   PANEL CONTENT
+========================================= */
+
+.location-panel-content {
+    width: 100%;
+
+    display: none;
+
+    animation: locationContentIn .45s ease forwards;
+}
+
+.location-panel-content.active {
+    display: block;
+}
+
+@keyframes locationContentIn {
+
+    from {
+        opacity: 0;
+        transform: translateX(20px);
+    }
+
+    to {
+        opacity: 1;
+        transform: translateX(0);
+    }
+
+}
+
+
+/* =========================================
+   PANEL HEADING
+========================================= */
+
+.panel-heading {
+    display: flex;
+    align-items: center;
+    gap: 18px;
+
+    margin-bottom: 30px;
+}
+
+.panel-heading span {
+    width: 42px;
+    height: 42px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    border-radius: 50%;
+
+    background: #f2eee5;
+
+    color: #a5823d;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+.panel-heading h3 {
+    margin: 0;
+
+    font-size: 34px;
+    line-height: 1.1;
+
+    color: #171717;
+}
+
+
+/* =========================================
+   LOCATION ITEM
+========================================= */
+
+.location-item {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    gap: 20px;
+
+    padding: 20px 0;
+
+    border-bottom: 1px solid #e7e2d7;
+}
+
+.location-item:first-of-type {
+    border-top: 1px solid #e7e2d7;
+}
+
+.location-item-name {
+    font-size: 15px;
+    line-height: 1.4;
+    color: #333;
+}
+
+.location-item-time {
+    flex: 0 0 auto;
+
+    font-size: 13px;
+    font-weight: 600;
+
+    color: #a5823d;
+    white-space: nowrap;
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 1000px) {
+
+    .location {
+        padding: 80px 4%;
+    }
+
+    .location-layout {
+        grid-template-columns: 1fr 1fr;
+        min-height: 500px;
+    }
+
+    .location-image {
+        min-height: 500px;
+    }
+
+    .location-panel {
+        padding: 40px 35px;
+    }
+
+    .panel-heading h3 {
+        font-size: 30px;
+    }
+
+    .location-item {
+        padding: 17px 0;
+    }
+
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 750px) {
+
+    .location {
+        padding: 70px 20px;
+    }
+
+    .location-header {
+        margin-bottom: 30px;
+    }
+
+    .location-header .section-title {
+        font-size: 42px;
+    }
+
+    .location-header .section-intro {
+        font-size: 15px;
+    }
+
+
+    /* TABS */
+
+    .location-categories {
+        gap: 8px;
+
+        margin-bottom: 25px;
+    }
+
+    .location-tab {
+        padding: 11px 19px;
+        font-size: 13px;
+    }
+
+
+    /* STACK IMAGE + CONTENT */
+
+    .location-layout {
+        grid-template-columns: 1fr;
+
+        min-height: auto;
+
+        border-radius: 18px;
+    }
+
+
+    /* IMAGE */
+
+    .location-image {
+        height: 350px;
+        min-height: 350px;
+    }
+
+
+    /* PANEL */
+
+    .location-panel {
+        min-height: 430px;
+
+        padding: 40px 25px;
+
+        align-items: flex-start;
+    }
+
+
+    .panel-heading {
+        margin-bottom: 25px;
+    }
+
+    .panel-heading h3 {
+        font-size: 28px;
+    }
+
+    .location-item {
+        padding: 17px 0;
+    }
+
+    .location-item-name {
+        font-size: 14px;
+    }
+
+    .location-item-time {
+        font-size: 12px;
+    }
+
+    .image-caption {
+        left: 25px;
+        bottom: 22px;
+    }
+
+    .image-caption strong {
+        font-size: 22px;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+
+@media (max-width: 480px) {
+
+    .location {
+        padding: 55px 15px;
+    }
+
+    .location-header .section-title {
+        font-size: 36px;
+    }
+
+    .location-header .section-intro {
+        font-size: 14px;
+        line-height: 1.7;
+    }
+
+    .location-image {
+        height: 280px;
+        min-height: 280px;
+    }
+
+    .location-panel {
+        padding: 30px 20px;
+        min-height: 390px;
+    }
+
+    .panel-heading h3 {
+        font-size: 25px;
+    }
+
+    .panel-heading span {
+        width: 36px;
+        height: 36px;
+    }
+
+    .location-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 7px;
+    }
+
+    .location-item-time {
+        font-size: 12px;
+    }
+
+}
+
+</style>
+
+
+</head>
+
+
+<body>
+
+
+<!-- =========================================================
+     PRELOADER
+========================================================= -->
+<!-- 
+<div class="preloader" id="preloader">
+
+    <div class="loader-content">
+
+        <div class="loader-brand">
+            AURELIA
+        </div>
+
+        <div class="loader-line">
+            <span></span>
+        </div>
+
+    </div>
+
+</div> -->
+
+
+<!-- =========================================================
+     HEADER
+========================================================= -->
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Trinetra Realty home">
+          <img src="assets/trinetra-logo.png" alt="Trinetra Realty logo">
+          <!-- <span>Trinetra Realty</span> -->
+        </a>
+        <button class="menu-btn" aria-label="Open menu">☰</button>
+        <nav class="nav-links">
+          <a class="" href="index.html">Home</a>
+          <a class="" href="about.html">About</a>
+          <a class="active" href="properties.html">Property</a>
+          <a class="" href="blog.html">Blog</a>
+          <a class="" href="contact.html">Contact Us</a>
+        </nav>
+        <a class="nav-cta" href="contact.html">Get Started</a>
+      </div>
+    </header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+    <div class="hero-image"></div>
+
+
+    <div class="hero-content">
+
+        <div class="container">
+
+            <div class="hero-inner reveal">
+
+                <div class="hero-label">
+                    The Architecture of Living
+                </div>
+
+                <h1 class="hero-title">
+
+                    Origen
+                    <span>Realty</span>
+                  
+
+                </h1>
+
+                <p class="hero-description">
+
+                    An architectural landmark created for those
+                    who expect more from where they live.
+                    Thoughtful design, refined spaces and
+                    experiences designed around modern wellbeing.
+
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <div class="hero-scroll">
+
+        Explore
+
+        <span class="hero-scroll-line"></span>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     QUICK FACTS
+========================================================= -->
+
+<div class="quick-facts">
+
+    <div class="container fact-grid">
+
+        <div class="fact">
+
+            <div class="fact-label">
+                Development
+            </div>
+
+            <div class="fact-value">
+                40+ Storeys
+            </div>
+
+        </div>
+
+
+        <div class="fact">
+
+            <div class="fact-label">
+                Residences
+            </div>
+
+            <div class="fact-value">
+                3 & 4 BHK
+            </div>
+
+        </div>
+
+
+        <div class="fact">
+
+            <div class="fact-label">
+                Location
+            </div>
+
+            <div class="fact-value">
+                Gurugram
+            </div>
+
+        </div>
+
+
+        <div class="fact">
+
+            <div class="fact-label">
+                Lifestyle
+            </div>
+
+            <div class="fact-value">
+                70+ Amenities
+            </div>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =========================================================
+     ABOUT
+========================================================= -->
+
+
+<section class="image-text-section">
+    <div class="image-text-container">
+
+        <!-- LEFT: IMAGE -->
+        <div class="section-image">
+            <img 
+                src="assets/Origenrealty/1779614632734-736147175.webp" 
+                alt="Trinetra Realty Project"
+            >
+        </div>
+
+        <!-- RIGHT: TEXT -->
+        <div class="section-content">
+            <span class="section-label">ABOUT THE PROJECT</span>
+
+            <h2>Designed for Modern Living</h2>
+
+            <p>
+                Discover a thoughtfully planned residential community
+                designed to bring together modern architecture, comfortable
+                living spaces and a premium lifestyle.
+            </p>
+
+            <p>
+                Every detail has been carefully considered to create a
+                beautiful environment where residents can enjoy comfort,
+                convenience and quality living.
+            </p>
+
+            <a href="contact.html" class="section-btn">
+                Enquire Now <span>→</span>
+            </a>
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================
+     HIGHLIGHTS
+========================================================= -->
+
+<section class="highlights" id="highlights">
+
+    <div class="container">
+
+        <div class="section-label">
+            Project Highlights
+        </div>
+
+        <h2 class="section-title">
+
+            Architecture that
+            <span>performs.</span>
+
+        </h2>
+
+        <p class="section-intro highlight-intro">
+
+            A balance of environmental intelligence,
+            structural precision and experiential design
+            creates a residence that performs as beautifully
+            as it looks.
+
+        </p>
+
+
+        <div class="highlight-grid">
+
+
+            <article class="highlight reveal">
+
+                <div class="highlight-image">
+
+                    <img
+                        src="assets/Origenrealty/1779614792346-677066638.webp"
+                        alt="Environmental design"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="highlight-content">
+
+                    <div class="highlight-number">
+                        01 — ENVIRONMENT
+                    </div>
+
+                    <h3>
+                        Environmental Intelligence
+                    </h3>
+
+                    <p>
+
+                        Orientation, daylight and natural
+                        ventilation are considered to create
+                        comfortable living spaces.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="highlight reveal">
+
+                <div class="highlight-image">
+
+                    <img
+                        src="assets/Origenrealty/1779621328828-83534793.webp"
+                        alt="Architectural design"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="highlight-content">
+
+                    <div class="highlight-number">
+                        02 — STRUCTURE
+                    </div>
+
+                    <h3>
+                        Structural Excellence
+                    </h3>
+
+                    <p>
+
+                        Precision engineering and intelligent
+                        planning combine for long-term
+                        strength and performance.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="highlight reveal">
+
+                <div class="highlight-image">
+
+                    <img
+                        src="assets/Origenrealty/environment2.avif"
+                        alt="Luxury interior"
+                        loading="lazy"
+                    >
+
+                </div>
+
+
+                <div class="highlight-content">
+
+                    <div class="highlight-number">
+                        03 — EXPERIENCE
+                    </div>
+
+                    <h3>
+                        Experiential Design
+                    </h3>
+
+                    <p>
+
+                        Every space is designed around privacy,
+                        comfort, movement and the everyday
+                        experience of residents.
+
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     AMENITIES
+========================================================= -->
+
+<!-- ================= PROJECT AMENITIES ================= -->
+<section class="amenities" id="amenities">
+
+    <div class="amenities-container">
+
+        <!-- Heading -->
+        <div class="amenity-heading">
+
+            <div>
+                <div class="section-label">PROJECT AMENITIES</div>
+
+                <h2 class="section-title">
+                    Designed around
+                    <span>you.</span>
+                </h2>
+            </div>
+
+            <!-- Tabs -->
+            <div class="amenity-tabs" role="tablist">
+
+                <button
+                    type="button"
+                    class="amenity-tab active"
+                    data-amenity="body"
+                    role="tab"
+                    aria-selected="true">
+                    Body
+                </button>
+
+                <button
+                    type="button"
+                    class="amenity-tab"
+                    data-amenity="mind"
+                    role="tab"
+                    aria-selected="false">
+                    Mind
+                </button>
+
+                <button
+                    type="button"
+                    class="amenity-tab"
+                    data-amenity="soul"
+                    role="tab"
+                    aria-selected="false">
+                    Soul
+                </button>
+
+                <button
+                    type="button"
+                    class="amenity-tab"
+                    data-amenity="community"
+                    role="tab"
+                    aria-selected="false">
+                    Community
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= CONTENT ================= -->
+        <div class="amenity-content">
+
+            <!-- BODY -->
+            <div
+                class="amenity-panel active"
+                id="body"
+                role="tabpanel">
+
+                <div class="amenity-large-image">
+                    <img
+                        src="assets/Origenrealty/body.avif"
+                        alt="Fitness amenities"
+                        loading="lazy"
+                        onerror="this.src='https://images.unsplash.com/photo-1517836357463-d25dfeac3438?auto=format&fit=crop&w=1300&q=85'">
+                </div>
+
+                <div class="amenity-list">
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🏋️</div>
+                        <h4>Fitness Studio</h4>
+                        <p>
+                            Dedicated spaces for strength,
+                            movement and everyday fitness.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🏊</div>
+                        <h4>Swimming Pool</h4>
+                        <p>
+                            A refined leisure environment
+                            for relaxation and recreation.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🏸</div>
+                        <h4>Sports Court</h4>
+                        <p>
+                            Active recreation spaces for
+                            residents of every age.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🧘</div>
+                        <h4>Yoga Studio</h4>
+                        <p>
+                            Calm spaces dedicated to
+                            movement and mindfulness.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- MIND -->
+            <div
+                class="amenity-panel"
+                id="mind"
+                role="tabpanel">
+
+                <div class="amenity-large-image">
+                    <img
+                        src="assets/Origenrealty/mind.avif"
+                        alt="Library"
+                        loading="lazy">
+                </div>
+
+                <div class="amenity-list">
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">📚</div>
+                        <h4>Library</h4>
+                        <p>
+                            A quiet retreat for reading,
+                            reflection and discovery.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">◌</div>
+                        <h4>Meditation Room</h4>
+                        <p>
+                            Spaces designed to slow down
+                            and reconnect.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">◇</div>
+                        <h4>Business Lounge</h4>
+                        <p>
+                            A refined environment for
+                            focused work and meetings.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">♪</div>
+                        <h4>Creative Studio</h4>
+                        <p>
+                            A flexible space for creative
+                            pursuits and learning.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- SOUL -->
+            <div
+                class="amenity-panel"
+                id="soul"
+                role="tabpanel">
+
+                <div class="amenity-large-image">
+                    <img
+                        src="assets/Origenrealty/soul.avif"
+                        alt="Spa and wellness"
+                        loading="lazy">
+                </div>
+
+                <div class="amenity-list">
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">✦</div>
+                        <h4>Luxury Spa</h4>
+                        <p>
+                            A peaceful destination for
+                            complete relaxation.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">🌿</div>
+                        <h4>Nature Trail</h4>
+                        <p>
+                            Green pathways for unhurried
+                            walks and quiet moments.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">☕</div>
+                        <h4>Wellness Café</h4>
+                        <p>
+                            Thoughtfully curated spaces
+                            for socialising and unwinding.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">◯</div>
+                        <h4>Garden Lounge</h4>
+                        <p>
+                            Landscaped spaces for peaceful
+                            outdoor experiences.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+
+            <!-- COMMUNITY -->
+            <div
+                class="amenity-panel"
+                id="community"
+                role="tabpanel">
+
+                <div class="amenity-large-image">
+                    <img
+                        src="assets/Origenrealty/community.avif"
+                        alt="Community lounge"
+                        loading="lazy">
+                </div>
+
+                <div class="amenity-list">
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">◇</div>
+                        <h4>Concierge</h4>
+                        <p>
+                            Personalised assistance designed
+                            around residents.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">⚡</div>
+                        <h4>EV Charging</h4>
+                        <p>
+                            Convenient infrastructure for
+                            electric mobility.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">♧</div>
+                        <h4>Community Lawn</h4>
+                        <p>
+                            Open spaces for gatherings,
+                            events and celebrations.
+                        </p>
+                    </div>
+
+                    <div class="amenity-card">
+                        <div class="amenity-icon">+</div>
+                        <h4>Convenience Store</h4>
+                        <p>
+                            Everyday essentials available
+                            within the community.
+                        </p>
+                    </div>
+
+                </div>
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+
+
+
+
+
+
+
+<!-- =========================================================
+     PLANS
+========================================================= -->
+
+<section class="plans" id="plans">
+    <div class="container">
+
+        <div class="section-label">
+            Master & Unit Plans
+        </div>
+
+        <h2 class="section-title">
+            Spaces that bring
+            <span>life together.</span>
+        </h2>
+
+        <p class="section-intro">
+            Explore the master planning and residence layouts designed
+            to balance openness, functionality and privacy.
+        </p>
+
+        <!-- PLAN SWITCH -->
+        <div class="plan-switch">
+            <button class="plan-btn active" data-plan="master">
+                Master Plan
+            </button>
+
+            <button class="plan-btn" data-plan="unit">
+                Unit Plan
+            </button>
+        </div>
+
+        <!-- MASTER PLAN -->
+        <div class="plan-view active" id="master">
+
+            <div class="plan-layout">
+
+                <!-- IMAGE -->
+                <div class="plan-image">
+                    <img
+                        src="assets/Origenrealty/map.webp"
+                        alt="Trinetra Realty Master Plan"
+                        loading="lazy"
+                    >
+                </div>
+
+                <!-- TEXT -->
+                <div class="plan-content">
+
+                    <span class="plan-number">01</span>
+
+                    <h3>Master Plan</h3>
+
+                    <p>
+                        A thoughtfully planned layout designed to create
+                        comfortable spaces, efficient movement and a
+                        well-connected community environment.
+                    </p>
+
+                    <div class="plan-points">
+                        <div>
+                            <strong>01</strong>
+                            <span>Well Planned Layout</span>
+                        </div>
+
+                        <div>
+                            <strong>02</strong>
+                            <span>Open & Green Spaces</span>
+                        </div>
+
+                        <div>
+                            <strong>03</strong>
+                            <span>Smart Connectivity</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+        <!-- UNIT PLAN -->
+        <div class="plan-view" id="unit">
+
+            <div class="plan-layout">
+
+                <!-- IMAGE -->
+                <div class="plan-image">
+                    <img
+                        src="assets/Origenrealty/map1.webp"
+                        alt="Trinetra Realty Unit Plan"
+                        loading="lazy"
+                    >
+                </div>
+
+                <!-- TEXT -->
+                <div class="plan-content">
+
+                    <span class="plan-number">02</span>
+
+                    <h3>Unit Plan</h3>
+
+                    <p>
+                        Modern residence layouts designed with practical
+                        planning, comfortable proportions and functional
+                        living areas for everyday life.
+                    </p>
+
+                    <div class="plan-points">
+                        <div>
+                            <strong>01</strong>
+                            <span>Efficient Spaces</span>
+                        </div>
+
+                        <div>
+                            <strong>02</strong>
+                            <span>Functional Layout</span>
+                        </div>
+
+                        <div>
+                            <strong>03</strong>
+                            <span>Modern Living</span>
+                        </div>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+</section>
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="cta-banner">
+
+    <div class="container">
+
+        <div class="cta-inner reveal">
+
+            <div class="section-label">
+                A New Standard
+            </div>
+
+            <h2 class="section-title">
+
+                Elevate your
+                <span>standard of living.</span>
+
+            </h2>
+
+            <p class="cta-text">
+
+                Discover a residential experience where
+                architecture, wellbeing and modern luxury
+                come together.
+
+            </p>
+
+            <a
+                href="#contact"
+                class="cta-button"
+            >
+                Enquire Now
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<section class="location" id="location">
+
+    <div class="container">
+
+        <!-- HEADER -->
+        <div class="location-header reveal">
+            <div class="section-label">
+                Location Advantages
+            </div>
+
+            <h2 class="section-title">
+                Where the city
+                <span>connects.</span>
+            </h2>
+
+            <p class="section-intro">
+                Strategically positioned to connect residents
+                with business districts, transport corridors,
+                lifestyle destinations, schools and healthcare.
+            </p>
+        </div>
+
+
+        <!-- TABS -->
+        <div class="location-categories">
+
+            <button type="button"
+                    class="location-tab active"
+                    data-location="office">
+                Office
+            </button>
+
+            <button type="button"
+                    class="location-tab"
+                    data-location="connectivity">
+                Connectivity
+            </button>
+
+            <button type="button"
+                    class="location-tab"
+                    data-location="malls">
+                Malls
+            </button>
+
+            <button type="button"
+                    class="location-tab"
+                    data-location="schools">
+                Schools
+            </button>
+
+            <button type="button"
+                    class="location-tab"
+                    data-location="hospitals">
+                Hospitals
+            </button>
+
+            <button type="button"
+                    class="location-tab"
+                    data-location="hotels">
+                Hotels
+            </button>
+
+        </div>
+
+
+        <!-- CONTENT -->
+        <div class="location-layout">
+
+            <!-- LEFT IMAGE -->
+            <div class="location-image">
+
+                <img
+                    id="locationMainImage"
+                    src="https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85"
+                    alt="Office location"
+                >
+
+                <div class="image-overlay"></div>
+
+                <div class="image-caption">
+                    <span>TRINETRA REALTY</span>
+                    <!-- <strong>Strategic Location</strong> -->
+                </div>
+
+            </div>
+
+
+            <!-- RIGHT CONTENT -->
+            <div class="location-panel">
+
+
+                <!-- OFFICE -->
+                <div class="location-panel-content active"
+                     id="office">
+
+                    <div class="panel-heading">
+                        <span>01</span>
+                        <h3>Office</h3>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Golf Course Extension Road
+                        </span>
+
+                        <span class="location-item-time">
+                            15 km · 25 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Udyog Vihar
+                        </span>
+
+                        <span class="location-item-time">
+                            22 km · 30 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Cyber City
+                        </span>
+
+                        <span class="location-item-time">
+                            24 km · 35 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Golf Course Road
+                        </span>
+
+                        <span class="location-item-time">
+                            23 km · 40 min
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- CONNECTIVITY -->
+                <div class="location-panel-content"
+                     id="connectivity">
+
+                    <div class="panel-heading">
+                        <span>02</span>
+                        <h3>Connectivity</h3>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Dwarka Expressway
+                        </span>
+
+                        <span class="location-item-time">
+                            2 km · 5 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            NH-48
+                        </span>
+
+                        <span class="location-item-time">
+                            7 km · 10 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Proposed Metro
+                        </span>
+
+                        <span class="location-item-time">
+                            4 km · 7 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            IGI Airport
+                        </span>
+
+                        <span class="location-item-time">
+                            27 km · 30 min
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- MALLS -->
+                <div class="location-panel-content"
+                     id="malls">
+                  
+
+                    <div class="panel-heading">
+                        <span>03</span>
+                        <h3>Malls</h3>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Premium Shopping Centre
+                        </span>
+
+                        <span class="location-item-time">
+                            5 km · 10 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Sapphire Mall
+                        </span>
+
+                        <span class="location-item-time">
+                            8 km · 15 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Ambience Mall
+                        </span>
+
+                        <span class="location-item-time">
+                            25 km · 35 min
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- SCHOOLS -->
+                <div class="location-panel-content"
+                     id="schools">
+
+                    <div class="panel-heading">
+                        <span>04</span>
+                        <h3>Schools</h3>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            International School
+                        </span>
+
+                        <span class="location-item-time">
+                            4 km · 10 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Delhi Public School
+                        </span>
+
+                        <span class="location-item-time">
+                            7 km · 15 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Suncity School
+                        </span>
+
+                        <span class="location-item-time">
+                            8 km · 15 min
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- HOSPITALS -->
+                <div class="location-panel-content"
+                     id="hospitals">
+
+                    <div class="panel-heading">
+                        <span>05</span>
+                        <h3>Hospitals</h3>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Multi-Speciality Hospital
+                        </span>
+
+                        <span class="location-item-time">
+                            4 km · 10 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Signature Hospital
+                        </span>
+
+                        <span class="location-item-time">
+                            8 km · 15 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Medanta Hospital
+                        </span>
+
+                        <span class="location-item-time">
+                            17 km · 25 min
+                        </span>
+                    </div>
+
+                </div>
+
+
+                <!-- HOTELS -->
+                <div class="location-panel-content"
+                     id="hotels">
+
+                    <div class="panel-heading">
+                        <span>06</span>
+                        <h3>Hotels</h3>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Holiday Inn
+                        </span>
+
+                        <span class="location-item-time">
+                            7 km · 15 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            Hyatt Regency
+                        </span>
+
+                        <span class="location-item-time">
+                            9 km · 20 min
+                        </span>
+                    </div>
+
+                    <div class="location-item">
+                        <span class="location-item-name">
+                            JW Marriott
+                        </span>
+
+                        <span class="location-item-time">
+                            29 km · 40 min
+                        </span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     FOOTER
+========================================================= -->
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html"><img src="assets/trinetra-logo.png" alt="Trinetra Realty logo">
+            <!-- <span
+              style="color:#fff">Trinetra Realty</span> -->
+          </a>
+          <p>Trinetra Realty expertly and seamlessly guides clients to their perfect residential or commercial
+            property.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="properties.html">Properties</a></p>
+          <p><a href="blog.html">Blog</a></p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p><a href="godrej green estate.html">Godrej Green Estate</a></p>
+          <p><a href="Eldeco Amaya.html">Eldeco Amaya</a></p>
+          <p><a href="Jindal Smart City.html">Jindal Smart City</a></p>
+          <p><a href="origen realty.html">Origen Realty</a></p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:+91 90349 69308">+91 90349 69308</a>
+
+                   <p><a href="mailto:info@trinetrarealty.in">info@trinetrarealty.in</a></p>
+
+
+          <p>SCO, F-3, SUPERMAX GALLERIA MARKET,
+            SECTOR 33, SONIPAT HARYANA - 131001</p>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© Trinetra Realty – All rights reserved</span></div>
+    </div>
+  </footer>
+
+
+
+<!-- =========================================================
+     WHATSAPP
+========================================================= -->
+
+<!-- <a
+    href="https://wa.me/919876543210"
+    class="whatsapp"
+    target="_blank"
+    aria-label="WhatsApp"
+>
+    ☎
+</a> -->
+
+
+<!-- =========================================================
+     BACK TOP
+========================================================= -->
+<!-- 
+<button
+    class="back-top"
+    id="backTop"
+>
+    ↑
+</button> -->
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+
+/* =========================================================
+   PRELOADER
+========================================================= */
+
+window.addEventListener("load", () => {
+
+    setTimeout(() => {
+
+        document
+            .getElementById("preloader")
+            .classList.add("hide");
+
+    }, 700);
+
+});
+
+
+/* =========================================================
+   HEADER
+========================================================= */
+
+const header =
+    document.getElementById("header");
+
+
+window.addEventListener("scroll", () => {
+
+    if (window.scrollY > 60) {
+
+        header.classList.add("scrolled");
+
+    } else {
+
+        header.classList.remove("scrolled");
+
+    }
+
+});
+
+
+/* =========================================================
+   MOBILE MENU
+========================================================= */
+
+const menuToggle =
+    document.getElementById("menuToggle");
+
+const navMenu =
+    document.getElementById("navMenu");
+
+
+menuToggle.addEventListener("click", () => {
+
+    navMenu.classList.toggle("active");
+
+    menuToggle.textContent =
+        navMenu.classList.contains("active")
+            ? "×"
+            : "☰";
+
+});
+
+
+document
+    .querySelectorAll(".nav-menu a")
+    .forEach(link => {
+
+        link.addEventListener("click", () => {
+
+            navMenu.classList.remove("active");
+
+            menuToggle.textContent = "☰";
+
+        });
+
+    });
+
+
+/* =========================================================
+   SCROLL REVEAL
+========================================================= */
+
+const reveals =
+    document.querySelectorAll(
+        ".reveal, .reveal-left, .reveal-right"
+    );
+
+
+const revealObserver =
+    new IntersectionObserver(
+        entries => {
+
+            entries.forEach(entry => {
+
+                if (entry.isIntersecting) {
+
+                    entry.target
+                        .classList
+                        .add("active");
+
+                    revealObserver
+                        .unobserve(entry.target);
+
+                }
+
+            });
+
+        },
+        {
+            threshold: .12
+        }
+    );
+
+
+reveals.forEach(element => {
+
+    revealObserver.observe(element);
+
+});
+
+
+
+/* =========================================================
+   PLAN SWITCH
+========================================================= */
+
+const planButtons =
+    document.querySelectorAll(".plan-btn");
+
+const planViews =
+    document.querySelectorAll(".plan-view");
+
+
+planButtons.forEach(button => {
+
+    button.addEventListener("click", () => {
+
+        const target =
+            button.dataset.plan;
+
+
+        planButtons.forEach(item => {
+
+            item.classList.remove("active");
+
+        });
+
+
+        planViews.forEach(view => {
+
+            view.classList.remove("active");
+
+        });
+
+
+        button.classList.add("active");
+
+
+        document
+            .getElementById(target)
+            .classList.add("active");
+
+    });
+
+});
+
+
+/* =========================================================
+   LOCATION TABS
+========================================================= */
+
+const locationTabs =
+    document.querySelectorAll(".location-tab");
+
+const locationPanels =
+    document.querySelectorAll(
+        ".location-panel-content"
+    );
+
+
+locationTabs.forEach(tab => {
+
+    tab.addEventListener("click", () => {
+
+        const target =
+            tab.dataset.location;
+
+
+        locationTabs.forEach(item => {
+
+            item.classList.remove("active");
+
+        });
+
+
+        locationPanels.forEach(panel => {
+
+            panel.classList.remove("active");
+
+        });
+
+
+        tab.classList.add("active");
+
+
+        document
+            .getElementById(target)
+            .classList.add("active");
+
+    });
+
+});
+
+
+
+/* =========================================================
+   ACTIVE SECTION NAVIGATION
+========================================================= */
+
+const sections =
+    document.querySelectorAll("section[id]");
+
+
+const navigationLinks =
+    document.querySelectorAll(".nav-menu a");
+
+
+window.addEventListener("scroll", () => {
+
+    let currentSection = "";
+
+
+    sections.forEach(section => {
+
+        const sectionTop =
+            section.offsetTop - 160;
+
+
+        if (window.scrollY >= sectionTop) {
+
+            currentSection =
+                section.getAttribute("id");
+
+        }
+
+    });
+
+
+    navigationLinks.forEach(link => {
+
+        link.classList.remove("active");
+
+        if (
+            link.getAttribute("href") ===
+            "#" + currentSection
+        ) {
+
+            link.classList.add("active");
+
+        }
+
+    });
+
+});
+
+
+
+
+</script>
+
+
+<!-- ================= AMENITIES JAVASCRIPT ================= -->
+<script>
+
+document.addEventListener("DOMContentLoaded", function () {
+
+    const tabs = document.querySelectorAll(".amenity-tab");
+    const panels = document.querySelectorAll(".amenity-panel");
+
+    if (!tabs.length || !panels.length) {
+        console.warn("Amenities tabs or panels were not found.");
+        return;
+    }
+
+    tabs.forEach(function (tab) {
+
+        tab.addEventListener("click", function () {
+
+            const target = this.dataset.amenity;
+
+            if (!target) return;
+
+            /* Remove active state */
+            tabs.forEach(function (item) {
+
+                item.classList.remove("active");
+                item.setAttribute("aria-selected", "false");
+
+            });
+
+            panels.forEach(function (panel) {
+                panel.classList.remove("active");
+            });
+
+
+            /* Activate clicked tab */
+            this.classList.add("active");
+            this.setAttribute("aria-selected", "true");
+
+
+            /* Activate matching panel */
+            const targetPanel = document.getElementById(target);
+
+            if (targetPanel) {
+
+                targetPanel.classList.add("active");
+
+                /* Restart animation */
+                targetPanel.style.animation = "none";
+
+                requestAnimationFrame(function () {
+                    targetPanel.style.animation = "";
+                });
+
+            }
+
+        });
+
+    });
+
+
+    /* Keyboard accessibility */
+    tabs.forEach(function (tab, index) {
+
+        tab.addEventListener("keydown", function (event) {
+
+            let newIndex = index;
+
+            if (event.key === "ArrowRight") {
+                newIndex = (index + 1) % tabs.length;
+            }
+
+            if (event.key === "ArrowLeft") {
+                newIndex = (index - 1 + tabs.length) % tabs.length;
+            }
+
+            if (event.key === "Enter" || event.key === " ") {
+                event.preventDefault();
+                tab.click();
+                return;
+            }
+
+            if (newIndex !== index) {
+                event.preventDefault();
+                tabs[newIndex].focus();
+                tabs[newIndex].click();
+            }
+
+        });
+
+    });
+
+});
+
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const planButtons = document.querySelectorAll(".plan-btn");
+    const planViews = document.querySelectorAll(".plan-view");
+
+    planButtons.forEach(button => {
+
+        button.addEventListener("click", function () {
+
+            const targetPlan = this.getAttribute("data-plan");
+
+            /* Remove active from buttons */
+            planButtons.forEach(btn => {
+                btn.classList.remove("active");
+            });
+
+            /* Remove active from views */
+            planViews.forEach(view => {
+                view.classList.remove("active");
+            });
+
+            /* Activate clicked button */
+            this.classList.add("active");
+
+            /* Activate corresponding plan */
+            const targetView = document.getElementById(targetPlan);
+
+            if (targetView) {
+                targetView.classList.add("active");
+            }
+
+        });
+
+    });
+
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const tabs = document.querySelectorAll(".location-tab");
+    const panels = document.querySelectorAll(".location-panel-content");
+
+    tabs.forEach(function (tab) {
+
+        tab.addEventListener("click", function () {
+
+            const target = this.getAttribute("data-location");
+
+            /* Remove active from all tabs */
+            tabs.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+            /* Remove active from all panels */
+            panels.forEach(function (panel) {
+                panel.classList.remove("active");
+            });
+
+            /* Activate clicked tab */
+            this.classList.add("active");
+
+            /* Activate matching panel */
+            const targetPanel = document.getElementById(target);
+
+            if (targetPanel) {
+                targetPanel.classList.add("active");
+            }
+
+        });
+
+    });
+
+});
+</script>
+
+
+<script>
+document.addEventListener("DOMContentLoaded", function () {
+
+    const tabs = document.querySelectorAll(".location-tab");
+    const panels = document.querySelectorAll(".location-panel-content");
+    const image = document.getElementById("locationMainImage");
+
+
+    /* =========================================
+       IMAGES FOR EACH CATEGORY
+    ========================================= */
+
+    const locationImages = {
+
+        office:
+            "https://images.unsplash.com/photo-1486406146926-c627a92ad1ab?auto=format&fit=crop&w=1600&q=85",
+
+        connectivity:
+            "https://images.unsplash.com/photo-1545324418-cc1a3fa10c00?auto=format&fit=crop&w=1600&q=85",
+
+        malls:
+           "https://images.unsplash.com/photos/people-walking-inside-building-during-daytime-gOe4rbB8K6U",
+
+        schools:
+            "https://images.unsplash.com/photo-1562774053-701939374585?auto=format&fit=crop&w=1600&q=85",
+
+        hospitals:
+            "https://images.unsplash.com/photo-1586773860418-d37222d8fce3?auto=format&fit=crop&w=1600&q=85",
+
+        hotels:
+            "https://images.unsplash.com/photo-1564501049412-61c2a3083791?auto=format&fit=crop&w=1600&q=85"
+
+    };
+
+
+    /* =========================================
+       TAB CLICK
+    ========================================= */
+
+    tabs.forEach(function (tab) {
+
+        tab.addEventListener("click", function () {
+
+            const target = this.getAttribute("data-location");
+
+
+            /* Remove active from tabs */
+
+            tabs.forEach(function (item) {
+                item.classList.remove("active");
+            });
+
+
+            /* Add active to clicked tab */
+
+            this.classList.add("active");
+
+
+            /* Hide all panels */
+
+            panels.forEach(function (panel) {
+                panel.classList.remove("active");
+            });
+
+
+            /* Show selected panel */
+
+            const selectedPanel = document.getElementById(target);
+
+            if (selectedPanel) {
+                selectedPanel.classList.add("active");
+            }
+
+
+            /* Change image */
+
+            if (locationImages[target]) {
+
+                image.classList.add("changing");
+
+
+                setTimeout(function () {
+
+                    image.src = locationImages[target];
+
+                    image.alt = target + " location advantages";
+
+                    image.onload = function () {
+                        image.classList.remove("changing");
+                    };
+
+                }, 250);
+
+            }
+
+        });
+
+    });
+
+});
+</script>
+ 
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <script src="script.js"></script>
+
+
+</body>
+
+</html>
+

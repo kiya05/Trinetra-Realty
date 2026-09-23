@@ -1,0 +1,3609 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Tatvam Residences | Luxury 4 BHK Independent Floors | Sonipat</title>
+
+    <meta name="description"
+          content="Tatvam Residences at Jindal Global City, Sonipat offers limited-edition 4 BHK independent floors surrounded by landscaped greens, expansive views and thoughtfully designed amenities.">
+
+    <meta name="keywords"
+          content="Tatvam Residences, Tatvam Sonipat, luxury apartments Sonipat, 4 BHK independent floors Sonipat, Jindal Global City, luxury homes Sonipat">
+
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@400;500;600&display=swap"
+          rel="stylesheet">
+          <link rel="stylesheet" href="styles.css">
+
+
+
+          
+
+    <style>
+
+        /* =====================================================
+           ROOT
+        ===================================================== */
+
+        :root {
+
+            --ink: #171717;
+            --muted: #6d6d6d;
+
+            --gold: #c9a24a;
+            --gold-dark: #9f7a2e;
+
+            --cream: #f7f5ef;
+            --line: #e7e2d7;
+
+            --white: #fff;
+
+            --max: 1200px;
+
+            --radius: 22px;
+
+            --shadow:
+                0 18px 50px rgba(20, 20, 20, .08);
+
+            --transition:
+                all .35s ease;
+        }
+
+
+        /* =====================================================
+           RESET
+        ===================================================== */
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+
+            font-family:
+                "DM Sans",
+                Arial,
+                sans-serif;
+
+            color: var(--ink);
+
+            background:
+                var(--white);
+
+            line-height: 1.7;
+
+            overflow-x: hidden;
+        }
+
+        img {
+
+            width: 100%;
+
+            display: block;
+
+            object-fit: cover;
+        }
+
+        a {
+
+            color: inherit;
+
+            text-decoration: none;
+        }
+
+        button,
+        input,
+        textarea {
+
+            font: inherit;
+        }
+
+        button {
+
+            border: 0;
+
+            cursor: pointer;
+        }
+
+        ul {
+
+            list-style: none;
+        }
+
+
+        /* =====================================================
+           UTILITIES
+        ===================================================== */
+
+        .container {
+
+            width: min(
+                calc(100% - 40px),
+                var(--max)
+            );
+
+            margin-inline: auto;
+        }
+
+        .section {
+
+            padding: 110px 0;
+        }
+
+        .cream {
+
+            background:
+                var(--cream);
+        }
+
+        .section-tag {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            gap: 10px;
+
+            color: var(--gold-dark);
+
+            text-transform: uppercase;
+
+            font-size: 15px;
+
+            letter-spacing: .18em;
+
+            font-weight: 700;
+
+            margin-bottom: 18px;
+        }
+
+        .section-tag::before {
+
+            content: "";
+
+            width: 34px;
+
+            height: 1px;
+
+            background:
+                var(--gold);
+        }
+
+        .section-title {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(38px, 5vw, 68px);
+
+            line-height: 1.05;
+
+            font-weight: 500;
+
+            letter-spacing: -.025em;
+        }
+
+        .section-title span {
+
+            color: var(--gold);
+        }
+
+        .section-intro {
+
+            color: var(--muted);
+
+            max-width: 650px;
+
+            margin-top: 22px;
+
+            font-size: 16px;
+        }
+
+        .btn {
+
+            display: inline-flex;
+
+            align-items: center;
+
+            justify-content: center;
+
+            gap: 12px;
+
+            padding:
+                14px 24px;
+
+            border-radius:
+                999px;
+
+            transition:
+                var(--transition);
+
+            font-weight: 700;
+
+            font-size: 13px;
+
+            letter-spacing: .04em;
+        }
+
+        .btn-gold {
+
+            background:
+                var(--gold);
+
+            color:
+                var(--white);
+        }
+
+        .btn-gold:hover {
+
+            background:
+                var(--gold-dark);
+
+            transform:
+                translateY(-2px);
+        }
+
+     
+    
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+
+            min-height:
+                100vh;
+
+            position:
+                relative;
+
+            display:
+                flex;
+
+            align-items:
+                flex-end;
+
+            color:
+                var(--white);
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,.75),
+                    rgba(0,0,0,.18)
+                ),
+                url(assets/tatvam/gallery_18.jpg)
+                center/cover no-repeat;
+        }
+
+        .hero::after {
+
+            content: "";
+
+            position: absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    0deg,
+                    rgba(0,0,0,.78),
+                    transparent 55%
+                );
+        }
+
+        .hero-content {
+
+            position:
+                relative;
+
+            z-index: 2;
+
+            padding:
+                150px 0 85px;
+        }
+
+        .hero-kicker {
+
+            color:
+                var(--gold);
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .25em;
+
+            font-size:
+                15px;
+
+            font-weight:
+                700;
+
+            margin-bottom:
+                20px;
+        }
+
+        .hero h1 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(55px, 8vw, 105px);
+
+            line-height:
+                .92;
+
+            max-width:
+                850px;
+
+            font-weight:
+                400;
+        }
+
+        .hero h1 span {
+
+            color:
+                var(--gold);
+        }
+
+        .hero-text {
+
+            max-width:
+                620px;
+
+            margin-top:
+                28px;
+
+            color:
+                rgba(255,255,255,.82);
+
+            font-size:
+                17px;
+        }
+
+        .hero-actions {
+
+            display:
+                flex;
+
+            gap:
+                14px;
+
+            margin-top:
+                30px;
+
+            flex-wrap:
+                wrap;
+        }
+
+        .hero-meta {
+
+            margin-top:
+                70px;
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(4, 1fr);
+
+            border-top:
+                1px solid rgba(255,255,255,.25);
+
+            max-width:
+                900px;
+        }
+
+        .hero-meta-item {
+
+            padding:
+                24px 20px 0 0;
+
+            border-right:
+                1px solid rgba(255,255,255,.2);
+        }
+
+        .hero-meta-item:not(:first-child) {
+
+            padding-left:
+                20px;
+        }
+
+        .hero-meta-item:last-child {
+
+            border-right:
+                0;
+        }
+
+        .hero-meta strong {
+
+            display:
+                block;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                27px;
+
+            font-weight:
+                500;
+
+            color:
+                var(--white);
+        }
+
+        .hero-meta span {
+
+            color:
+                rgba(255,255,255,.62);
+
+            font-size:
+                11px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .1em;
+        }
+
+
+        /* =====================================================
+           INTRO
+        ===================================================== */
+
+        .intro-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                .85fr 1.15fr;
+
+            gap:
+                80px;
+
+            align-items:
+                center;
+        }
+
+        .intro-image {
+
+            position:
+                relative;
+        }
+
+        .intro-image img {
+
+            height:
+                650px;
+
+            border-radius:
+                var(--radius);
+        }
+
+        .image-badge {
+
+            position:
+                absolute;
+
+            bottom:
+                25px;
+
+            right:
+                -25px;
+
+            background:
+                var(--ink);
+
+            color:
+                var(--white);
+
+            padding:
+                25px 30px;
+
+            border-radius:
+                var(--radius);
+
+            box-shadow:
+                var(--shadow);
+        }
+
+        .image-badge strong {
+
+            display:
+                block;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                32px;
+
+            color:
+                var(--gold);
+        }
+
+        .intro-copy h2 {
+
+            margin-bottom:
+                25px;
+        }
+
+        .intro-copy p {
+
+            color:
+                var(--muted);
+
+            margin-bottom:
+                18px;
+        }
+
+
+        /* =====================================================
+           NATURE ELEMENTS
+        ===================================================== */
+
+        .elements-header {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                40px;
+
+            align-items:
+                flex-end;
+
+            margin-bottom:
+                55px;
+        }
+
+        .elements-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(5, 1fr);
+
+            gap:
+                12px;
+        }
+
+        .element {
+
+            position:
+                relative;
+
+            height:
+                430px;
+
+            overflow:
+                hidden;
+
+            border-radius:
+                var(--radius);
+
+            color:
+                var(--white);
+        }
+
+        .element img {
+
+            height:
+                100%;
+
+            transition:
+                transform .7s ease;
+        }
+
+        .element:hover img {
+
+            transform:
+                scale(1.08);
+        }
+
+        .element::after {
+
+            content: "";
+
+            position:
+                absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    0deg,
+                    rgba(0,0,0,.8),
+                    transparent 65%
+                );
+        }
+
+        .element-content {
+
+            position:
+                absolute;
+
+            z-index: 2;
+
+            bottom:
+                24px;
+
+            left:
+                24px;
+
+            right:
+                24px;
+        }
+
+        .element-number {
+
+            font-size:
+                11px;
+
+            letter-spacing:
+                .15em;
+
+            color:
+                var(--gold);
+
+            font-weight:
+                700;
+        }
+
+        .element h3 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                28px;
+
+            margin:
+                5px 0;
+        }
+
+        .element p {
+
+            font-size:
+                12px;
+
+            line-height:
+                1.5;
+
+            color:
+                rgba(255,255,255,.78);
+        }
+
+
+        /* =====================================================
+           HIGHLIGHTS
+        ===================================================== */
+
+        .highlight-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                18px;
+
+            margin-top:
+                55px;
+        }
+
+        .highlight-card {
+
+            padding:
+                34px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius:
+                var(--radius);
+
+            background:
+                var(--white);
+
+            transition:
+                var(--transition);
+        }
+
+        .highlight-card:hover {
+
+            transform:
+                translateY(-7px);
+
+            box-shadow:
+                var(--shadow);
+
+            border-color:
+                var(--gold);
+        }
+
+        .highlight-icon {
+
+            width:
+                48px;
+
+            height:
+                48px;
+
+            border-radius:
+                50%;
+
+            background:
+                var(--cream);
+
+            color:
+                var(--gold-dark);
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            font-size:
+                19px;
+
+            margin-bottom:
+                25px;
+        }
+
+        .highlight-card h3 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                25px;
+
+            margin-bottom:
+                10px;
+        }
+
+        .highlight-card p {
+
+            color:
+                var(--muted);
+
+            font-size:
+                14px;
+        }
+
+
+        /* =====================================================
+           FEATURE SPLIT
+        ===================================================== */
+
+        .feature {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            min-height:
+                620px;
+        }
+
+        .feature-image {
+
+            min-height:
+                600px;
+
+            background:
+                url(assets/tatvam/gallery_11.jpg)
+                center/cover no-repeat;
+        }
+
+        .feature-copy {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            padding:
+                80px;
+        }
+
+        .feature-copy-inner {
+
+            max-width:
+                520px;
+        }
+
+        .feature-list {
+
+            margin-top:
+                30px;
+        }
+
+        .feature-list li {
+
+            display:
+                flex;
+
+            gap:
+                14px;
+
+            padding:
+                14px 0;
+
+            border-bottom:
+                1px solid var(--line);
+
+            color:
+                var(--muted);
+
+            font-size:
+                14px;
+        }
+
+        .feature-list li::before {
+
+            content:
+                "✦";
+
+            color:
+                var(--gold);
+
+            font-size:
+                12px;
+        }
+
+
+        /* =====================================================
+           AMENITIES
+        ===================================================== */
+
+        .amenities-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                repeat(3, 1fr);
+
+            gap:
+                18px;
+
+            margin-top:
+                55px;
+        }
+
+        .amenity {
+
+            position:
+                relative;
+
+            min-height:
+                200px;
+
+            overflow:
+                hidden;
+
+            border-radius:
+                var(--radius);
+
+            color:
+                var(--white);
+        }
+
+        .amenity img {
+
+            height:
+                100%;
+
+            transition:
+                transform .6s ease;
+        }
+
+        .amenity:hover img {
+
+            transform:
+                scale(1.06);
+        }
+
+        .amenity::after {
+
+            content: "";
+
+            position:
+                absolute;
+
+            inset: 0;
+
+            background:
+                linear-gradient(
+                    0deg,
+                    rgba(0,0,0,.82),
+                    transparent 70%
+                );
+        }
+
+        .amenity-info {
+
+            position:
+                absolute;
+
+            z-index:
+                2;
+
+            left:
+                25px;
+
+            bottom:
+                24px;
+
+            right:
+                25px;
+        }
+
+        .amenity-info h3 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                28px;
+        }
+
+        .amenity-info p {
+
+            font-size:
+                12px;
+
+            color:
+                rgba(255,255,255,.75);
+
+            margin-top:
+                5px;
+        }
+
+
+        /* =====================================================
+           CONNECTIVITY
+        ===================================================== */
+
+        .connectivity {
+
+            background:
+                var(--ink);
+
+            color:
+                var(--white);
+        }
+
+        .connectivity .section-intro {
+
+            color:
+                rgba(255,255,255,.62);
+        }
+
+        .connect-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                70px;
+
+            margin-top:
+                60px;
+        }
+
+        .connect-image {
+
+            height:
+                570px;
+
+            border-radius:
+                var(--radius);
+
+            background:
+                url(assets/tatvam/gallery_19.jpg)
+                center/cover no-repeat;
+        }
+
+        .connect-list {
+
+            border-top:
+                1px solid rgba(255,255,255,.15);
+        }
+
+        .connect-item {
+
+            display:
+                flex;
+
+            align-items:
+                center;
+
+            justify-content:
+                space-between;
+
+            padding:
+                21px 0;
+
+            border-bottom:
+                1px solid rgba(255,255,255,.15);
+        }
+
+        .connect-item span:first-child {
+
+            color:
+                rgba(255,255,255,.62);
+
+            font-size:
+                13px;
+        }
+
+        .connect-item strong {
+
+            color:
+                var(--gold);
+
+            font-size:
+                14px;
+        }
+
+
+        /* =====================================================
+           GALLERY
+        ===================================================== */
+
+        .gallery-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1.3fr .7fr .7fr;
+
+            grid-auto-rows:
+                260px;
+
+            gap:
+                12px;
+
+            margin-top:
+                55px;
+        }
+
+        .gallery-item {
+
+            overflow:
+                hidden;
+
+            border-radius:
+                var(--radius);
+        }
+
+        .gallery-item:first-child {
+
+            grid-row:
+                span 2;
+        }
+
+        .gallery-item img {
+
+            height:
+                100%;
+
+            transition:
+                transform .7s ease;
+        }
+
+        .gallery-item:hover img {
+
+            transform:
+                scale(1.06);
+        }
+
+
+        /* =====================================================
+           FLOOR PLANS
+        ===================================================== */
+
+        .plans-tabs {
+
+            display:
+                flex;
+
+            gap:
+                10px;
+
+            margin:
+                45px 0 30px;
+
+            flex-wrap:
+                wrap;
+        }
+
+        .plan-tab {
+
+            padding:
+                12px 20px;
+
+            border:
+                1px solid var(--line);
+
+            border-radius:
+                999px;
+
+            background:
+                transparent;
+
+            color:
+                var(--muted);
+
+            transition:
+                var(--transition);
+        }
+
+        .plan-tab.active,
+        .plan-tab:hover {
+
+            background:
+                var(--ink);
+
+            color:
+                var(--white);
+
+            border-color:
+                var(--ink);
+        }
+
+        .plans-panel {
+
+            display:
+                none;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                50px;
+
+            align-items:
+                center;
+        }
+
+        .plans-panel.active {
+
+            display:
+                grid;
+        }
+
+        .plan-image {
+
+            background:
+                var(--cream);
+
+            border-radius:
+                var(--radius);
+
+            padding:
+                30px;
+        }
+
+        .plan-image img {
+
+            height:
+                500px;
+
+            object-fit:
+                contain;
+        }
+
+        .plan-info h3 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                40px;
+
+            margin-bottom:
+                15px;
+        }
+
+        .plan-info p {
+
+            color:
+                var(--muted);
+
+            margin-bottom:
+                10px;
+        }
+
+        .plan-info strong {
+
+            color:
+                var(--gold-dark);
+        }
+
+
+        /* =====================================================
+           LOCATION
+        ===================================================== */
+
+        .location-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                .8fr 1.2fr;
+
+            gap:
+                50px;
+
+            margin-top:
+                55px;
+        }
+
+        .location-map {
+
+            min-height:
+                500px;
+
+            border-radius:
+                var(--radius);
+
+            overflow:
+                hidden;
+
+            background:
+                var(--cream);
+
+            display:
+                grid;
+
+            place-items:
+                center;
+
+            color:
+                var(--muted);
+        }
+
+        .location-map-inner {
+
+            text-align:
+                center;
+
+            padding:
+                30px;
+        }
+
+        .location-map-inner strong {
+
+            display:
+                block;
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                34px;
+
+            color:
+                var(--ink);
+
+            margin-bottom:
+                8px;
+        }
+
+        .location-columns {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                35px;
+        }
+
+        .location-group {
+
+            margin-bottom:
+                30px;
+        }
+
+        .location-group h3 {
+
+            font-size:
+                12px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .15em;
+
+            color:
+                var(--gold-dark);
+
+            margin-bottom:
+                15px;
+        }
+
+        .location-row {
+
+            display:
+                flex;
+
+            justify-content:
+                space-between;
+
+            gap:
+                20px;
+
+            padding:
+                10px 0;
+
+            border-bottom:
+                1px solid var(--line);
+
+            font-size:
+                13px;
+        }
+
+        .location-row span {
+
+            color:
+                var(--muted);
+        }
+
+        .location-row strong {
+
+            white-space:
+                nowrap;
+        }
+
+
+        /* =====================================================
+           CTA
+        ===================================================== */
+
+        .cta {
+
+            position:
+                relative;
+
+            color:
+                var(--white);
+
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,.82),
+                    rgba(0,0,0,.38)
+                ),
+                url(assets/tatvam/gallery_7.jpg)
+                center/cover no-repeat;
+
+            padding:
+                110px 0;
+        }
+
+        .cta-content {
+
+            max-width:
+                700px;
+        }
+
+        .cta h2 {
+
+            font-family:
+                "Playfair Display",
+                serif;
+
+            font-size:
+                clamp(42px, 6vw, 72px);
+
+            line-height:
+                1;
+
+            font-weight:
+                400;
+        }
+
+        .cta p {
+
+            margin:
+                22px 0 30px;
+
+            color:
+                rgba(255,255,255,.72);
+        }
+
+
+        /* =====================================================
+           CONTACT
+        ===================================================== */
+
+        .contact-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                .8fr 1.2fr;
+
+            gap:
+                70px;
+        }
+
+        .contact-details {
+
+            margin-top:
+                35px;
+        }
+
+        .contact-detail {
+
+            padding:
+                20px 0;
+
+            border-bottom:
+                1px solid var(--line);
+        }
+
+        .contact-detail span {
+
+            display:
+                block;
+
+            font-size:
+                11px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .15em;
+
+            color:
+                var(--gold-dark);
+
+            margin-bottom:
+                5px;
+        }
+
+        .contact-detail strong {
+
+            font-size:
+                15px;
+
+            font-weight:
+                500;
+        }
+
+        .contact-form {
+
+            background:
+                var(--cream);
+
+            padding:
+                40px;
+
+            border-radius:
+                var(--radius);
+        }
+
+        .form-grid {
+
+            display:
+                grid;
+
+            grid-template-columns:
+                1fr 1fr;
+
+            gap:
+                16px;
+        }
+
+        .form-group {
+
+            margin-bottom:
+                16px;
+        }
+
+        .form-group.full {
+
+            grid-column:
+                1 / -1;
+        }
+
+        .form-group label {
+
+            display:
+                block;
+
+            font-size:
+                11px;
+
+            text-transform:
+                uppercase;
+
+            letter-spacing:
+                .1em;
+
+            margin-bottom:
+                7px;
+
+            color:
+                var(--muted);
+        }
+
+        .form-group input,
+        .form-group textarea {
+
+            width:
+                100%;
+
+            border:
+                1px solid var(--line);
+
+            background:
+                var(--white);
+
+            border-radius:
+                12px;
+
+            padding:
+                14px 15px;
+
+            outline:
+                none;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus {
+
+            border-color:
+                var(--gold);
+        }
+
+        textarea {
+
+            resize:
+                vertical;
+
+            min-height:
+                130px;
+        }
+
+
+
+        /* =====================================================
+           REVEAL ANIMATION
+        ===================================================== */
+
+        .reveal {
+
+            opacity:
+                100%;
+
+            transform:
+                translateY(35px);
+
+            transition:
+                opacity .8s ease,
+                transform .8s ease;
+        }
+
+        .reveal.visible {
+
+            opacity:
+                1;
+
+            transform:
+                translateY(0);
+        }
+
+
+        /* =====================================================
+           MOBILE
+        ===================================================== */
+
+        @media(max-width: 900px) {
+
+         
+
+            .elements-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .element:last-child {
+
+                grid-column:
+                    span 2;
+            }
+
+            .highlight-grid,
+            .amenities-grid {
+
+                grid-template-columns:
+                    repeat(2, 1fr);
+            }
+
+            .feature {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .feature-image {
+
+                min-height:
+                    500px;
+            }
+
+            .connect-grid,
+            .location-grid,
+            .contact-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .plans-panel.active {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+          
+        }
+
+
+        @media(max-width: 600px) {
+
+            .section {
+
+                padding:
+                    75px 0;
+            }
+
+            .container {
+
+                width:
+                    min(
+                        calc(100% - 28px),
+                        var(--max)
+                    );
+            }
+
+            .hero {
+    min-height: 420px
+  }
+
+            .hero-content {
+
+                padding:
+                    120px 0 45px;
+            }
+
+            .hero-meta {
+
+                grid-template-columns:
+                    1fr 1fr;
+
+                gap:
+                    20px;
+
+                padding-top:
+                    20px;
+            }
+
+            .hero-meta-item {
+
+                border:
+                    0;
+
+                padding:
+                    0 !important;
+            }
+
+            .intro-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    45px;
+            }
+
+            .intro-image img {
+
+                height:
+                    450px;
+            }
+
+            .image-badge {
+
+                right:
+                    15px;
+            }
+
+            .elements-header {
+
+                display:
+                    block;
+            }
+
+            .elements-grid {
+
+                grid-template-columns:
+                    1fr 1fr;
+            }
+
+            .element {
+
+                height:
+                    330px;
+            }
+
+            .element:last-child {
+
+                grid-column:
+                    span 2;
+            }
+
+            .highlight-grid,
+            .amenities-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .feature-copy {
+
+                padding:
+                    55px 25px;
+            }
+
+            .connect-grid {
+
+                gap:
+                    35px;
+            }
+
+            .connect-image {
+
+                height:
+                    400px;
+            }
+
+            .gallery-grid {
+
+                grid-template-columns:
+                    1fr 1fr;
+
+                grid-auto-rows:
+                    190px;
+            }
+
+            .gallery-item:first-child {
+
+                grid-row:
+                    span 2;
+            }
+
+            .location-columns {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .form-grid {
+
+                grid-template-columns:
+                    1fr;
+            }
+
+            .form-group.full {
+
+                grid-column:
+                    auto;
+            }
+
+            .contact-form {
+
+                padding:
+                    25px;
+            }
+
+
+            .copyright {
+
+                display:
+                    block;
+            }
+
+            .copyright span {
+
+                display:
+                    block;
+
+                margin-bottom:
+                    8px;
+            }
+        }
+
+    </style>
+
+    <style>
+        /* =====================================================
+   TATVAM PLANS SECTION
+===================================================== */
+
+#plans {
+    position: relative;
+    overflow: hidden;
+}
+
+#plans .plans-tabs {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin: 40px 0 45px;
+}
+
+#plans .plan-tab {
+    appearance: none;
+    -webkit-appearance: none;
+
+    border: 1px solid var(--line);
+    background: var(--white);
+    color: var(--ink);
+
+    padding: 14px 28px;
+
+    font-family: inherit;
+    font-size: 13px;
+    font-weight: 600;
+
+    letter-spacing: .08em;
+    text-transform: uppercase;
+
+    cursor: pointer;
+
+    transition:
+        background .3s ease,
+        color .3s ease,
+        border-color .3s ease,
+        transform .3s ease;
+}
+
+#plans .plan-tab:hover {
+    border-color: var(--gold);
+    color: var(--gold-dark);
+}
+
+#plans .plan-tab.active {
+    background: var(--ink);
+    border-color: var(--ink);
+    color: var(--white);
+}
+
+
+/* =====================================================
+   PANELS
+===================================================== */
+
+#plans .plans-panel {
+    display: none !important;
+
+    width: 100%;
+
+    grid-template-columns:
+        minmax(0, 1.2fr)
+        minmax(300px, .8fr);
+
+    gap: 60px;
+
+    align-items: center;
+}
+
+#plans .plans-panel.active {
+    display: grid !important;
+}
+
+
+/* =====================================================
+   PLAN IMAGE
+===================================================== */
+
+#plans .plan-image {
+    position: relative;
+
+    width: 100%;
+    min-height: 450px;
+
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    background: var(--white);
+
+    border: 1px solid var(--line);
+
+    border-radius: var(--radius);
+
+    overflow: hidden;
+
+    padding: 25px;
+
+    box-shadow: var(--shadow);
+}
+
+#plans .plan-image img {
+    display: block;
+
+    width: 100%;
+    height: auto;
+
+    max-height: 650px;
+
+    object-fit: contain;
+
+    border-radius: 12px;
+
+    transition: transform .5s ease;
+}
+
+#plans .plan-image:hover img {
+    transform: scale(1.025);
+}
+
+
+/* =====================================================
+   PLAN INFORMATION
+===================================================== */
+
+#plans .plan-info {
+    width: 100%;
+}
+
+#plans .plan-info .section-tag {
+    margin-bottom: 18px;
+}
+
+#plans .plan-info h3 {
+    margin: 0 0 20px;
+
+    color: var(--ink);
+
+    font-size: clamp(32px, 4vw, 52px);
+
+    line-height: 1.08;
+
+    font-weight: 500;
+}
+
+#plans .plan-info p {
+    margin: 0 0 8px;
+
+    color: var(--muted);
+
+    font-size: 14px;
+
+    line-height: 1.7;
+}
+
+#plans .plan-info strong {
+    display: block;
+
+    color: var(--gold-dark);
+
+    font-size: 20px;
+
+    line-height: 1.6;
+
+    font-weight: 600;
+}
+
+#plans .plan-info strong small {
+    color: var(--muted);
+
+    font-size: 14px;
+
+    font-weight: 400;
+}
+
+#plans .plan-description {
+    margin-top: 24px !important;
+
+    max-width: 430px;
+
+    font-size: 15px !important;
+
+    line-height: 1.8 !important;
+}
+
+
+/* =====================================================
+   MOBILE
+===================================================== */
+
+@media (max-width: 900px) {
+
+    #plans .plans-panel {
+        grid-template-columns: 1fr;
+
+        gap: 35px;
+    }
+
+    #plans .plan-image {
+        min-height: 350px;
+
+        padding: 18px;
+    }
+
+    #plans .plan-info {
+        padding-bottom: 20px;
+    }
+
+    .intro-grid {
+
+                grid-template-columns:
+                    1fr;
+
+                gap:
+                    45px;
+            }
+
+}
+
+
+@media (max-width: 600px) {
+
+    #plans .plans-tabs {
+        display: grid;
+
+        grid-template-columns: 1fr;
+
+        gap: 8px;
+
+        margin: 30px 0;
+    }
+
+    #plans .plan-tab {
+        width: 100%;
+
+        padding: 14px 18px;
+    }
+
+    #plans .plans-panel {
+        gap: 25px;
+    }
+
+    #plans .plan-image {
+        min-height: 260px;
+
+        padding: 10px;
+
+        border-radius: 16px;
+    }
+
+    #plans .plan-info h3 {
+        font-size: 34px;
+    }
+
+    #plans .plan-info strong {
+        font-size: 17px;
+    }
+
+}
+    </style>
+</head>
+
+
+<body>
+
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Trinetra Realty home">
+        <img src="assets/trinetra-logo.png" alt="Trinetra Realty logo">
+        <!-- <span>Trinetra Realty</span> -->
+      </a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <nav class="nav-links">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="about.html">About</a>
+        <a class="active" href="properties.html">Property</a>
+        <a class="" href="blog.html">Blog</a>
+        <a class="" href="contact.html">Contact Us</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Get Started</a>
+    </div>
+  </header>
+
+<!-- =========================================================
+     HERO
+========================================================= -->
+
+<section class="hero" id="home">
+
+    <div class="container hero-content">
+
+        <div class="hero-kicker">
+          Jindal Global City · Sonipat
+        </div>
+
+
+        <h1>
+           Tatvam<br>
+          Jindal Global <span> City</span>
+        </h1>
+
+
+        <p class="hero-text">
+
+            Tatvam is a limited-edition collection of
+            independent 4 BHK residences shaped around
+            nature, openness and thoughtful architecture.
+
+        </p>
+
+
+        <div class="hero-actions">
+
+            <a
+                href="#overview"
+                class="btn btn-gold"
+            >
+                Explore Tatvam
+            </a>
+
+      
+
+        </div>
+
+
+        <div class="hero-meta">
+
+            <div class="hero-meta-item">
+
+                <strong>108</strong>
+
+                <span>
+                    Limited Edition Residences
+                </span>
+
+            </div>
+
+
+            <div class="hero-meta-item">
+
+                <strong>4 BHK</strong>
+
+                <span>
+                    Luxury Independent Floors
+                </span>
+
+            </div>
+
+
+            <div class="hero-meta-item">
+
+                <strong>Stilt + 4</strong>
+
+                <span>
+                    Residential Levels
+                </span>
+
+            </div>
+
+
+            <div class="hero-meta-item">
+
+                <strong>Sonipat</strong>
+
+                <span>
+                    Jindal Global City
+                </span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     OVERVIEW
+========================================================= -->
+
+<section class="section" id="overview">
+
+    <div class="container intro-grid">
+
+        <div class="intro-image reveal">
+
+            <img
+                src="assets/tatvam/gallery_17.jpg"
+                alt="Tatvam luxury residences"
+            >
+
+            <div class="image-badge">
+
+                <strong>4 BHK</strong>
+
+                <span>
+                    Independent Residences
+                </span>
+
+            </div>
+
+        </div>
+
+
+        <div class="intro-copy reveal">
+
+            <div class="section-tag">
+                The Tatvam Story
+            </div>
+
+            <h2 class="section-title">
+
+                Shaped by
+                <span>Nature.</span>
+
+            </h2>
+
+
+            <p>
+
+                Tatvam is envisioned as a sanctuary of
+                green living, with luxury residences
+                nestled within open landscapes and
+                designed to breathe, grow and evolve
+                with nature.
+
+            </p>
+
+
+            <p>
+
+                Here, luxury is quiet, spaces are
+                generous and every detail is guided
+                by balance.
+
+            </p>
+
+
+            <p>
+
+                Large openings, expansive views,
+                landscaped greens and thoughtfully
+                designed interiors create an elevated
+                expression of independent living.
+
+            </p>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FIVE ELEMENTS
+========================================================= -->
+
+<section class="section cream" id="elements">
+
+    <div class="container">
+
+        <div class="elements-header reveal">
+
+            <div>
+
+                <div class="section-tag">
+                    The Five Elements
+                </div>
+
+                <h2 class="section-title">
+                    Life in <span>Balance.</span>
+                </h2>
+
+            </div>
+
+            <p class="section-intro">
+
+                Tatvam draws inspiration from the five
+                elements of nature — creating spaces
+                that feel calm, open and connected.
+
+            </p>
+
+        </div>
+
+
+        <div class="elements-grid">
+
+
+            <article class="element reveal">
+
+                <img
+                    src="assets/tatvam/jal.jpg"
+                    alt="Water element"
+                >
+
+                <div class="element-content">
+
+                    <span class="element-number">
+                        01
+                    </span>
+
+                    <h3>Jal</h3>
+
+                    <p>
+                        Calm, flow and renewal.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="element reveal">
+
+                <img
+                    src="assets/tatvam/earth.jpg"
+                    alt="Earth element"
+                >
+
+                <div class="element-content">
+
+                    <span class="element-number">
+                        02
+                    </span>
+
+                    <h3>Prithvi</h3>
+
+                    <p>
+                        Strength, stability and grounding.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="element reveal">
+
+                <img
+                    src="assets/tatvam/agni.jpg"
+                    alt="Fire element"
+                >
+
+                <div class="element-content">
+
+                    <span class="element-number">
+                        03
+                    </span>
+
+                    <h3>Agni</h3>
+
+                    <p>
+                        Energy, warmth and vitality.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="element reveal">
+
+                <img
+                    src="assets/tatvam/air.jpg"
+                    alt="Air element"
+                >
+
+                <div class="element-content">
+
+                    <span class="element-number">
+                        04
+                    </span>
+
+                    <h3>Vayu</h3>
+
+                    <p>
+                        Freshness, movement and clarity.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="element reveal">
+
+                <img
+                    src="assets/tatvam/sky.jpg"
+                    alt="Space element"
+                >
+
+                <div class="element-content">
+
+                    <span class="element-number">
+                        05
+                    </span>
+
+                    <h3>Akash</h3>
+
+                    <p>
+                        Freedom, openness and possibility.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     HIGHLIGHTS
+========================================================= -->
+
+<section class="section" id="highlights">
+
+    <div class="container">
+
+        <div class="section-tag reveal">
+            Project Highlights
+        </div>
+
+        <h2 class="section-title reveal">
+            Designed for
+            <span>Elevated Living.</span>
+        </h2>
+
+
+        <div class="highlight-grid">
+
+
+            <div class="highlight-card reveal">
+
+                <div class="highlight-icon">
+                    ✦
+                </div>
+
+                <h3>
+                    Low Density Community
+                </h3>
+
+                <p>
+                    An exclusive gated community
+                    designed around openness,
+                    landscaped greens and privacy.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-card reveal">
+
+                <div class="highlight-icon">
+                    56
+                </div>
+
+                <h3>
+                    Select Residences
+                </h3>
+
+                <p>
+                    A collection of 56 independent
+                    residences within the Select
+                    offering.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-card reveal">
+
+                <div class="highlight-icon">
+                    52
+                </div>
+
+                <h3>
+                    Signature Residences
+                </h3>
+
+                <p>
+                    52 independent residences
+                    within the Signature collection.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-card reveal">
+
+                <div class="highlight-icon">
+                    4
+                </div>
+
+                <h3>
+                    Ensuite Bedrooms
+                </h3>
+
+                <p>
+                    Four bedrooms with ensuite
+                    bathrooms along with a separate
+                    powder room.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-card reveal">
+
+                <div class="highlight-icon">
+                    8'
+                </div>
+
+                <h3>
+                    Deep Balconies
+                </h3>
+
+                <p>
+                    Balconies up to approximately
+                    8 feet deep connect interiors
+                    with the outdoors.
+                </p>
+
+            </div>
+
+
+            <div class="highlight-card reveal">
+
+                <div class="highlight-icon">
+                    ✓
+                </div>
+
+                <h3>
+                    Vaastu Compliant
+                </h3>
+
+                <p>
+                    Thoughtfully planned residences
+                    with Vaastu-compliant floor plans.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FEATURE
+========================================================= -->
+
+<section class="feature">
+
+    <div class="feature-image"></div>
+
+
+    <div class="feature-copy">
+
+        <div class="feature-copy-inner reveal">
+
+            <div class="section-tag">
+                Architecture
+            </div>
+
+            <h2 class="section-title">
+
+                Designed to
+                <span>Breathe.</span>
+
+            </h2>
+
+            <p class="section-intro">
+
+                Generous frontage, large glazing,
+                landscaped surroundings and
+                deep balconies create a seamless
+                relationship between the home
+                and nature.
+
+            </p>
+
+
+            <ul class="feature-list">
+
+                <li>
+                    Large external glazing in living
+                    spaces and bedrooms
+                </li>
+
+                <li>
+                    Expansive frontage and rear
+                    landscaped views
+                </li>
+
+                <li>
+                    Up to 8 feet deep balconies
+                </li>
+
+                <li>
+                    Dedicated utility area
+                </li>
+
+                <li>
+                    Large kitchen and Puja area
+                </li>
+
+                <li>
+                    Elevator access from entrance lobby
+                </li>
+
+            </ul>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     AMENITIES
+========================================================= -->
+
+<section class="section cream" id="amenities">
+
+    <div class="container">
+
+        <div class="section-tag reveal">
+            Lifestyle
+        </div>
+
+        <h2 class="section-title reveal">
+            Spaces for
+            <span>Every Rhythm.</span>
+        </h2>
+
+
+        <div class="amenities-grid">
+
+
+            <article class="amenity reveal">
+
+                <img
+                    src="assets/tatvam/body-and-soul.jpg"
+                    alt="Yoga space"
+                >
+
+                <div class="amenity-info">
+
+                    <h3>Body & Soul</h3>
+
+                    <p>
+                        A serene yoga space for calm,
+                        balance and mindfulness.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity reveal">
+
+                <img
+                    src="assets/tatvam/studio-fitness.jpg"
+                    alt="Fitness studio"
+                >
+
+                <div class="amenity-info">
+
+                    <h3>Studio Fitness</h3>
+
+                    <p>
+                        Modern fitness environment
+                        with advanced equipment.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity reveal">
+
+                <img
+                    src="assets/tatvam/games-and-activities.jpg"
+                    alt="Games and activities"
+                >
+
+                <div class="amenity-info">
+
+                    <h3>Games & Activities</h3>
+
+                    <p>
+                        Badminton, table tennis,
+                        skating, pool and more.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity reveal">
+
+                <img
+                    src="assets/tatvam/ev-charging-point.jpg"
+                    alt="EV charging point"
+                >
+
+                <div class="amenity-info">
+
+                    <h3>EV Charging</h3>
+
+                    <p>
+                        Future-ready electric
+                        vehicle charging facility.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity reveal">
+
+                <img
+                    src="assets/tatvam/outdoor-living.jpg"
+                    alt="Outdoor living"
+                >
+
+                <div class="amenity-info">
+
+                    <h3>Outdoor Living</h3>
+
+                    <p>
+                        Deep balconies and terraces
+                        bring sunlight and greenery in.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity reveal">
+
+                <img
+                    src="assets/tatvam/gallery_13.jpg"
+                    alt="Private terrace"
+                >
+
+                <div class="amenity-info">
+
+                    <h3>Open Green Views</h3>
+
+                    <p>
+                        Designed around landscaped
+                        surroundings and openness.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     CONNECTIVITY
+========================================================= -->
+
+<section class="section connectivity" id="location">
+
+    <div class="container">
+
+        <div class="section-tag reveal">
+            Connectivity
+        </div>
+
+        <h2 class="section-title reveal">
+            Connected to
+            <span>Everything.</span>
+        </h2>
+
+        <p class="section-intro reveal">
+
+            Tatvam is positioned within Jindal Global
+            City, Sonipat, with access to major roads,
+            rail corridors, education hubs and the
+            wider Delhi NCR region.
+
+        </p>
+
+
+        <div class="connect-grid">
+
+            <div class="connect-image reveal"></div>
+
+
+            <div class="connect-list reveal">
+
+
+                <div class="connect-item">
+
+                    <span>
+                        NH-334B
+                    </span>
+
+                    <strong>
+                        01 min
+                    </strong>
+
+                </div>
+
+
+                <div class="connect-item">
+
+                    <span>
+                        NH-44
+                    </span>
+
+                    <strong>
+                        05 mins
+                    </strong>
+
+                </div>
+
+
+                <div class="connect-item">
+
+                    <span>
+                        Haryana Orbital Rail Corridor
+                    </span>
+
+                    <strong>
+                        05 mins
+                    </strong>
+
+                </div>
+
+
+                <div class="connect-item">
+
+                    <span>
+                        Eastern & Western Peripheral
+                    </span>
+
+                    <strong>
+                        10 mins
+                    </strong>
+
+                </div>
+
+
+                <div class="connect-item">
+
+                    <span>
+                        UER-II
+                    </span>
+
+                    <strong>
+                        20 mins
+                    </strong>
+
+                </div>
+
+
+                <div class="connect-item">
+
+                    <span>
+                        Sonipat
+                    </span>
+
+                    <strong>
+                        10 mins
+                    </strong>
+
+                </div>
+
+
+                <div class="connect-item">
+
+                    <span>
+                        Delhi
+                    </span>
+
+                    <strong>
+                        20 mins
+                    </strong>
+
+                </div>
+
+
+                <div class="connect-item">
+
+                    <span>
+                        IGI Airport
+                    </span>
+
+                    <strong>
+                        &lt; 60 mins
+                    </strong>
+
+                </div>
+
+
+                <div class="connect-item">
+
+                    <span>
+                        Noida Sector 62
+                    </span>
+
+                    <strong>
+                        70 mins
+                    </strong>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     GALLERY
+========================================================= -->
+
+<section class="section" id="gallery">
+
+    <div class="container">
+
+        <div class="section-tag reveal">
+            Visual Story
+        </div>
+
+        <h2 class="section-title reveal">
+            A Glimpse of
+            <span>Tatvam.</span>
+        </h2>
+
+
+        <div class="gallery-grid">
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/tatvam/gallery_16.jpg"
+                    alt="Tatvam luxury living room"
+                >
+
+            </div>
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/tatvam/gallery_17.jpg"
+                    alt="Tatvam entrance"
+                >
+
+            </div>
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/tatvam/gallery_13.jpg"
+                    alt="Tatvam terrace"
+                >
+
+            </div>
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/tatvam/gallery_14.jpg"
+                    alt="Tatvam bedroom"
+                >
+
+            </div>
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/tatvam/gallery_19.jpg"
+                    alt="Tatvam bathroom"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =========================================================
+     FLOOR PLANS
+========================================================= -->
+<section class="section cream" id="plans">
+
+    <div class="container">
+
+        <div class="section-tag reveal">
+            Plans
+        </div>
+
+        <h2 class="section-title reveal">
+            Find Your
+            <span>Space.</span>
+        </h2>
+
+        <!-- TABS -->
+        <div class="plans-tabs" role="tablist">
+
+            <button
+                type="button"
+                class="plan-tab active"
+                data-target="signature"
+                aria-selected="true"
+            >
+                Signature
+            </button>
+
+            <button
+                type="button"
+                class="plan-tab"
+                data-target="select-east"
+                aria-selected="false"
+            >
+                Select East
+            </button>
+
+            <button
+                type="button"
+                class="plan-tab"
+                data-target="select-west"
+                aria-selected="false"
+            >
+                Select West
+            </button>
+
+        </div>
+
+
+        <!-- ================= SIGNATURE ================= -->
+
+        <div
+            class="plans-panel active"
+            id="signature"
+        >
+
+            <div class="plan-image">
+
+                <img
+                    src="assets/tatvam/Tatvam-Signature-Floor-Plan.jpg"
+                    alt="Tatvam Signature 4 BHK floor plan"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="plan-info">
+
+                <div class="section-tag">
+                    Signature
+                </div>
+
+                <h3>
+                    4 Bedroom
+                    Luxury Homes
+                </h3>
+
+                <p>
+                    Carpet Area
+                </p>
+
+                <strong>
+                    166.367 – 168.565 sq. m
+                    <br>
+                    <small>
+                        (1790.774 – 1814.434 sq. ft.)
+                    </small>
+                </strong>
+
+                <p class="plan-description">
+                    With stilt parking and exclusive
+                    landscaped terrace.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= SELECT EAST ================= -->
+
+        <div
+            class="plans-panel"
+            id="select-east"
+        >
+
+            <div class="plan-image">
+
+                <img
+                    src="assets/tatvam/select_east_facing1.jpg"
+                    alt="Tatvam Select East facing 4 BHK floor plan"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="plan-info">
+
+                <div class="section-tag">
+                    Select · East Facing
+                </div>
+
+                <h3>
+                    4 Bedroom
+                    Luxury Homes
+                </h3>
+
+                <p>
+                    Carpet Area
+                </p>
+
+                <strong>
+                    170.200 – 193.206 sq. m
+                    <br>
+                    <small>
+                        (1832.033 – 2079.669 sq. ft.)
+                    </small>
+                </strong>
+
+                <p class="plan-description">
+                    With stilt parking, exclusive
+                    terrace and private basement spaces.
+                </p>
+
+            </div>
+
+        </div>
+
+
+        <!-- ================= SELECT WEST ================= -->
+
+        <div
+            class="plans-panel"
+            id="select-west"
+        >
+
+            <div class="plan-image">
+
+                <img
+                    src="assets/tatvam/select_west_facing1.jpg"
+                    alt="Tatvam Select West facing 4 BHK floor plan"
+                    loading="lazy"
+                >
+
+            </div>
+
+            <div class="plan-info">
+
+                <div class="section-tag">
+                    Select · West Facing
+                </div>
+
+                <h3>
+                    4 Bedroom
+                    Luxury Homes
+                </h3>
+
+                <p>
+                    Carpet Area
+                </p>
+
+                <strong>
+                    168.137 – 168.567 sq. m
+                    <br>
+                    <small>
+                        (1809.827 – 1814.455 sq. ft.)
+                    </small>
+                </strong>
+
+                <p class="plan-description">
+                    With stilt parking, exclusive
+                    terrace and private basement spaces.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =========================================================
+     CTA
+========================================================= -->
+
+<section class="cta">
+
+    <div class="container">
+
+        <div class="cta-content reveal">
+
+            <div class="section-tag">
+                Discover Tatvam
+            </div>
+
+            <h2>
+                Come home to
+                a quieter kind
+                of luxury.
+            </h2>
+
+            <p>
+
+                Experience the residences,
+                landscaped surroundings and
+                thoughtful design at Tatvam.
+
+            </p>
+
+            <a
+                href="contact.html"
+                class="btn btn-gold"
+            >
+                Plan a Site Visit
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+
+
+  <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html"><img src="assets/trinetra-logo.png" alt="Trinetra Realty logo">
+            <!-- <span
+              style="color:#fff">Trinetra Realty</span> -->
+          </a>
+          <p>Trinetra Realty expertly and seamlessly guides clients to their perfect residential or commercial
+            property.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="properties.html">Properties</a></p>
+          <p><a href="blog.html">Blog</a></p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p><a href="godrej green estate.html">Godrej Green Estate</a></p>
+          <p><a href="Eldeco Amaya.html">Eldeco Amaya</a></p>
+          <p><a href="Jindal Smart City.html">Jindal Smart City</a></p>
+          <p><a href="origen realty.html">Origen Realty</a></p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:+91 90349 69308">+91 90349 69308</a>
+
+          <p><a href="mailto:info@trinetrarealty.in">info@trinetrarealty.in</a></p>
+
+
+          <p>SCO, F-3, SUPERMAX GALLERIA MARKET,
+            SECTOR 33, SONIPAT HARYANA - 131001</p>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© Trinetra Realty – All rights reserved</span></div>
+    </div>
+  </footer>
+
+<div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <script src="script.js"></script>
+
+
+<!-- =========================================================
+     JAVASCRIPT
+========================================================= -->
+
+<script>
+
+   
+
+    /* =====================================================
+       REVEAL ON SCROLL
+    ===================================================== */
+
+    const revealElements =
+        document.querySelectorAll(".reveal");
+
+
+    const observer =
+        new IntersectionObserver(
+
+            entries => {
+
+                entries.forEach(entry => {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add(
+                            "visible"
+                        );
+
+                        observer.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+
+            {
+                threshold: .12
+            }
+
+        );
+
+
+    revealElements.forEach(element => {
+
+        observer.observe(element);
+
+    });
+
+</script>
+
+<script>
+(function () {
+
+    function initTatvamPlans() {
+
+        const section = document.getElementById("plans");
+
+        if (!section) {
+            console.warn("Tatvam Plans section not found.");
+            return;
+        }
+
+        const tabs = section.querySelectorAll(".plan-tab");
+        const panels = section.querySelectorAll(".plans-panel");
+
+        if (!tabs.length || !panels.length) {
+            console.warn("Tatvam Plans tabs or panels not found.");
+            return;
+        }
+
+        function showPlan(targetId) {
+
+            /* Hide all panels */
+            panels.forEach(function (panel) {
+
+                panel.classList.remove("active");
+
+                panel.style.display = "none";
+
+            });
+
+
+            /* Reset all tabs */
+            tabs.forEach(function (tab) {
+
+                tab.classList.remove("active");
+
+                tab.setAttribute(
+                    "aria-selected",
+                    "false"
+                );
+
+            });
+
+
+            /* Find selected panel */
+            const targetPanel =
+                section.querySelector("#" + CSS.escape(targetId));
+
+            const targetTab =
+                section.querySelector(
+                    '.plan-tab[data-target="' +
+                    CSS.escape(targetId) +
+                    '"]'
+                );
+
+
+            if (!targetPanel) {
+
+                console.error(
+                    "Plan panel not found:",
+                    targetId
+                );
+
+                return;
+            }
+
+
+            /* Show panel */
+            targetPanel.classList.add("active");
+
+            targetPanel.style.display = "grid";
+
+
+            /* Activate tab */
+            if (targetTab) {
+
+                targetTab.classList.add("active");
+
+                targetTab.setAttribute(
+                    "aria-selected",
+                    "true"
+                );
+
+            }
+
+        }
+
+
+        /* Tab clicks */
+
+        tabs.forEach(function (tab) {
+
+            tab.addEventListener("click", function (event) {
+
+                event.preventDefault();
+
+                const target =
+                    this.getAttribute("data-target");
+
+                if (!target) {
+                    return;
+                }
+
+                showPlan(target);
+
+            });
+
+        });
+
+
+        /* Initial state */
+
+        showPlan("signature");
+
+    }
+
+
+    /* Works even if other scripts are present */
+
+    if (document.readyState === "loading") {
+
+        document.addEventListener(
+            "DOMContentLoaded",
+            initTatvamPlans
+        );
+
+    } else {
+
+        initTatvamPlans();
+
+    }
+
+})();
+</script>
+
+
+</body>
+</html>
+

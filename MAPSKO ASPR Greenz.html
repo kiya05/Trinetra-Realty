@@ -1,0 +1,3723 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>ASPR Greenz | Premium Plotted Development in Sonipat</title>
+
+    <meta name="description"
+          content="Discover ASPR Greenz, a premium plotted development in Sector 35, Sonipat, designed with green spaces, modern amenities and excellent connectivity.">
+
+    <meta name="keywords"
+          content="ASPR Greenz, Mapsko ASPR Greenz, plots in Sonipat, residential plots in Sonipat, plots in Sector 35 Sonipat, property in Sonipat">
+
+    <meta name="robots" content="index, follow">
+
+    <link rel="preconnect"
+          href="https://fonts.googleapis.com">
+
+    <link rel="preconnect"
+          href="https://fonts.gstatic.com"
+          crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@400;500;600;700&family=Playfair+Display:wght@500;600;700&display=swap"
+          rel="stylesheet">
+
+          <link rel="stylesheet" href="styles.css">
+
+
+<style>
+
+/* =========================================================
+   ROOT
+========================================================= */
+
+:root{
+
+    --ink: #171717;
+
+    --muted: #6d6d6d;
+
+    --gold: #c9a24a;
+
+    --gold-dark: #9f7a2e;
+
+    --cream: #f7f5ef;
+
+    --line: #e7e2d7;
+
+    --white: #fff;
+
+    --max: 1200px;
+
+    --radius: 22px;
+
+    --shadow:
+        0 18px 50px rgba(20, 20, 20, .08);
+
+}
+
+
+/* =========================================================
+   RESET
+========================================================= */
+
+*{
+
+    margin:0;
+
+    padding:0;
+
+    box-sizing:border-box;
+
+}
+
+
+html{
+
+    scroll-behavior:smooth;
+
+}
+
+
+body{
+
+    font-family:
+        "DM Sans",
+        sans-serif;
+
+    color:var(--ink);
+
+    background:var(--cream);
+
+    overflow-x:hidden;
+
+}
+
+
+body.no-scroll{
+
+    overflow:hidden;
+
+}
+
+
+img{
+
+    display:block;
+
+    width:100%;
+
+}
+
+
+a{
+
+    text-decoration:none;
+
+    color:inherit;
+
+}
+
+
+button,
+input,
+textarea,
+select{
+
+    font-family:inherit;
+
+}
+
+
+button{
+
+    border:0;
+
+    cursor:pointer;
+
+}
+
+
+.container{
+
+    width:min(
+        var(--max),
+        calc(100% - 40px)
+    );
+
+    margin:auto;
+
+}
+
+
+/* =========================================================
+   PRELOADER
+========================================================= */
+/* 
+.preloader{
+
+    position:fixed;
+
+    inset:0;
+
+    background:var(--ink);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    z-index:99999;
+
+    transition:
+        opacity .7s ease,
+        visibility .7s ease;
+
+}
+
+
+.preloader.hide{
+
+    opacity:0;
+
+    visibility:hidden;
+
+}
+
+
+.preloader-content{
+
+    text-align:center;
+
+    color:var(--white);
+
+}
+
+
+.preloader-title{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:34px;
+
+    letter-spacing:4px;
+
+}
+
+
+.preloader-subtitle{
+
+    margin-top:8px;
+
+    font-size:10px;
+
+    letter-spacing:4px;
+
+    color:var(--gold);
+
+}
+
+
+.loader{
+
+    width:160px;
+
+    height:1px;
+
+    background:
+        rgba(255,255,255,.2);
+
+    margin:25px auto;
+
+    overflow:hidden;
+
+}
+
+
+.loader span{
+
+    display:block;
+
+    width:0;
+
+    height:100%;
+
+    background:var(--gold);
+
+    animation:
+        loading 1.5s
+        ease-in-out
+        infinite;
+
+}
+
+
+@keyframes loading{
+
+    0%{
+        width:0;
+    }
+
+    50%{
+        width:80%;
+    }
+
+    100%{
+        width:100%;
+    }
+
+}
+ */
+
+
+/* =========================================================
+   HERO
+========================================================= */
+
+.hero{
+
+    min-height:100vh;
+
+    position:relative;
+
+    display:flex;
+
+    align-items:center;
+
+    overflow:hidden;
+
+    color:var(--white);
+
+}
+
+
+
+.hero-image{
+
+    position:absolute;
+
+    inset:0;
+
+    background-position:center;
+
+    background-size:cover;
+
+    transform:scale(1.06);
+
+    transition:
+        transform 7s ease;
+
+}
+
+
+.hero-content{
+
+    position:relative;
+
+    z-index:3;
+
+    max-width:850px;
+
+    padding-top:80px;
+
+}
+
+
+.hero-kicker{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    font-size:11px;
+
+    letter-spacing:3px;
+
+    text-transform:uppercase;
+
+    color:
+        rgba(255,255,255,.75);
+
+    margin-bottom:25px;
+
+}
+
+
+.hero-kicker::before{
+
+    content:"";
+
+    width:38px;
+
+    height:1px;
+
+    background:var(--gold);
+
+}
+
+
+.hero h1{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(55px,8vw,105px);
+
+    line-height:.9;
+
+    font-weight:500;
+
+    letter-spacing:-2px;
+
+}
+
+
+.hero h1 span{
+
+    color:var(--gold);
+
+}
+
+
+.hero-description{
+
+    max-width:650px;
+
+    margin-top:30px;
+
+    font-size:17px;
+
+    line-height:1.8;
+
+    color:
+        rgba(255,255,255,.8);
+
+}
+
+
+.hero-actions{
+
+    display:flex;
+
+    gap:13px;
+
+    margin-top:35px;
+
+    flex-wrap:wrap;
+
+}
+
+
+.btn{
+
+    display:inline-flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    gap:10px;
+
+    min-height:50px;
+
+    padding:0 25px;
+
+    border-radius:50px;
+
+    font-size:12px;
+
+    font-weight:600;
+
+    transition:.3s;
+
+}
+
+
+.btn-gold{
+
+    background:var(--gold);
+
+    color:var(--white);
+
+}
+
+
+.btn-gold:hover{
+
+    background:var(--gold-dark);
+
+    transform:translateY(-3px);
+
+    box-shadow:
+        0 12px 30px
+        rgba(159,122,46,.25);
+
+}
+
+
+.btn-outline{
+
+    color:var(--white);
+
+    border:1px solid
+        rgba(255,255,255,.45);
+
+}
+
+
+.btn-outline:hover{
+
+    background:var(--white);
+
+    color:var(--ink);
+
+}
+
+
+.hero-bottom{
+
+    position:absolute;
+
+    z-index:5;
+
+    bottom:35px;
+
+    left:0;
+
+    width:100%;
+
+}
+
+
+.hero-bottom-inner{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+}
+
+
+.hero-location{
+
+    font-size:11px;
+
+    letter-spacing:2px;
+
+    text-transform:uppercase;
+
+    color:
+        rgba(255,255,255,.65);
+
+}
+
+
+
+
+
+
+/* =========================================================
+   STATS
+========================================================= */
+
+.stats{
+
+    background:var(--ink);
+
+    color:var(--white);
+
+    padding:35px 0;
+
+}
+
+
+.stats-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+}
+
+
+.stat{
+
+    padding:
+        10px 30px;
+
+    border-right:
+        1px solid
+        rgba(255,255,255,.12);
+
+}
+
+
+.stat:last-child{
+
+    border-right:0;
+
+}
+
+
+.stat-number{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:42px;
+
+    font-weight:500;
+
+    color:var(--gold);
+
+}
+
+
+.stat-label{
+
+    margin-top:5px;
+
+    color:
+        rgba(255,255,255,.6);
+
+    font-size:10px;
+
+    letter-spacing:1.5px;
+
+    text-transform:uppercase;
+
+}
+
+
+/* =========================================================
+   COMMON SECTION
+========================================================= */
+
+.section{
+
+    padding:110px 5%;
+
+}
+
+
+.section-label{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:12px;
+
+    color:var(--gold-dark);
+
+    text-transform:uppercase;
+
+    font-size:10px;
+
+    font-weight:700;
+
+    letter-spacing:3px;
+
+    margin-bottom:18px;
+
+}
+
+
+.section-label::before{
+
+    content:"";
+
+    width:34px;
+
+    height:1px;
+
+    background:var(--gold);
+
+}
+
+
+.section-title{
+
+    max-width:800px;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(42px,5vw,68px);
+
+    font-weight:500;
+
+    line-height:1;
+
+    letter-spacing:-1px;
+
+}
+
+
+.section-title span{
+
+    color:var(--gold);
+
+}
+
+
+.section-text{
+
+    color:var(--muted);
+
+    line-height:1.85;
+
+    font-size:14px;
+
+}
+
+
+/* =========================================================
+   OVERVIEW
+========================================================= */
+
+.overview{
+
+    background:var(--cream);
+
+}
+
+
+.overview-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:75px;
+
+    align-items:center;
+
+}
+
+
+.overview-image{
+
+    position:relative;
+
+}
+
+
+.overview-image img{
+
+    height:620px;
+
+    object-fit:cover;
+
+    border-radius:var(--radius);
+
+}
+
+
+.overview-badge{
+
+    position:absolute;
+
+    left:25px;
+
+    bottom:25px;
+
+    padding:20px 25px;
+
+    background:
+        rgba(255,255,255,.93);
+
+    border-radius:16px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.overview-badge strong{
+
+    display:block;
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    color:var(--ink);
+
+    font-size:23px;
+
+}
+
+
+.overview-badge span{
+
+    display:block;
+
+    margin-top:4px;
+
+    color:var(--muted);
+
+    font-size:11px;
+
+}
+
+
+.overview-copy{
+
+    padding-right:15px;
+
+}
+
+
+.overview-copy .section-text{
+
+    margin-top:25px;
+
+}
+
+
+.overview-copy
+.section-text + .section-text{
+
+    margin-top:15px;
+
+}
+
+
+.overview-points{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:12px;
+
+    margin-top:35px;
+
+}
+
+
+.overview-point{
+
+    padding:20px;
+
+    background:var(--white);
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:16px;
+
+    transition:.3s;
+
+}
+
+
+.overview-point:hover{
+
+    transform:translateY(-5px);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.overview-point strong{
+
+    display:block;
+
+    font-size:14px;
+
+}
+
+
+.overview-point span{
+
+    display:block;
+
+    color:var(--muted);
+
+    margin-top:6px;
+
+    font-size:11px;
+
+    line-height:1.5;
+
+}
+
+
+/* =========================================================
+   HIGHLIGHTS
+========================================================= */
+
+.highlights{
+
+    background:var(--white);
+
+}
+
+
+.section-heading-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:flex-end;
+
+    gap:50px;
+
+    margin-bottom:50px;
+
+}
+
+
+.section-heading-row
+.section-text{
+
+    max-width:470px;
+
+}
+
+
+.highlight-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(4,1fr);
+
+    gap:15px;
+
+}
+
+
+.highlight-card{
+
+    padding:30px;
+
+    min-height:270px;
+
+    border:
+        1px solid
+        var(--line);
+
+    border-radius:var(--radius);
+
+    transition:.4s;
+
+    background:var(--white);
+
+}
+
+
+.highlight-card:hover{
+
+    transform:translateY(-8px);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.highlight-number{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:15px;
+
+    color:var(--gold-dark);
+
+}
+
+
+.highlight-icon{
+
+    width:55px;
+
+    height:55px;
+
+    margin:
+        35px 0 30px;
+
+    border-radius:50%;
+
+    background:var(--cream);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    color:var(--gold-dark);
+
+    font-size:20px;
+
+}
+
+
+.highlight-card h3{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:22px;
+
+    font-weight:500;
+
+}
+
+
+.highlight-card p{
+
+    color:var(--muted);
+
+    font-size:12px;
+
+    line-height:1.7;
+
+    margin-top:9px;
+
+}
+
+
+/* =========================================================
+   AMENITIES
+========================================================= */
+
+.amenities{
+
+    background:var(--ink);
+
+    color:var(--white);
+
+}
+
+
+.amenities .section-title{
+
+    color:var(--white);
+
+}
+
+
+.amenities .section-label{
+
+    color:var(--gold);
+
+}
+
+
+.amenities .section-text{
+
+    color:
+        rgba(255,255,255,.55);
+
+}
+
+
+.amenity-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        repeat(3,1fr);
+
+    gap:15px;
+
+    margin-top:50px;
+
+}
+
+
+.amenity-card{
+
+    position:relative;
+
+    height:300px;
+
+    overflow:hidden;
+
+    border-radius:var(--radius);
+
+}
+
+
+.amenity-card img{
+
+    position:absolute;
+
+    inset:0;
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        transform .7s ease;
+
+}
+
+
+.amenity-card:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+.amenity-card::after{
+
+    content:"";
+
+    position:absolute;
+
+    inset:0;
+
+    background:
+        linear-gradient(
+            transparent 20%,
+            rgba(0,0,0,.9)
+        );
+
+}
+
+
+.amenity-content{
+
+    position:absolute;
+
+    z-index:2;
+
+    left:25px;
+
+    right:25px;
+
+    bottom:24px;
+
+}
+
+
+.amenity-content small{
+
+    color:var(--gold);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:9px;
+
+}
+
+
+.amenity-content h3{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:26px;
+
+    font-weight:500;
+
+    margin-top:6px;
+
+}
+
+
+.amenity-content p{
+
+    color:
+        rgba(255,255,255,.65);
+
+    font-size:11px;
+
+    margin-top:4px;
+
+}
+
+
+/* =========================================================
+   MASTER PLAN
+========================================================= */
+
+.masterplan{
+
+    background:var(--cream);
+
+}
+
+
+.masterplan-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        .8fr 1.2fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+.masterplan-copy .section-text{
+
+    margin-top:25px;
+
+}
+
+
+.plan-list{
+
+    margin-top:30px;
+
+}
+
+
+.plan-item{
+
+    display:flex;
+
+    align-items:center;
+
+    gap:15px;
+
+    padding:17px 0;
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+}
+
+
+.plan-item-number{
+
+    width:30px;
+
+    height:30px;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    border-radius:50%;
+
+    background:var(--white);
+
+    color:var(--gold-dark);
+
+    font-size:10px;
+
+}
+
+
+.plan-item strong{
+
+    font-size:13px;
+
+}
+
+
+.plan-image{
+
+    position:relative;
+
+    padding:20px;
+
+    background:var(--white);
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+    cursor:pointer;
+
+}
+
+
+.plan-image img{
+
+    border-radius:12px;
+
+}
+
+
+.plan-view{
+
+    position:absolute;
+
+    right:35px;
+
+    bottom:35px;
+
+    background:var(--gold);
+
+    color:var(--white);
+
+    padding:12px 18px;
+
+    border-radius:50px;
+
+    font-size:10px;
+
+}
+
+
+/* =========================================================
+   GALLERY
+========================================================= */
+
+.gallery{
+
+    background:var(--white);
+
+}
+
+
+.gallery-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1.4fr .8fr .8fr;
+
+    grid-template-rows:
+        250px 250px;
+
+    gap:14px;
+
+    margin-top:45px;
+
+}
+
+
+.gallery-item{
+
+    overflow:hidden;
+
+    border-radius:var(--radius);
+
+    position:relative;
+
+    cursor:pointer;
+
+}
+
+
+.gallery-item:first-child{
+
+    grid-row:
+        span 2;
+
+}
+
+
+.gallery-item img{
+
+    height:100%;
+
+    object-fit:cover;
+
+    transition:
+        transform .7s ease;
+
+}
+
+
+.gallery-item:hover img{
+
+    transform:scale(1.08);
+
+}
+
+
+.gallery-overlay{
+
+    position:absolute;
+
+    inset:0;
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    background:
+        rgba(0,0,0,.35);
+
+    opacity:100%;
+
+    transition:.3s;
+
+}
+
+
+.gallery-item:hover
+.gallery-overlay{
+
+    opacity:1;
+
+}
+
+
+.gallery-overlay span{
+
+    width:55px;
+
+    height:55px;
+
+    border-radius:50%;
+
+    background:var(--white);
+
+    color:var(--ink);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+}
+
+
+/* =========================================================
+   LOCATION
+========================================================= */
+
+.location{
+
+    background:var(--cream);
+
+}
+
+
+.location-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:70px;
+
+    align-items:center;
+
+}
+
+
+.location-list{
+
+    margin-top:35px;
+
+}
+
+
+.location-row{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    gap:20px;
+
+    padding:18px 0;
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+}
+
+
+.location-row span{
+
+    color:var(--muted);
+
+    font-size:13px;
+
+}
+
+
+.location-row strong{
+
+    color:var(--gold-dark);
+
+    font-size:13px;
+
+}
+
+
+.location-image{
+
+    min-height:500px;
+
+    border-radius:var(--radius);
+
+    background:
+        linear-gradient(
+            rgba(0,0,0,.35),
+            rgba(0,0,0,.35)
+        ),
+        url(assets/asprgreenz/map.webp)
+        center/cover;
+
+    display:flex;
+
+    align-items:flex-end;
+
+    padding:30px;
+
+}
+
+
+.location-card{
+
+    width:100%;
+
+    background:
+        rgba(255,255,255,.95);
+
+    padding:25px;
+
+    border-radius:17px;
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.location-card small{
+
+    color:var(--gold-dark);
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    font-size:9px;
+
+}
+
+
+.location-card h3{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:30px;
+
+    font-weight:500;
+
+    margin:8px 0;
+
+}
+
+
+.location-card p{
+
+    color:var(--muted);
+
+    font-size:12px;
+
+    line-height:1.6;
+
+}
+
+
+/* =========================================================
+   CTA
+========================================================= */
+
+.cta{
+
+    position:relative;
+
+    padding:100px 0;
+
+    background:
+        linear-gradient(
+            90deg,
+            rgba(23,23,23,.94),
+            rgba(23,23,23,.65)
+        ),
+        url(assets/asprgreenz/g6.webp)
+        center/cover;
+
+    color:var(--white);
+
+}
+
+
+.cta-inner{
+
+    display:flex;
+
+    justify-content:space-between;
+
+    align-items:center;
+
+    gap:50px;
+
+}
+
+
+.cta h2{
+
+    font-family:
+        "Playfair Display",
+        serif;
+
+    font-size:
+        clamp(42px,5vw,68px);
+
+    line-height:.95;
+
+    font-weight:500;
+
+}
+
+
+.cta h2 span{
+
+    color:var(--gold);
+
+}
+
+
+.cta p{
+
+    max-width:500px;
+
+    color:
+        rgba(255,255,255,.6);
+
+    font-size:13px;
+
+    line-height:1.8;
+
+    margin-top:20px;
+
+}
+
+
+/* =========================================================
+   CONTACT
+========================================================= */
+
+.contact{
+
+    background:var(--cream);
+
+}
+
+
+.contact-wrapper{
+
+    display:grid;
+
+    grid-template-columns:
+        .75fr 1.25fr;
+
+    gap:60px;
+
+    align-items:start;
+
+}
+
+
+.contact-copy .section-text{
+
+    margin-top:25px;
+
+}
+
+
+.contact-info{
+
+    margin-top:35px;
+
+}
+
+
+.contact-info-item{
+
+    padding:17px 0;
+
+    border-bottom:
+        1px solid
+        var(--line);
+
+}
+
+
+.contact-info-item small{
+
+    display:block;
+
+    color:var(--gold-dark);
+
+    font-size:9px;
+
+    text-transform:uppercase;
+
+    letter-spacing:2px;
+
+    margin-bottom:5px;
+
+}
+
+
+.contact-info-item strong{
+
+    font-size:14px;
+
+}
+
+
+.contact-form{
+
+    background:var(--white);
+
+    padding:40px;
+
+    border-radius:var(--radius);
+
+    box-shadow:var(--shadow);
+
+}
+
+
+.form-grid{
+
+    display:grid;
+
+    grid-template-columns:
+        1fr 1fr;
+
+    gap:16px;
+
+}
+
+
+.form-group{
+
+    display:flex;
+
+    flex-direction:column;
+
+    gap:7px;
+
+}
+
+
+.form-group.full{
+
+    grid-column:
+        1 / -1;
+
+}
+
+
+.form-group label{
+
+    font-size:10px;
+
+    font-weight:600;
+
+    text-transform:uppercase;
+
+    letter-spacing:1px;
+
+}
+
+
+.form-group input,
+.form-group textarea,
+.form-group select{
+
+    width:100%;
+
+    border:
+        1px solid
+        var(--line);
+
+    background:var(--cream);
+
+    border-radius:12px;
+
+    padding:14px 15px;
+
+    outline:none;
+
+    color:var(--ink);
+
+    transition:.3s;
+
+}
+
+
+.form-group input:focus,
+.form-group textarea:focus,
+.form-group select:focus{
+
+    border-color:var(--gold);
+
+    background:var(--white);
+
+}
+
+
+.form-group textarea{
+
+    min-height:130px;
+
+    resize:vertical;
+
+}
+
+
+.form-submit{
+
+    width:100%;
+
+    margin-top:20px;
+
+    background:var(--gold-dark);
+
+    color:var(--white);
+
+}
+
+
+.form-submit:hover{
+
+    background:var(--gold);
+
+}
+
+
+
+/* =========================================================
+   LIGHTBOX
+========================================================= */
+
+.lightbox{
+
+    position:fixed;
+
+    inset:0;
+
+    z-index:99999;
+
+    background:
+        rgba(0,0,0,.94);
+
+    display:flex;
+
+    align-items:center;
+
+    justify-content:center;
+
+    padding:30px;
+
+    opacity:100%;
+
+    visibility:hidden;
+
+    transition:.3s;
+
+}
+
+
+.lightbox.active{
+
+    opacity:1;
+
+    visibility:visible;
+
+}
+
+
+.lightbox img{
+
+    max-width:
+        min(1100px,95vw);
+
+    max-height:
+        90vh;
+
+    object-fit:contain;
+
+}
+
+
+.lightbox-close{
+
+    position:absolute;
+
+    right:25px;
+
+    top:20px;
+
+    width:45px;
+
+    height:45px;
+
+    border-radius:50%;
+
+    background:var(--white);
+
+    color:var(--ink);
+
+    font-size:25px;
+
+}
+
+
+/* =========================================================
+   REVEAL
+========================================================= */
+
+.reveal{
+
+    opacity:100%;
+
+    transform:
+        translateY(35px);
+
+    transition:
+        opacity .8s ease,
+        transform .8s ease;
+
+}
+
+
+.reveal.show{
+
+    opacity:1;
+
+    transform:
+        translateY(0);
+
+}
+
+
+.reveal-left{
+
+    opacity:100%;
+
+    transform:
+        translateX(-40px);
+
+    transition:
+        opacity .9s ease,
+        transform .9s ease;
+
+}
+
+
+.reveal-left.show{
+
+    opacity:1;
+
+    transform:
+        translateX(0);
+
+}
+
+
+/* =========================================================
+   RESPONSIVE 1000
+========================================================= */
+
+@media(max-width:1000px){
+
+    .nav-links{
+
+        gap:18px;
+
+    }
+
+
+    .highlight-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .amenity-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .overview-grid,
+    .masterplan-grid,
+    .location-grid,
+    .contact-wrapper{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .overview-image img{
+
+        height:550px;
+
+    }
+
+
+
+}
+
+
+/* =========================================================
+   MOBILE
+========================================================= */
+
+@media(max-width:760px){
+
+    .container{
+
+        width:
+            calc(100% - 28px);
+
+    }
+
+
+   
+
+    .hero {
+    min-height: 420px
+  }
+
+
+    .hero-content{
+
+        padding-top:100px;
+
+    }
+
+
+    .hero h1{
+
+        font-size:
+            clamp(52px,17vw,76px);
+
+    }
+
+
+    .hero-description{
+
+        font-size:14px;
+
+    }
+
+
+    .hero-location{
+
+        font-size:8px;
+
+    }
+
+
+    .stats{
+
+        padding:20px 0;
+
+    }
+
+
+    .stats-grid{
+
+        grid-template-columns:
+            1fr 1fr;
+
+    }
+
+
+    .stat{
+
+        padding:18px 10px;
+
+        border-bottom:
+            1px solid
+            rgba(255,255,255,.1);
+
+    }
+
+
+    .stat-number{
+
+        font-size:31px;
+
+    }
+
+
+    .stat-label{
+
+        font-size:8px;
+
+    }
+
+
+    .section{
+
+        padding:75px 5%;
+
+    }
+
+
+    .section-heading-row{
+
+        display:block;
+
+        margin-bottom:35px;
+
+    }
+
+
+    .section-heading-row
+    .section-text{
+
+        margin-top:20px;
+
+    }
+
+
+    .section-title{
+
+        font-size:44px;
+
+    }
+
+
+    .overview-image img{
+
+        height:420px;
+
+    }
+
+
+    .overview-points{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .highlight-grid{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .highlight-card{
+
+        min-height:230px;
+
+    }
+
+
+    .amenity-grid{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .amenity-card{
+
+        height:280px;
+
+    }
+
+
+    .gallery-grid{
+
+        grid-template-columns:
+            1fr;
+
+        grid-template-rows:
+            repeat(5,230px);
+
+    }
+
+
+    .gallery-item:first-child{
+
+        grid-row:
+            auto;
+
+    }
+
+
+    .location-image{
+
+        min-height:400px;
+
+    }
+
+
+    .cta{
+
+        padding:75px 0;
+
+    }
+
+
+    .cta-inner{
+
+        display:block;
+
+    }
+
+
+    .cta .btn{
+
+        margin-top:30px;
+
+    }
+
+
+    .contact-form{
+
+        padding:25px 18px;
+
+    }
+
+
+    .form-grid{
+
+        grid-template-columns:
+            1fr;
+
+    }
+
+
+    .form-group.full{
+
+        grid-column:auto;
+
+    }
+
+
+    /* .footer-grid{
+
+        grid-template-columns:
+            1fr;
+
+        gap:35px;
+
+    }
+
+
+    .footer-bottom{
+
+        flex-direction:column;
+
+    } */
+
+
+    .float-buttons{
+
+        right:14px;
+
+        bottom:14px;
+
+    }
+
+}
+
+
+/* =========================================================
+   REDUCED MOTION
+========================================================= */
+
+@media(prefers-reduced-motion:reduce){
+
+    *{
+
+        animation-duration:
+            .01ms !important;
+
+        transition-duration:
+            .01ms !important;
+
+        scroll-behavior:auto !important;
+
+    }
+
+}
+
+</style>
+
+</head>
+
+
+<body>
+
+
+<!-- ======================================================
+     PRELOADER
+====================================================== -->
+
+
+
+
+<!-- ======================================================
+     HEADER
+====================================================== -->
+
+  <header class="site-header">
+    <div class="container nav">
+      <a class="brand" href="index.html" aria-label="Trinetra Realty home">
+        <img src="assets/trinetra-logo.png" alt="Trinetra Realty logo">
+        <!-- <span>Trinetra Realty</span> -->
+      </a>
+      <button class="menu-btn" aria-label="Open menu">☰</button>
+      <nav class="nav-links">
+        <a class="" href="index.html">Home</a>
+        <a class="" href="about.html">About</a>
+        <a class="active" href="properties.html">Property</a>
+        <a class="" href="blog.html">Blog</a>
+        <a class="" href="contact.html">Contact Us</a>
+      </nav>
+      <a class="nav-cta" href="contact.html">Get Started</a>
+    </div>
+  </header>
+
+<!-- ======================================================
+     HERO
+====================================================== -->
+
+<section class="hero" id="home">
+
+
+    <div
+        class="hero-slide active"
+        data-slide="0"
+    >
+
+        <div class="hero-image"></div>
+
+        <div class="container hero-content">
+
+            <div class="hero-kicker">
+                Premium Plotted Development
+            </div>
+
+            <h1>
+                Mapsko ASPR 
+                <span>Greenz</span>
+            </h1>
+
+            <p class="hero-description">
+
+                Discover a thoughtfully planned plotted
+                development in Sector 35, Sonipat,
+                designed around open spaces, greenery,
+                connectivity and everyday lifestyle.
+
+            </p>
+
+            <div class="hero-actions">
+
+                <a
+                    href="properties.html"
+                    class="btn btn-gold"
+                >
+                    Explore Project →
+                </a>
+
+                <a
+                    href="contact.html"
+                    class="btn btn-outline"
+                >
+                    Request Details
+                </a>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+
+    <div class="hero-bottom">
+
+        <div class="container hero-bottom-inner">
+
+            <div class="hero-location">
+                Sector 35 · Sonipat · Haryana
+            </div>
+
+            <div class="hero-dots">
+
+                <button
+                    class="hero-dot active"
+                    data-index="0"
+                ></button>
+
+                <button
+                    class="hero-dot"
+                    data-index="1"
+                ></button>
+
+                <button
+                    class="hero-dot"
+                    data-index="2"
+                ></button>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+
+<!-- ======================================================
+     OVERVIEW
+====================================================== -->
+
+<section
+    class="section overview"
+    id="overview"
+>
+
+    <div class="container overview-grid">
+
+<!-- 
+        <div class="overview-image reveal-left">
+
+            <img
+                src="assets/aspr/gateway.jpg"
+                alt="ASPR Greenz entrance"
+                loading="lazy"
+            > -->
+
+            <!-- <div class="overview-badge">
+
+                <strong>
+                    Your plot.
+                </strong>
+
+                <span>
+                    Your home. Your vision.
+                </span>
+
+            </div> -->
+
+        </div>
+
+
+
+        <div class="overview-copy reveal">
+
+            <div class="section-label">
+                Project Overview
+            </div>
+
+            <h2 class="section-title">
+
+                Designed around
+                <span>your lifestyle.</span>
+
+            </h2>
+
+
+            <p class="section-text">
+
+                ASPR Greenz is a plotted residential
+                development in Sector 35, Sonipat,
+                created for homeowners looking for
+                the freedom and flexibility of
+                independent living.
+
+            </p>
+
+
+            <p class="section-text">
+
+                The development brings together
+                planned internal roads, landscaped
+                green spaces, lifestyle amenities and
+                convenient connectivity in one
+                residential environment.
+
+            </p>
+
+
+            <div class="overview-points">
+
+
+                <div class="overview-point">
+
+                    <strong>
+                        Independent Plots
+                    </strong>
+
+                    <span>
+                        Design and build your home
+                        around your lifestyle.
+                    </span>
+
+                </div>
+
+
+                <div class="overview-point">
+
+                    <strong>
+                        Green Environment
+                    </strong>
+
+                    <span>
+                        Landscaped spaces and
+                        open surroundings.
+                    </span>
+
+                </div>
+
+
+                <div class="overview-point">
+
+                    <strong>
+                        Planned Roads
+                    </strong>
+
+                    <span>
+                        Organised internal
+                        connectivity.
+                    </span>
+
+                </div>
+
+
+                <div class="overview-point">
+
+                    <strong>
+                        Strategic Location
+                    </strong>
+
+                    <span>
+                        Easy access to major
+                        regional routes.
+                    </span>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     HIGHLIGHTS
+====================================================== -->
+
+<section
+    class="section highlights"
+    id="highlights"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading-row reveal">
+
+            <div>
+
+                <div class="section-label">
+                    Project Highlights
+                </div>
+
+                <h2 class="section-title">
+
+                    Everything begins
+                    with <span>space.</span>
+
+                </h2>
+
+            </div>
+
+
+            <p class="section-text">
+
+                Thoughtfully planned features create
+                an environment that balances
+                independent living with community
+                amenities and open spaces.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="highlight-grid">
+
+
+            <article class="highlight-card reveal">
+
+                <div class="highlight-number">
+                    01
+                </div>
+
+                <div class="highlight-icon">
+                    ◇
+                </div>
+
+                <h3>
+                    Premium Plots
+                </h3>
+
+                <p>
+                    Planned residential plots that give
+                    you the flexibility to create a
+                    personalised home.
+                </p>
+
+            </article>
+
+
+            <article class="highlight-card reveal">
+
+                <div class="highlight-number">
+                    02
+                </div>
+
+                <div class="highlight-icon">
+                    ◎
+                </div>
+
+                <h3>
+                    Green Spaces
+                </h3>
+
+                <p>
+                    Landscaped areas and open spaces
+                    designed to bring nature closer
+                    to everyday life.
+                </p>
+
+            </article>
+
+
+            <article class="highlight-card reveal">
+
+                <div class="highlight-number">
+                    03
+                </div>
+
+                <div class="highlight-icon">
+                    ○
+                </div>
+
+                <h3>
+                    Lifestyle Amenities
+                </h3>
+
+                <p>
+                    Dedicated spaces for fitness,
+                    recreation, children and
+                    community interaction.
+                </p>
+
+            </article>
+
+
+            <article class="highlight-card reveal">
+
+                <div class="highlight-number">
+                    04
+                </div>
+
+                <div class="highlight-icon">
+                    ⌂
+                </div>
+
+                <h3>
+                    Connected Location
+                </h3>
+
+                <p>
+                    Positioned close to important
+                    roads and emerging destinations
+                    around Sonipat.
+                </p>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     AMENITIES
+====================================================== -->
+
+<section
+    class="section amenities"
+    id="amenities"
+>
+
+    <div class="container">
+
+
+        <div class="section-label">
+            Lifestyle Amenities
+        </div>
+
+
+        <h2 class="section-title">
+
+            Spaces made for
+            <span>living.</span>
+
+        </h2>
+
+
+        <div class="amenity-grid">
+
+
+            <article class="amenity-card reveal">
+
+                <img
+                    src="assets/asprgreenz/images (3).jfif"
+                    alt="Open gym"
+                    loading="lazy"
+                >
+
+                <div class="amenity-content">
+
+                    <small>
+                        Fitness
+                    </small>
+
+                    <h3>
+                        Open Gym
+                    </h3>
+
+                    <p>
+                        Stay active in an open
+                        and refreshing environment.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity-card reveal">
+
+                <img
+                    src="assets/asprgreenz/images.jfif"
+                    alt="Kids play area"
+                    loading="lazy"
+                >
+
+                <div class="amenity-content">
+
+                    <small>
+                        Recreation
+                    </small>
+
+                    <h3>
+                        Kids Play Area
+                    </h3>
+
+                    <p>
+                        A dedicated space for
+                        younger residents.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity-card reveal">
+
+                <img
+                    src="assets/asprgreenz/images (1).jfif"
+                    alt="Multipurpose court"
+                    loading="lazy"
+                >
+
+                <div class="amenity-content">
+
+                    <small>
+                        Sports
+                    </small>
+
+                    <h3>
+                        Multi-Purpose Court
+                    </h3>
+
+                    <p>
+                        Enjoy active and engaging
+                        outdoor recreation.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity-card reveal">
+
+                <img
+                    src="assets/asprgreenz/g3.webp"
+                    alt="Landscaped green area"
+                    loading="lazy"
+                >
+
+                <div class="amenity-content">
+
+                    <small>
+                        Nature
+                    </small>
+
+                    <h3>
+                        Landscaped Greens
+                    </h3>
+
+                    <p>
+                        Green surroundings integrated
+                        into the community.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity-card reveal">
+
+                <img
+                    src="assets/asprgreenz/images (2).jfif"
+                    alt="Internal roads"
+                    loading="lazy"
+                >
+
+                <div class="amenity-content">
+
+                    <small>
+                        Infrastructure
+                    </small>
+
+                    <h3>
+                        Wide Roads
+                    </h3>
+
+                    <p>
+                        Organised internal movement
+                        throughout the development.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="amenity-card reveal">
+
+                <img
+                    src="assets/asprgreenz/g5.webp"
+                    alt="Community space"
+                    loading="lazy"
+                >
+
+                <div class="amenity-content">
+
+                    <small>
+                        Community
+                    </small>
+
+                    <h3>
+                        Social Spaces
+                    </h3>
+
+                    <p>
+                        Designed to encourage
+                        neighbourhood interaction.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     MASTER PLAN
+====================================================== -->
+
+<section
+    class="section masterplan"
+    id="masterplan"
+>
+
+    <div class="container masterplan-grid">
+
+
+        <div class="masterplan-copy reveal">
+
+            <div class="section-label">
+                Master Plan
+            </div>
+
+
+            <h2 class="section-title">
+
+                A layout with
+                <span>room to breathe.</span>
+
+            </h2>
+
+
+            <p class="section-text">
+
+                The master plan combines residential
+                plots, internal roads, green areas
+                and community spaces to create a
+                balanced plotted neighbourhood.
+
+            </p>
+
+
+            <div class="plan-list">
+
+
+                <div class="plan-item">
+
+                    <span class="plan-item-number">
+                        01
+                    </span>
+
+                    <strong>
+                        Residential Plot Clusters
+                    </strong>
+
+                </div>
+
+
+                <div class="plan-item">
+
+                    <span class="plan-item-number">
+                        02
+                    </span>
+
+                    <strong>
+                        Landscaped Green Spaces
+                    </strong>
+
+                </div>
+
+
+                <div class="plan-item">
+
+                    <span class="plan-item-number">
+                        03
+                    </span>
+
+                    <strong>
+                        Internal Road Network
+                    </strong>
+
+                </div>
+
+
+                <div class="plan-item">
+
+                    <span class="plan-item-number">
+                        04
+                    </span>
+
+                    <strong>
+                        Community Facilities
+                    </strong>
+
+                </div>
+
+
+                <div class="plan-item">
+
+                    <span class="plan-item-number">
+                        05
+                    </span>
+
+                    <strong>
+                        Recreation Areas
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div
+            class="plan-image reveal"
+            data-lightbox="assets/aspr/masterplan.jpg"
+        >
+
+            <img
+                src="assets/asprgreenz/map.webp"
+                alt="ASPR Greenz master plan"
+                loading="lazy"
+            >
+
+            <div class="plan-view">
+                View Master Plan
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     GALLERY
+====================================================== -->
+
+<section
+    class="section gallery"
+    id="gallery"
+>
+
+    <div class="container">
+
+
+        <div class="section-heading-row reveal">
+
+            <div>
+
+                <div class="section-label">
+                    Project Gallery
+                </div>
+
+                <h2 class="section-title">
+
+                    Imagine your
+                    <span>everyday.</span>
+
+                </h2>
+
+            </div>
+
+
+            <p class="section-text">
+
+                Explore the architecture, landscapes,
+                amenities and planned environment
+                of ASPR Greenz.
+
+            </p>
+
+        </div>
+
+
+
+        <div class="gallery-grid">
+
+
+            <div
+                class="gallery-item reveal"
+                data-lightbox="assets/asprgreenz/g1.webp"
+            >
+
+                <img
+                    src="assets/asprgreenz/g1.webp"
+                    alt="ASPR Greenz project"
+                    loading="lazy"
+                >
+
+                <div class="gallery-overlay">
+                    <span>+</span>
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-item reveal"
+                data-lightbox="assets/asprgreenz/g2.webp"
+            >
+
+                <img
+                    src="assets/asprgreenz/g2.webp"
+                    alt="ASPR Greenz landscape"
+                    loading="lazy"
+                >
+
+                <div class="gallery-overlay">
+                    <span>+</span>
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-item reveal"
+                data-lightbox="assets/asprgreenz/g3.webp"
+            >
+
+                <img
+                    src="assets/asprgreenz/g3.webp"
+                    alt="ASPR Greenz amenities"
+                    loading="lazy"
+                >
+
+                <div class="gallery-overlay">
+                    <span>+</span>
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-item reveal"
+                data-lightbox="assets/asprgreenz/g5.webp"
+            >
+
+                <img
+                    src="assets/asprgreenz/g5.webp"
+                    alt="ASPR Greenz community"
+                    loading="lazy"
+                >
+
+                <div class="gallery-overlay">
+                    <span>+</span>
+                </div>
+
+            </div>
+
+
+            <div
+                class="gallery-item reveal"
+                data-lightbox="assets/asprgreenz/g6.webp"
+            >
+
+                <img
+                    src="assets/asprgreenz/g6.webp"
+                    alt="ASPR Greenz green spaces"
+                    loading="lazy"
+                >
+
+                <div class="gallery-overlay">
+                    <span>+</span>
+                </div>
+
+            </div>
+
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     LOCATION
+====================================================== -->
+
+<section
+    class="section location"
+    id="location"
+>
+
+    <div class="container location-grid">
+
+
+        <div class="reveal">
+
+            <div class="section-label">
+                Location Advantages
+            </div>
+
+
+            <h2 class="section-title">
+
+                Connected to
+                <span>what matters.</span>
+
+            </h2>
+
+
+            <p class="section-text">
+
+                ASPR Greenz is located in Sector 35,
+                Sonipat, offering convenient access
+                to important roads, employment
+                destinations and city infrastructure.
+
+            </p>
+
+
+            <div class="location-list">
+
+
+                <div class="location-row">
+
+                    <span>
+                        NH-334B
+                    </span>
+
+                    <strong>
+                        &lt; 1 KM*
+                    </strong>
+
+                </div>
+
+
+                <div class="location-row">
+
+                    <span>
+                        IMT Kharkhoda
+                    </span>
+
+                    <strong>
+                        ~10 Minutes*
+                    </strong>
+
+                </div>
+
+
+                <div class="location-row">
+
+                    <span>
+                        Sonipat City Centre
+                    </span>
+
+                    <strong>
+                        Nearby*
+                    </strong>
+
+                </div>
+
+
+                <div class="location-row">
+
+                    <span>
+                        Schools & Colleges
+                    </span>
+
+                    <strong>
+                        Nearby*
+                    </strong>
+
+                </div>
+
+
+                <div class="location-row">
+
+                    <span>
+                        Hospitals & Shopping
+                    </span>
+
+                    <strong>
+                        Connected*
+                    </strong>
+
+                </div>
+
+
+            </div>
+
+        </div>
+
+
+
+        <div class="location-image reveal">
+
+            <div class="location-card">
+
+                <small>
+                    Project Location
+                </small>
+
+                <h3>
+                    Sector 35,
+                    Sonipat
+                </h3>
+
+                <p>
+                    Strategically positioned for
+                    convenient access to major
+                    regional and city connections.
+                </p>
+
+                <br>
+
+                <a
+                    href="https://maps.app.goo.gl/4kCWteBawCMzGiZCA"
+                    target="_blank"
+                    class="btn btn-gold"
+                >
+                    Open Google Maps →
+                </a>
+
+            </div>
+
+        </div>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     CTA
+====================================================== -->
+
+<section class="cta">
+
+    <div class="container cta-inner">
+
+
+        <div>
+
+            <h2>
+
+                Your plot.
+                <br>
+
+                <span>Your vision.</span>
+
+            </h2>
+
+
+            <p>
+
+                Explore ASPR Greenz and discover
+                the possibilities of building your
+                own home in a planned residential
+                environment.
+
+            </p>
+
+        </div>
+
+
+        <a
+            href="contact.html"
+            class="btn btn-gold"
+        >
+            Schedule a Site Visit →
+        </a>
+
+
+    </div>
+
+</section>
+
+
+
+<!-- ======================================================
+     FOOTER
+====================================================== -->
+
+ <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html"><img src="assets/trinetra-logo.png" alt="Trinetra Realty logo">
+            <!-- <span
+              style="color:#fff">Trinetra Realty</span> -->
+          </a>
+          <p>Trinetra Realty expertly and seamlessly guides clients to their perfect residential or commercial
+            property.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="properties.html">Properties</a></p>
+          <p><a href="blog.html">Blog</a></p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p><a href="godrej green estate.html">Godrej Green Estate</a></p>
+          <p><a href="Eldeco Amaya.html">Eldeco Amaya</a></p>
+          <p><a href="Jindal Smart City.html">Jindal Smart City</a></p>
+          <p><a href="origen realty.html">Origen Realty</a></p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:+91 90349 69308">+91 90349 69308</a>
+
+          <p><a href="mailto:info@trinetrarealty.in">info@trinetrarealty.in</a></p>
+
+
+          <p>SCO, F-3, SUPERMAX GALLERIA MARKET,
+            SECTOR 33, SONIPAT HARYANA - 131001</p>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© Trinetra Realty – All rights reserved</span></div>
+    </div>
+  </footer>
+
+<script src="script.js"></script>
+
+
+<!-- ======================================================
+     LIGHTBOX
+====================================================== -->
+
+<div
+    class="lightbox"
+    id="lightbox"
+>
+
+    <button
+        class="lightbox-close"
+        id="lightboxClose"
+    >
+        ×
+    </button>
+
+
+    <img
+        id="lightboxImage"
+        src=""
+        alt="Project image preview"
+    >
+
+</div>
+
+
+
+<!-- ======================================================
+     JAVASCRIPT
+====================================================== -->
+
+<script>
+
+
+
+/* ========================================================
+   COUNTERS
+======================================================== */
+
+const counters =
+    document.querySelectorAll(
+        ".counter"
+    );
+
+
+const counterObserver =
+    new IntersectionObserver(
+        function(entries){
+
+            entries.forEach(
+                function(entry){
+
+                    if(
+                        entry.isIntersecting
+                    ){
+
+                        const counter =
+                            entry.target;
+
+                        const target =
+                            Number(
+                                counter.dataset.target
+                            );
+
+                        let current = 0;
+
+                        const duration = 1200;
+
+                        const start =
+                            performance.now();
+
+
+                        function update(time){
+
+                            const progress =
+                                Math.min(
+                                    (time - start)
+                                    / duration,
+                                    1
+                                );
+
+
+                            current =
+                                Math.floor(
+                                    progress * target
+                                );
+
+
+                            counter.textContent =
+                                current;
+
+
+                            if(
+                                progress < 1
+                            ){
+
+                                requestAnimationFrame(
+                                    update
+                                );
+
+                            }
+
+                        }
+
+
+                        requestAnimationFrame(
+                            update
+                        );
+
+
+                        counterObserver
+                            .unobserve(
+                                counter
+                            );
+
+                    }
+
+                }
+            );
+
+        },
+        {
+            threshold:.7
+        }
+    );
+
+
+counters.forEach(
+    function(counter){
+
+        counterObserver.observe(
+            counter
+        );
+
+    }
+);
+
+
+
+/* ========================================================
+   LIGHTBOX
+======================================================== */
+
+const lightbox =
+    document.getElementById(
+        "lightbox"
+    );
+
+const lightboxImage =
+    document.getElementById(
+        "lightboxImage"
+    );
+
+const lightboxClose =
+    document.getElementById(
+        "lightboxClose"
+    );
+
+
+document
+    .querySelectorAll(
+        "[data-lightbox]"
+    )
+    .forEach(
+        function(item){
+
+            item.addEventListener(
+                "click",
+                function(){
+
+                    const image =
+                        this.dataset.lightbox;
+
+                    lightboxImage.src =
+                        image;
+
+                    lightbox.classList.add(
+                        "active"
+                    );
+
+                    document.body
+                        .classList.add(
+                            "no-scroll"
+                        );
+
+                }
+            );
+
+        }
+    );
+
+
+function closeLightbox(){
+
+    lightbox.classList.remove(
+        "active"
+    );
+
+    document.body
+        .classList.remove(
+            "no-scroll"
+        );
+
+}
+
+
+lightboxClose.addEventListener(
+    "click",
+    closeLightbox
+);
+
+
+lightbox.addEventListener(
+    "click",
+    function(event){
+
+        if(
+            event.target === lightbox
+        ){
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+
+document.addEventListener(
+    "keydown",
+    function(event){
+
+        if(
+            event.key === "Escape"
+        ){
+
+            closeLightbox();
+
+        }
+
+    }
+);
+
+
+
+/* ========================================================
+   FORM BUTTON
+======================================================== */
+
+const form =
+    document.getElementById(
+        "contactForm"
+    );
+
+
+form.addEventListener(
+    "submit",
+    function(){
+
+        const button =
+            form.querySelector(
+                ".form-submit"
+            );
+
+
+        button.textContent =
+            "Sending...";
+
+
+        button.style.opacity =
+            ".7";
+
+    }
+);
+
+
+
+</script>
+
+
+</body>
+</html>

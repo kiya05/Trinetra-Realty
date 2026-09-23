@@ -1,0 +1,2835 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Luxury Greens | Premium Residential Plots</title>
+
+    <meta name="description"
+          content="Discover premium residential plots with landscaped green spaces, modern amenities, excellent connectivity and a lifestyle designed for tomorrow.">
+
+    <meta name="keywords"
+          content="premium plots, residential plots, luxury plots, property investment, residential project, real estate">
+
+    <meta name="robots" content="index, follow">
+
+    <!-- Google Font -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+    <link href="https://fonts.googleapis.com/css2?family=DM+Sans:wght@300;400;500;600;700&family=Playfair+Display:wght@400;500;600;700&display=swap"
+          rel="stylesheet">
+
+          <link rel="stylesheet" href="styles.css">
+     
+    <style>
+
+    
+
+        /* =====================================================
+           HERO
+        ===================================================== */
+
+        .hero {
+            height: 100vh;
+            min-height: 680px;
+            position: relative;
+            overflow: hidden;
+            color: white;
+        }
+
+        .hero-bg {
+            position: absolute;
+            inset: 0;
+            background:
+                linear-gradient(
+                    90deg,
+                    rgba(0,0,0,.78),
+                    rgba(0,0,0,.35),
+                    rgba(0,0,0,.08)
+                ),
+                url(assets/godrej/dw-godrej-green-estate-ncr-slider-image-01-1920-x900-512ca305-6428-47f7-906-cmrkpqptz004i13phfmqvhrha.avif)
+                center/cover no-repeat;
+
+            animation: heroZoom 12s ease-in-out infinite alternate;
+        }
+
+        @keyframes heroZoom {
+            from {
+                transform: scale(1);
+            }
+
+            to {
+                transform: scale(1.08);
+            }
+        }
+
+        .hero-content {
+            position: relative;
+            z-index: 2;
+            height: 100%;
+            display: flex;
+            align-items: center;
+        }
+
+        .hero-inner {
+            max-width: 760px;
+            padding-top: 70px;
+        }
+
+        .eyebrow {
+            display: flex;
+            align-items: center;
+            gap: 12px;
+            color: var(--gold);
+            text-transform: uppercase;
+            letter-spacing: 4px;
+            font-size: 12px;
+            margin-bottom: 22px;
+        }
+
+        .eyebrow::before {
+            content: "";
+            width: 40px;
+            height: 1px;
+            background: var(--gold);
+        }
+
+        .hero h1 {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(48px, 7vw, 92px);
+            line-height: .98;
+            font-weight: 500;
+            margin-bottom: 28px;
+        }
+
+        .hero h1 em {
+            color: var(--gold);
+            font-style: normal;
+        }
+
+        .hero-description {
+            max-width: 600px;
+            color: rgba(255,255,255,.82);
+            line-height: 1.8;
+            font-size: 16px;
+            margin-bottom: 35px;
+        }
+
+        .hero-buttons {
+            display: flex;
+            gap: 15px;
+            flex-wrap: wrap;
+        }
+
+        .btn {
+            display: inline-flex;
+            align-items: center;
+            justify-content: center;
+            min-height: 50px;
+            padding: 0 25px;
+            border: 1px solid var(--gold);
+            background: var(--gold);
+            color: var(--dark);
+            font-weight: 600;
+            font-size: 13px;
+            transition: .3s ease;
+        }
+
+        .btn:hover {
+            background: var(--gold-dark);
+            color: white;
+        }
+
+        .btn-outline {
+            background: transparent;
+            color: white;
+            border-color: rgba(255,255,255,.5);
+        }
+
+        .btn-outline:hover {
+            background: white;
+            color: var(--dark);
+        }
+
+        .hero-scroll {
+            position: absolute;
+            bottom: 35px;
+            left: 50%;
+            transform: translateX(-50%);
+            z-index: 2;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            gap: 10px;
+            font-size: 10px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            color: rgba(255,255,255,.7);
+        }
+
+        .scroll-line {
+            width: 1px;
+            height: 55px;
+            background: rgba(255,255,255,.5);
+            position: relative;
+            overflow: hidden;
+        }
+
+        .scroll-line::after {
+            content: "";
+            position: absolute;
+            top: -100%;
+            left: 0;
+            width: 100%;
+            height: 50%;
+            background: white;
+            animation: scrollMove 1.7s infinite;
+        }
+
+        @keyframes scrollMove {
+            to {
+                top: 150%;
+            }
+        }
+
+
+        /* =====================================================
+           PROJECT BAR
+        ===================================================== */
+
+        .project-bar {
+            background: white;
+            box-shadow: 0 10px 35px rgba(0,0,0,.08);
+            position: relative;
+            z-index: 5;
+        }
+
+        .project-info {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr) auto;
+            align-items: stretch;
+        }
+
+        .info-item {
+            padding: 25px 30px;
+            border-right: 1px solid var(--border);
+        }
+
+        .info-item small {
+            display: block;
+            color: var(--muted);
+            font-size: 11px;
+            text-transform: uppercase;
+            letter-spacing: 1.5px;
+            margin-bottom: 7px;
+        }
+
+        .info-item strong {
+            font-size: 16px;
+        }
+
+        .info-cta {
+            display: flex;
+            align-items: center;
+            padding: 15px 25px;
+        }
+
+
+        /* =====================================================
+           SECTION
+        ===================================================== */
+
+        section {
+            padding: 110px 0;
+        }
+
+        .section-heading {
+            max-width: 800px;
+            margin-bottom: 60px;
+        }
+
+        .section-heading.center {
+            text-align: center;
+            margin-left: auto;
+            margin-right: auto;
+        }
+
+        .section-tag {
+            color: var(--gold-dark);
+            font-size: 11px;
+            letter-spacing: 3px;
+            text-transform: uppercase;
+            font-weight: 700;
+            margin-bottom: 14px;
+        }
+
+        .section-title {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(38px, 5vw, 64px);
+            line-height: 1.1;
+            font-weight: 500;
+            color: var(--dark);
+        }
+
+        .section-title span {
+            color: var(--gold-dark);
+        }
+
+        .section-text {
+            margin-top: 22px;
+            color: var(--muted);
+            line-height: 1.9;
+            font-size: 15px;
+        }
+
+
+    
+        /* =====================================================
+           HIGHLIGHTS
+        ===================================================== */
+
+        .highlights {
+            background: white;
+        }
+
+        .highlight-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 20px;
+        }
+
+        .highlight-card {
+            position: relative;
+            min-height: 330px;
+            overflow: hidden;
+            color: white;
+        }
+
+        .highlight-card img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            position: absolute;
+            inset: 0;
+            transition: transform .7s ease;
+        }
+
+        .highlight-card:hover img {
+            transform: scale(1.08);
+        }
+
+        .highlight-card::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            background: linear-gradient(
+                transparent 25%,
+                rgba(0,0,0,.85)
+            );
+        }
+
+        .highlight-content {
+            position: absolute;
+            z-index: 2;
+            left: 25px;
+            right: 25px;
+            bottom: 25px;
+        }
+
+        .highlight-number {
+            color: var(--gold);
+            font-size: 11px;
+            letter-spacing: 2px;
+        }
+
+        .highlight-content h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 28px;
+            margin: 7px 0;
+        }
+
+        .highlight-content p {
+            color: rgba(255,255,255,.72);
+            font-size: 13px;
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           AMENITIES
+        ===================================================== */
+
+        .amenities {
+            background: var(--cream);
+        }
+
+        .amenity-grid {
+            display: grid;
+            grid-template-columns: repeat(4, 1fr);
+            gap: 1px;
+            background: var(--border);
+        }
+
+        .amenity {
+            background: var(--cream);
+            padding: 40px 30px;
+            text-align: center;
+            transition: .35s ease;
+        }
+
+        .amenity:hover {
+            background: white;
+            transform: translateY(-5px);
+        }
+
+        .amenity-icon {
+            width: 65px;
+            height: 65px;
+            margin: 0 auto 20px;
+            border: 1px solid var(--gold);
+            border-radius: 50%;
+            display: grid;
+            place-items: center;
+            font-size: 25px;
+        }
+
+        .amenity h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 21px;
+            margin-bottom: 8px;
+        }
+
+        .amenity p {
+            color: var(--muted);
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+
+        /* =====================================================
+           LOCATION
+        ===================================================== */
+
+        .location {
+            background: white;
+        }
+
+        .location-grid {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            min-height: 600px;
+        }
+
+        .location-map {
+            min-height: 600px;
+            background:
+                linear-gradient(
+                    rgba(23,23,23,.15),
+                    rgba(23,23,23,.15)
+                ),
+                url(assets/godrej/godrejgallery/Entrance.avif)
+                center/cover;
+        }
+
+        .location-content {
+            background: var(--dark);
+            color: white;
+            padding: 70px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+        }
+
+        .location-content .section-title {
+            color: white;
+        }
+
+        .location-content .section-text {
+            color: rgba(255,255,255,.65);
+        }
+
+        .connectivity {
+            margin-top: 35px;
+        }
+
+        .connect-item {
+            display: flex;
+            justify-content: space-between;
+            border-bottom: 1px solid rgba(255,255,255,.1);
+            padding: 17px 0;
+            font-size: 13px;
+        }
+
+        .connect-item span:last-child {
+            color: var(--gold);
+        }
+
+
+        /* =====================================================
+           PLANS
+        ===================================================== */
+
+        .plans {
+            background: var(--cream);
+        }
+
+        .plan-grid {
+            display: grid;
+            grid-template-columns: repeat(3, 1fr);
+            gap: 25px;
+        }
+
+        .plan-card {
+            background: white;
+            border: 1px solid var(--border);
+            padding: 30px;
+            transition: .35s ease;
+        }
+
+        .plan-card:hover {
+            transform: translateY(-8px);
+            box-shadow: 0 20px 50px rgba(0,0,0,.08);
+        }
+
+        .plan-image {
+            height: 220px;
+            background: #eee;
+            margin-bottom: 25px;
+            overflow: hidden;
+        }
+
+        .plan-image img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .6s ease;
+        }
+
+        .plan-card:hover .plan-image img {
+            transform: scale(1.06);
+        }
+
+        .plan-card h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 25px;
+        }
+
+        .plan-card p {
+            color: var(--muted);
+            font-size: 13px;
+            margin: 10px 0 20px;
+        }
+
+        .plan-details {
+            display: flex;
+            justify-content: space-between;
+            border-top: 1px solid var(--border);
+            padding-top: 17px;
+            font-size: 12px;
+        }
+
+
+        /* =====================================================
+           PRICE CTA
+        ===================================================== */
+
+        .price-section {
+            position: relative;
+            color: white;
+            background:
+                linear-gradient(
+                    rgba(20, 25, 21, 0.74),
+                    rgba(20, 25, 21, 0.664)
+                ),
+                url(assets/godrej/godrejgallery/Entrance.avif)
+                center/cover fixed;
+        }
+
+        .price-content {
+            max-width: 900px;
+            text-align: center;
+            margin: auto;
+        }
+
+        .price-content .section-title {
+            color: white;
+        }
+
+        .price {
+            font-family: "Playfair Display", serif;
+            font-size: clamp(48px, 7vw, 80px);
+            color: var(--gold);
+            margin: 25px 0;
+        }
+
+        .price-note {
+            color: rgba(255,255,255,.6);
+            font-size: 12px;
+            margin-bottom: 30px;
+        }
+
+
+        /* =====================================================
+           GALLERY
+        ===================================================== */
+
+        .gallery {
+            background: white;
+        }
+
+        .gallery-grid {
+            display: grid;
+            grid-template-columns: 1.5fr 1fr 1fr;
+            grid-auto-rows: 250px;
+            gap: 12px;
+        }
+
+        .gallery-item {
+            position: relative;
+            overflow: hidden;
+            cursor: pointer;
+        }
+
+        .gallery-item:first-child {
+            grid-row: span 2;
+        }
+
+        .gallery-item img {
+            width: 100%;
+            height: 100%;
+            object-fit: cover;
+            transition: .6s ease;
+        }
+
+        .gallery-item:hover img {
+            transform: scale(1.08);
+        }
+
+        .gallery-item::after {
+            content: "";
+            position: absolute;
+            inset: 0;
+            display: grid;
+            place-items: center;
+            background: rgba(0,0,0,.35);
+            color: white;
+            letter-spacing: 3px;
+            font-size: 11px;
+            opacity: 100%;
+            transition: .3s ease;
+        }
+
+        .gallery-item:hover::after {
+            opacity: 1;
+        }
+
+
+        /* =====================================================
+           ENQUIRY
+        ===================================================== */
+
+        .enquiry {
+            background: var(--cream);
+        }
+
+        .enquiry-grid {
+            display: grid;
+            grid-template-columns: .85fr 1.15fr;
+            gap: 70px;
+            align-items: center;
+        }
+
+        .enquiry-content p {
+            color: var(--muted);
+            line-height: 1.8;
+            margin-top: 20px;
+        }
+
+        .contact-details {
+            margin-top: 35px;
+        }
+
+        .contact-detail {
+            display: flex;
+            gap: 15px;
+            margin-bottom: 20px;
+        }
+
+        .contact-detail span {
+            width: 38px;
+            height: 38px;
+            background: var(--dark);
+            color: var(--gold);
+            display: grid;
+            place-items: center;
+            border-radius: 50%;
+            flex-shrink: 0;
+        }
+
+        .contact-detail div small {
+            display: block;
+            color: var(--muted);
+            font-size: 10px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 3px;
+        }
+
+        .form {
+            background: white;
+            padding: 45px;
+            box-shadow: 0 20px 70px rgba(0,0,0,.07);
+        }
+
+        .form h3 {
+            font-family: "Playfair Display", serif;
+            font-size: 32px;
+            margin-bottom: 25px;
+        }
+
+        .form-row {
+            display: grid;
+            grid-template-columns: 1fr 1fr;
+            gap: 15px;
+        }
+
+        .form-group {
+            margin-bottom: 15px;
+        }
+
+        .form-group input,
+        .form-group textarea,
+        .form-group select {
+            width: 100%;
+            border: 1px solid #ddd;
+            padding: 15px;
+            outline: none;
+            background: white;
+            transition: .3s;
+            font-size: 13px;
+        }
+
+        .form-group input:focus,
+        .form-group textarea:focus,
+        .form-group select:focus {
+            border-color: var(--gold);
+        }
+
+        textarea {
+            min-height: 110px;
+            resize: vertical;
+        }
+
+        .form .btn {
+            width: 100%;
+            cursor: pointer;
+        }
+
+
+
+        /* =====================================================
+           SCROLL REVEAL
+        ===================================================== */
+
+        .reveal {
+            opacity: 100%;
+            transform: translateY(50px);
+            transition: opacity .8s ease, transform .8s ease;
+        }
+
+        .reveal.active {
+            opacity: 1;
+            transform: translateY(0);
+        }
+
+        .reveal-left {
+            opacity: 100%;
+            transform: translateX(-50px);
+            transition: .8s ease;
+        }
+
+        .reveal-left.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+        .reveal-right {
+            opacity: 100%;
+            transform: translateX(50px);
+            transition: .8s ease;
+        }
+
+        .reveal-right.active {
+            opacity: 1;
+            transform: translateX(0);
+        }
+
+
+        /* =====================================================
+           LIGHTBOX
+        ===================================================== */
+
+        .lightbox {
+            position: fixed;
+            inset: 0;
+            background: rgba(0,0,0,.92);
+            z-index: 9999;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            padding: 30px;
+            opacity: 0;
+            visibility: hidden;
+            transition: .3s ease;
+        }
+
+        .lightbox.active {
+            opacity: 1;
+            visibility: visible;
+        }
+
+        .lightbox img {
+            max-width: 90vw;
+            max-height: 85vh;
+            object-fit: contain;
+        }
+
+        .close-lightbox {
+            position: absolute;
+            right: 30px;
+            top: 25px;
+            color: white;
+            font-size: 35px;
+            cursor: pointer;
+        }
+
+
+        /* =====================================================
+           RESPONSIVE
+        ===================================================== */
+
+        @media(max-width: 900px) {
+/* 
+            .nav-links {
+                gap: 18px;
+            } */
+
+            .project-info {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .info-cta {
+                grid-column: span 2;
+                justify-content: center;
+            }
+
+            .overview-grid,
+            .location-grid,
+            .enquiry-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .overview-image img {
+                height: 500px;
+            }
+
+         
+
+            .highlight-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .amenity-grid {
+                grid-template-columns: repeat(2, 1fr);
+            }
+
+            .plan-grid {
+                grid-template-columns: 1fr 1fr;
+            }
+/* 
+            .footer-grid {
+                grid-template-columns: 1fr 1fr;
+            } */
+
+        }
+
+
+        @media(max-width: 600px) {
+
+            section {
+                padding: 75px 0;
+            }
+
+
+           .hero {
+    min-height: 420px
+  }
+
+            .hero-inner {
+                padding-top: 50px;
+            }
+
+            .hero h1 {
+                font-size: clamp(44px, 14vw, 65px);
+            }
+
+            .hero-description {
+                font-size: 14px;
+            }
+
+            .project-info {
+                grid-template-columns: 1fr 1fr;
+            }
+
+            .info-item {
+                padding: 20px 15px;
+            }
+
+            .info-cta {
+                grid-column: span 2;
+            }
+
+            .overview-grid {
+                gap: 40px;
+            }
+
+            .overview-image img {
+                height: 400px;
+            }
+
+            .feature-list {
+                grid-template-columns: 1fr;
+            }
+
+            .highlight-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .highlight-card {
+                min-height: 360px;
+            }
+
+          
+
+            .location-content {
+                padding: 45px 25px;
+            }
+
+            .location-map {
+                min-height: 400px;
+            }
+
+            .plan-grid {
+                grid-template-columns: 1fr;
+            }
+
+            .gallery-grid {
+                grid-template-columns: 1fr 1fr;
+                grid-auto-rows: 180px;
+            }
+
+            .gallery-item:first-child {
+                grid-row: span 2;
+            }
+
+            .form {
+                padding: 25px;
+            }
+
+            .form-row {
+                grid-template-columns: 1fr;
+            }
+
+         
+        }
+
+
+        /* =========================================
+   PROJECT OVERVIEW
+========================================= */
+
+.overview {
+    position: relative;
+    padding: 110px 0;
+    background: #f7f5ef;
+    overflow: hidden;
+}
+
+.overview .container {
+    width: min(1200px, 92%);
+    margin: 0 auto;
+}
+
+
+/* =========================================
+   OVERVIEW GRID
+========================================= */
+
+.overview-grid {
+    display: grid;
+    grid-template-columns: 1.05fr 0.95fr;
+    align-items: center;
+    gap: 80px;
+}
+
+
+/* =========================================
+   IMAGE
+========================================= */
+
+.overview-image {
+    position: relative;
+    width: 100%;
+    height: 600px;
+    overflow: hidden;
+    /* border-radius: 22px; */
+    /* background: #ddd; */
+    box-shadow: 0 25px 60px rgba(0, 0, 0, 0.12);
+}
+
+.overview-image img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    transition: transform 0.8s ease;
+}
+
+.overview-image:hover img {
+    transform: scale(1.05);
+}
+
+
+/* =========================================
+   IMAGE LABEL
+========================================= */
+
+.image-label {
+    position: absolute;
+    left: 25px;
+    bottom: 25px;
+    z-index: 2;
+
+    padding: 16px 20px;
+    border-radius: 12px;
+
+    background: rgba(20, 20, 20, 0.55);
+    backdrop-filter: blur(8px);
+    -webkit-backdrop-filter: blur(8px);
+
+    color: #fff;
+}
+
+.image-label small {
+    display: block;
+    margin-bottom: 5px;
+
+    font-size: 11px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    opacity: 0.8;
+}
+
+.image-label strong {
+    display: block;
+
+    font-size: 15px;
+    font-weight: 500;
+    letter-spacing: 0.3px;
+}
+
+
+/* =========================================
+   CONTENT
+========================================= */
+
+.overview-content {
+    max-width: 560px;
+}
+
+.section-tag {
+    display: inline-flex;
+    align-items: center;
+    gap: 10px;
+
+    margin-bottom: 18px;
+
+    font-size: 12px;
+    font-weight: 600;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    color: #9f7a2e;
+}
+
+.section-tag::before {
+    content: "";
+    width: 35px;
+    height: 1px;
+    background: #c9a24a;
+}
+
+
+/* =========================================
+   HEADING
+========================================= */
+
+.overview .section-title {
+    margin: 0 0 25px;
+
+    font-size: clamp(36px, 4vw, 58px);
+    line-height: 1.08;
+    font-weight: 500;
+    letter-spacing: -1.5px;
+
+    color: #171717;
+}
+
+.overview .section-title span {
+    display: block;
+    color: #9f7a2e;
+}
+
+
+/* =========================================
+   PARAGRAPHS
+========================================= */
+
+.overview-content > p {
+    margin: 0 0 18px;
+
+    max-width: 540px;
+
+    font-size: 16px;
+    line-height: 1.8;
+    color: #6d6d6d;
+}
+
+
+/* =========================================
+   FEATURE LIST
+========================================= */
+
+.feature-list {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    gap: 14px 25px;
+
+    margin-top: 30px;
+}
+
+.feature-list > div {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+
+    padding: 13px 0;
+
+    font-size: 14px;
+    font-weight: 500;
+
+    color: #333;
+
+    border-bottom: 1px solid #e7e2d7;
+
+    transition:
+        transform 0.3s ease,
+        color 0.3s ease;
+}
+
+.feature-list > div:hover {
+    transform: translateX(5px);
+    color: #9f7a2e;
+}
+
+.feature-list > div > span:first-child {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+
+    flex: 0 0 25px;
+
+    width: 25px;
+    height: 25px;
+
+    border-radius: 50%;
+
+    background: #c9a24a;
+    color: #fff;
+
+    font-size: 12px;
+    font-weight: 700;
+}
+
+
+/* =========================================
+   STATS
+========================================= */
+
+.stats {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+
+    margin-top: 90px;
+
+    border-top: 1px solid #ddd7c9;
+    border-bottom: 1px solid #ddd7c9;
+}
+
+.stat {
+    position: relative;
+
+    padding: 35px 25px;
+
+    text-align: center;
+}
+
+.stat:not(:last-child)::after {
+    content: "";
+
+    position: absolute;
+    top: 30px;
+    right: 0;
+
+    width: 1px;
+    height: 55px;
+
+    background: #ddd7c9;
+}
+
+.stat strong {
+    display: block;
+
+    margin-bottom: 8px;
+
+    font-size: clamp(30px, 3vw, 44px);
+    line-height: 1;
+
+    font-weight: 500;
+    letter-spacing: -1px;
+
+    color: #9f7a2e;
+}
+
+.stat span {
+    display: block;
+
+    font-size: 12px;
+    line-height: 1.5;
+
+    letter-spacing: 1px;
+    text-transform: uppercase;
+
+    color: #6d6d6d;
+}
+
+
+/* =========================================
+   REVEAL ANIMATIONS
+========================================= */
+
+.reveal-left,
+.reveal-right,
+.reveal {
+    opacity: 100%;
+    transition:
+        opacity 0.9s ease,
+        transform 0.9s ease;
+}
+
+.reveal-left {
+    transform: translateX(-50px);
+}
+
+.reveal-right {
+    transform: translateX(50px);
+}
+
+.reveal {
+    transform: translateY(40px);
+}
+
+
+/* Add this class with JavaScript
+   when the element enters viewport */
+
+.reveal-left.active,
+.reveal-right.active,
+.reveal.active {
+    opacity: 1;
+    transform: translate(0);
+}
+
+
+/* =========================================
+   TABLET
+========================================= */
+
+@media (max-width: 900px) {
+
+    .overview {
+        padding: 80px 0;
+    }
+
+    .overview-grid {
+        grid-template-columns: 1fr;
+        gap: 50px;
+    }
+
+    .overview-image {
+        height: 500px;
+        padding-left: 90px;
+    }
+
+    .overview-content {
+        max-width: 100%;
+    }
+
+    .overview-content > p {
+        max-width: 100%;
+    }
+
+    .stats {
+        grid-template-columns: repeat(2, 1fr);
+        margin-top: 70px;
+    }
+
+    .stat:nth-child(2)::after {
+        display: none;
+    }
+
+    .stat:nth-child(1),
+    .stat:nth-child(2) {
+        border-bottom: 1px solid #ddd7c9;
+    }
+}
+
+
+/* =========================================
+   MOBILE
+========================================= */
+
+@media (max-width: 600px) {
+
+    .overview {
+        padding: 65px 0;
+    }
+
+    .overview .container {
+        width: min(92%, 1200px);
+    }
+
+    .overview-grid {
+        gap: 35px;
+    }
+
+    .overview-image {
+        height: 400px;
+        /* border-radius: 26px; */
+    }
+
+    .image-label {
+        left: 15px;
+        right: 15px;
+        bottom: 15px;
+
+      padding: 23px 45px;
+    }
+
+    .image-label strong {
+        font-size: 13px;
+    }
+
+    .overview .section-title {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .overview-content > p {
+        font-size: 15px;
+        line-height: 1.7;
+    }
+
+    .feature-list {
+        grid-template-columns: 1fr;
+        gap: 0;
+    }
+
+    .feature-list > div {
+        padding: 12px 0;
+    }
+
+    .stats {
+        grid-template-columns: 1fr 1fr;
+
+        margin-top: 55px;
+    }
+
+    .stat {
+        padding: 25px 10px;
+    }
+
+    .stat strong {
+        font-size: 30px;
+    }
+
+    .stat span {
+        font-size: 10px;
+        letter-spacing: 0.7px;
+    }
+
+    .stat:nth-child(2)::after {
+        display: block;
+    }
+
+    .stat:nth-child(3)::after {
+        display: none;
+    }
+
+    .stat:nth-child(1),
+    .stat:nth-child(2) {
+        border-bottom: 1px solid #ddd7c9;
+    }
+
+}
+
+
+/* =========================================
+   SMALL MOBILE
+========================================= */
+/* 
+@media (max-width: 400px) {
+
+    .overview-image {
+        height: 330px;
+    }
+
+    .overview .section-title {
+        font-size: 32px;
+    }
+
+    .stats {
+        grid-template-columns: 1fr;
+    }
+
+    .stat {
+        border-bottom: 1px solid #ddd7c9 !important;
+    }
+
+    .stat::after {
+        display: none !important;
+    }
+
+    .stat:last-child {
+        border-bottom: none !important;
+    }
+} */
+
+    </style>
+</head>
+
+
+<body>
+
+
+    <header class="site-header">
+      <div class="container nav">
+        <a class="brand" href="index.html" aria-label="Trinetra Realty home">
+          <img src="assets/trinetra-logo.png" alt="Trinetra Realty logo">
+          <!-- <span>Trinetra Realty</span> -->
+        </a>
+        <button class="menu-btn" aria-label="Open menu">☰</button>
+        <nav class="nav-links">
+          <a class="" href="index.html">Home</a>
+          <a class="" href="about.html">About</a>
+          <a class="active" href="properties.html">Property</a>
+          <a class="" href="blog.html">Blog</a>
+          <a class="" href="contact.html">Contact Us</a>
+        </nav>
+        <a class="nav-cta" href="contact.html">Get Started</a>
+      </div>
+    </header>
+
+
+<!-- =====================================================
+     HERO
+===================================================== -->
+
+
+<section class="hero" id="home">
+
+    <div class="hero-bg"></div>
+
+    <div class="hero-content">
+
+        <div class="container">
+
+            <div class="hero-inner reveal">
+
+                <div class="eyebrow">
+                    Premium Plotted Community
+                </div>
+
+                <h1>
+                 Godrej Green
+                    <em>Estate</em>
+                    
+                </h1>
+
+                <p class="hero-description">
+                    Discover an exceptional residential community
+                    designed around nature, space and modern living.
+                    Create a home that reflects your lifestyle,
+                    surrounded by thoughtfully planned green spaces.
+                </p>
+
+                <div class="hero-buttons">
+
+                    <a href="contact.html" class="btn">
+                        Book a Site Visit
+                    </a>
+
+                    <!-- <a href="#overview" class="btn btn-outline">
+                        Explore Project
+                    </a> -->
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+<!-- 
+    <div class="hero-scroll">
+
+        Scroll to explore
+
+        <span class="scroll-line"></span>
+
+    </div> -->
+
+</section>
+
+
+<!-- =====================================================
+     PROJECT INFO
+===================================================== -->
+
+<div class="project-bar">
+
+    <div class="container project-info">
+
+        <div class="info-item">
+
+            <small>Location</small>
+
+            <strong>Sonipat, Haryana</strong>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <small>Project Type</small>
+
+            <strong>Residential Plots</strong>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <small>Plot Sizes</small>
+
+            <strong>1200 – 3000 Sq. Ft.</strong>
+
+        </div>
+
+
+        <div class="info-item">
+
+            <small>Starting From</small>
+
+            <strong>₹51 Lakh*</strong>
+
+        </div>
+
+
+        <div class="info-cta">
+
+            <a href="contact.html" class="btn">
+                Get Price Details
+            </a>
+
+        </div>
+
+    </div>
+
+</div>
+
+
+<!-- =====================================================
+     OVERVIEW
+===================================================== -->
+<!-- 
+<section class="overview" id="overview">
+
+    <div class="container">
+
+        <div class="overview-grid">
+
+            <div class="overview-image reveal-left">
+
+                <img
+                    src="assets/godrej/8.avif"
+                    alt="Premium residential development"
+                    loading="lazy"
+                >
+
+                <div class="image-label">
+
+                    <small>Designed for living</small>
+
+                    <strong>Nature • Space • Community</strong>
+
+                </div>
+
+            </div>
+
+
+            <div class="overview-content reveal-right">
+
+                <div class="section-tag">
+                    The Project
+                </div>
+
+                <h2 class="section-title">
+                    More than a plot.
+                    <span>A place to belong.</span>
+                </h2>
+
+                <p>
+                    A thoughtfully planned residential destination
+                    where spacious plots, landscaped greens and
+                    contemporary infrastructure come together.
+                </p>
+
+                <p>
+                    Designed for families who value freedom and
+                    individuality, the community gives you the
+                    opportunity to build a home that is truly yours.
+                </p>
+
+
+                <div class="feature-list">
+
+                    <div>
+                        <span>✓</span>
+                        Gated Community
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Landscaped Greens
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Wide Roads
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        24×7 Security
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Clubhouse
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        Modern Infrastructure
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+     <div class="container">
+        <div class="stats reveal">
+          <div class="stat">
+            <strong class="counter" data-target="48" data-suffix="+">0</strong>
+            <span>Acres of Developmen</span>
+          </div>
+
+          <div class="stat">
+            <strong class="counter" data-target="2000" data-suffix="+">0</strong>
+            <span>Green Trees</span>
+          </div>
+
+          <div class="stat">
+            <strong class="counter" data-target="3.5" data-suffix="+">0</strong>
+            <span>Acres of Open Greens</span>
+          </div>
+
+          <div class="stat">
+            <strong class="counter" data-target="24" data-suffix="+">0</strong>
+            <span>Hours Security</span>
+          </div>
+        </div>
+      </div>
+
+    
+</section> -->
+
+
+<section class="overview" id="overview">
+
+    <!-- PROJECT OVERVIEW -->
+    <div class="container">
+
+        <div class="overview-grid">
+
+            <!-- IMAGE -->
+            <div class="overview-image reveal-left">
+
+                <img
+                    src="assets/godrej/godrejgallery/Exterior.avif"
+                    alt="Premium residential plotted development"
+                    loading="lazy"
+                >
+
+                <div class="image-label">
+                    <small>Designed for living</small>
+                    <strong>Nature • Space • Community</strong>
+                </div>
+
+            </div>
+
+
+            <!-- CONTENT -->
+            <div class="overview-content reveal-right">
+
+                <div class="section-tag">
+                    The Project
+                </div>
+
+                <h2 class="section-title">
+                    More than a plot.
+                    <span>A place to belong.</span>
+                </h2>
+
+                <p>
+                    A thoughtfully planned residential destination
+                    where spacious plots, landscaped greens and
+                    contemporary infrastructure come together.
+                </p>
+
+                <p>
+                    Designed for families who value freedom and
+                    individuality, the community gives you the
+                    opportunity to build a home that is truly yours.
+                </p>
+
+
+                <!-- FEATURES -->
+                <div class="feature-list">
+
+                    <div>
+                        <span>✓</span>
+                        <span>Gated Community</span>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <span>Landscaped Greens</span>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <span>Wide Roads</span>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <span>24×7 Security</span>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <span>Clubhouse</span>
+                    </div>
+
+                    <div>
+                        <span>✓</span>
+                        <span>Modern Infrastructure</span>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+
+    <!-- PROJECT STATS -->
+    <div class="container">
+
+        <div class="stats reveal">
+
+            <!-- STAT 1 -->
+            <div class="stat">
+
+                <strong
+                    class="counter"
+                    data-target="48"
+                    data-suffix="+">
+                    0
+                </strong>
+
+                <span>Acres of Development</span>
+
+            </div>
+
+
+            <!-- STAT 2 -->
+            <div class="stat">
+
+                <strong
+                    class="counter"
+                    data-target="2000"
+                    data-suffix="+">
+                    0
+                </strong>
+
+                <span>Green Trees</span>
+
+            </div>
+
+
+            <!-- STAT 3 -->
+            <div class="stat">
+
+                <strong
+                    class="counter"
+                    data-target="3.5"
+                    data-suffix="+">
+                    0
+                </strong>
+
+                <span>Acres of Open Greens</span>
+
+            </div>
+
+
+            <!-- STAT 4 -->
+            <div class="stat">
+
+                <strong
+                    class="counter"
+                    data-target="24"
+                    data-suffix="×7">
+                    0
+                </strong>
+
+                <span>Hours Security</span>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     HIGHLIGHTS
+===================================================== -->
+
+<section class="highlights" id="highlights">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <div class="section-tag">
+                Project Highlights
+            </div>
+
+            <h2 class="section-title">
+                Everything you need.
+                <span>Beautifully planned.</span>
+            </h2>
+
+            <p class="section-text">
+                Every detail is designed to make everyday living
+                comfortable, connected and memorable.
+            </p>
+
+        </div>
+
+
+        <div class="highlight-grid">
+
+            <article class="highlight-card reveal">
+
+                <img
+                    src="assets/godrej/2.avif"
+                    alt="Luxury home"
+                    loading="lazy"
+                >
+
+                <div class="highlight-content">
+
+                    <div class="highlight-number">01</div>
+
+                    <h3>Your Own Canvas</h3>
+
+                    <p>
+                        Spacious plots that let you design
+                        a home around your lifestyle.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="highlight-card reveal">
+
+                <img
+                    src="assets/godrej/12.avif"
+                    alt="Modern community space"
+                    loading="lazy"
+                >
+
+                <div class="highlight-content">
+
+                    <div class="highlight-number">02</div>
+
+                    <h3>Designed Community</h3>
+
+                    <p>
+                        Landscaped surroundings, open spaces
+                        and a carefully planned neighbourhood.
+                    </p>
+
+                </div>
+
+            </article>
+
+
+            <article class="highlight-card reveal">
+
+                <img
+                    src="assets/godrej/13.avif"
+                    alt="Residential development"
+                    loading="lazy"
+                >
+
+                <div class="highlight-content">
+
+                    <div class="highlight-number">03</div>
+
+                    <h3>Connected Living</h3>
+
+                    <p>
+                        Convenient connectivity to major
+                        roads, education and lifestyle destinations.
+                    </p>
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     AMENITIES
+===================================================== -->
+
+<section class="amenities" id="amenities">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <div class="section-tag">
+                Lifestyle Amenities
+            </div>
+
+            <h2 class="section-title">
+                A community
+                <span>made for life.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="amenity-grid">
+
+            <div class="amenity reveal">
+
+                <div class="amenity-icon">🌳</div>
+
+                <h3>Green Parks</h3>
+
+                <p>
+                    Landscaped parks and green open spaces
+                    for everyday relaxation.
+                </p>
+
+            </div>
+
+
+            <div class="amenity reveal">
+
+                <div class="amenity-icon">🏊</div>
+
+                <h3>Swimming Pool</h3>
+
+                <p>
+                    A refreshing recreational space for
+                    residents and families.
+                </p>
+
+            </div>
+
+
+            <div class="amenity reveal">
+
+                <div class="amenity-icon">🏋</div>
+
+                <h3>Fitness Centre</h3>
+
+                <p>
+                    Dedicated spaces designed to support
+                    an active lifestyle.
+                </p>
+
+            </div>
+
+
+            <div class="amenity reveal">
+
+                <div class="amenity-icon">🏠</div>
+
+                <h3>Clubhouse</h3>
+
+                <p>
+                    A social destination for leisure,
+                    gatherings and celebrations.
+                </p>
+
+            </div>
+
+
+            <div class="amenity reveal">
+
+                <div class="amenity-icon">🚶</div>
+
+                <h3>Walking Tracks</h3>
+
+                <p>
+                    Dedicated pathways for peaceful
+                    morning and evening walks.
+                </p>
+
+            </div>
+
+
+            <div class="amenity reveal">
+
+                <div class="amenity-icon">🛡</div>
+
+                <h3>24×7 Security</h3>
+
+                <p>
+                    Controlled access and security systems
+                    for greater peace of mind.
+                </p>
+
+            </div>
+
+
+            <div class="amenity reveal">
+
+                <div class="amenity-icon">🚗</div>
+
+                <h3>Wide Roads</h3>
+
+                <p>
+                    Planned internal roads for smooth
+                    movement throughout the community.
+                </p>
+
+            </div>
+
+
+            <div class="amenity reveal">
+
+                <div class="amenity-icon">⚡</div>
+
+                <h3>Modern Infrastructure</h3>
+
+                <p>
+                    Reliable infrastructure planned for
+                    contemporary residential living.
+                </p>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     LOCATION
+===================================================== -->
+<!-- 
+<section class="location" id="location">
+
+    <div class="container">
+
+        <div class="location-grid">
+
+            <div class="location-map reveal-left"></div>
+
+
+            <div class="location-content reveal-right">
+
+                <div class="section-tag">
+                    Prime Location
+                </div>
+
+                <h2 class="section-title">
+                    Connected to
+                    <span>everything.</span>
+                </h2>
+
+                <p class="section-text">
+                    Strategically located for convenient access
+                    to highways, educational institutions,
+                    healthcare facilities and everyday essentials.
+                </p>
+
+
+                <div class="connectivity">
+
+                    <div class="connect-item">
+
+                        <span>Delhi</span>
+
+                        <span>45 min*</span>
+
+                    </div>
+
+
+                    <div class="connect-item">
+
+                        <span>Delhi Airport</span>
+
+                        <span>60 min*</span>
+
+                    </div>
+
+
+                    <div class="connect-item">
+
+                        <span>Major Highway</span>
+
+                        <span>10 min*</span>
+
+                    </div>
+
+
+                    <div class="connect-item">
+
+                        <span>Schools & Institutions</span>
+
+                        <span>Nearby</span>
+
+                    </div>
+
+
+                    <div class="connect-item">
+
+                        <span>Healthcare</span>
+
+                        <span>Nearby</span>
+
+                    </div>
+
+                </div>
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section> -->
+
+
+<!-- =====================================================
+     PLANS
+===================================================== -->
+
+<section class="plans" id="plans">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <div class="section-tag">
+                Plot Options
+            </div>
+
+            <h2 class="section-title">
+                Choose the space
+                <span>that fits you.</span>
+            </h2>
+
+            <p class="section-text">
+                Select from thoughtfully planned plot sizes
+                created for different lifestyles and home designs.
+            </p>
+
+        </div>
+
+
+        <div class="plan-grid">
+
+            <article class="plan-card reveal">
+
+                <div class="plan-image">
+
+                    <img
+                        src="assets/godrej/godrejgallery/Multipurpose Hall.avif"
+                        alt="Residential plot home"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <h3>Premium Plot</h3>
+
+                <p>
+                    Ideal for a comfortable family residence.
+                </p>
+
+                <div class="plan-details">
+
+                    <span>1200 Sq. Ft.</span>
+
+                    <!-- <strong>Enquire</strong> -->
+
+                </div>
+
+            </article>
+
+
+            <article class="plan-card reveal">
+
+                <div class="plan-image">
+
+                    <img
+                        src="assets/godrej/godrejgallery/Road 2.avif"
+                        alt="Luxury residential property"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <h3>Luxury Plot</h3>
+
+                <p>
+                    More space for larger homes and gardens.
+                </p>
+
+                <div class="plan-details">
+
+                    <span>1800 Sq. Ft.</span>
+
+                    <!-- <strong>Enquire</strong> -->
+
+                </div>
+
+            </article>
+
+
+            <article class="plan-card reveal">
+
+                <div class="plan-image">
+
+                    <img
+                        src="assets/godrej/16.avif"
+                        alt="Premium luxury home"
+                        loading="lazy"
+                    >
+
+                </div>
+
+                <h3>Signature Plot</h3>
+
+                <p>
+                    Generous space for a truly distinctive home.
+                </p>
+
+                <div class="plan-details">
+
+                    <span>2400+ Sq. Ft.</span>
+
+                    <!-- <strong>Enquire</strong> -->
+
+                </div>
+
+            </article>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     PRICE
+===================================================== -->
+
+<section class="price-section">
+
+    <div class="container">
+
+        <div class="price-content reveal">
+
+            <div class="section-tag">
+                Investment Opportunity
+            </div>
+
+            <h2 class="section-title">
+                Your future begins
+                <span>with a place.</span>
+            </h2>
+
+            <div class="price">
+                ₹51 Lakh*
+            </div>
+
+            <p class="price-note">
+                *Indicative starting price. Terms and conditions apply.
+            </p>
+
+            <a href="contact.html" class="btn">
+                Request Price Details
+            </a>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+<!-- =====================================================
+     GALLERY
+===================================================== -->
+
+<section class="gallery" id="gallery">
+
+    <div class="container">
+
+        <div class="section-heading center reveal">
+
+            <div class="section-tag">
+                Visual Tour
+            </div>
+
+            <h2 class="section-title">
+                Experience the
+                <span>possibilities.</span>
+            </h2>
+
+        </div>
+
+
+        <div class="gallery-grid">
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/godrej/12.avif"
+                    alt="building"
+                >
+
+            </div>
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/godrej/11.avif"
+                    alt="Modern residence"
+                >
+
+            </div>
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/godrej/6.avif"
+                    alt="Luxury home exterior"
+                >
+
+            </div>
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/godrej/godrejamenity/Gymnasium.avif"
+                    alt="Premium interior"
+                >
+
+            </div>
+
+
+            <div class="gallery-item reveal">
+
+                <img
+                    src="assets/godrej/godrejamenity/Indoor Games Room.avif"
+                    alt="Contemporary home"
+                >
+
+            </div>
+
+        </div>
+
+    </div>
+
+</section>
+
+
+
+<!-- =====================================================
+     FOOTER
+===================================================== -->
+ <footer>
+    <div class="container">
+      <div class="footer-grid">
+        <div>
+          <a class="footer-brand" href="index.html"><img src="assets/trinetra-logo.png" alt="Trinetra Realty logo">
+            <!-- <span
+              style="color:#fff">Trinetra Realty</span> -->
+          </a>
+          <p>Trinetra Realty expertly and seamlessly guides clients to their perfect residential or commercial
+            property.</p>
+        </div>
+        <div>
+          <h3>Explore</h3>
+          <p><a href="index.html">Home</a></p>
+          <p><a href="about.html">About Us</a></p>
+          <p><a href="properties.html">Properties</a></p>
+          <p><a href="blog.html">Blog</a></p>
+        </div>
+        <div>
+          <h3>Services</h3>
+          <p><a href="godrej green estate.html">Godrej Green Estate</a></p>
+          <p><a href="Eldeco Amaya.html">Eldeco Amaya</a></p>
+          <p><a href="Jindal Smart City.html">Jindal Smart City</a></p>
+          <p><a href="origen realty.html">Origen Realty</a></p>
+        </div>
+        <div>
+          <h3>Contact</h3>
+          <a href="tel:+91 90349 69308">+91 90349 69308</a>
+
+                    <p><a href="mailto:info@trinetrarealty.in">info@trinetrarealty.in</a></p>
+
+
+          <p>SCO, F-3, SUPERMAX GALLERIA MARKET,
+            SECTOR 33, SONIPAT HARYANA - 131001</p>
+        </div>
+      </div>
+      <div class="footer-bottom"><span>© Trinetra Realty – All rights reserved</span></div>
+    </div>
+  </footer>
+
+
+
+
+<!-- =====================================================
+     JAVASCRIPT
+===================================================== -->
+ 
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+  <script src="script.js"></script>
+<script>
+
+    /* =====================================================
+       PRELOADER
+    ===================================================== */
+
+    window.addEventListener("load", function () {
+
+        setTimeout(function () {
+
+            document
+                .getElementById("preloader")
+                .classList.add("hide");
+
+        }, 600);
+
+    });
+
+
+    /* =====================================================
+       HEADER SCROLL
+    ===================================================== */
+
+    const header = document.getElementById("header");
+
+    window.addEventListener("scroll", function () {
+
+        if (window.scrollY > 50) {
+
+            header.classList.add("scrolled");
+
+        } else {
+
+            header.classList.remove("scrolled");
+
+        }
+
+    });
+
+
+    /* =====================================================
+       MOBILE MENU
+    ===================================================== */
+
+    const menuBtn = document.getElementById("menuBtn");
+    const navLinks = document.getElementById("navLinks");
+
+    menuBtn.addEventListener("click", function () {
+
+        navLinks.classList.toggle("active");
+
+        menuBtn.textContent =
+            navLinks.classList.contains("active")
+                ? "×"
+                : "☰";
+
+    });
+
+
+    document
+        .querySelectorAll(".nav-links a")
+        .forEach(function (link) {
+
+            link.addEventListener("click", function () {
+
+                navLinks.classList.remove("active");
+
+                menuBtn.textContent = "☰";
+
+            });
+
+        });
+
+
+    /* =====================================================
+       SCROLL REVEAL
+    ===================================================== */
+
+    const revealElements =
+        document.querySelectorAll(
+            ".reveal, .reveal-left, .reveal-right"
+        );
+
+
+    const revealObserver =
+        new IntersectionObserver(
+            function (entries) {
+
+                entries.forEach(function (entry) {
+
+                    if (entry.isIntersecting) {
+
+                        entry.target.classList.add("active");
+
+                        revealObserver.unobserve(
+                            entry.target
+                        );
+
+                    }
+
+                });
+
+            },
+            {
+                threshold: 0.12
+            }
+        );
+
+
+    revealElements.forEach(function (element) {
+
+        revealObserver.observe(element);
+
+    });
+
+
+    /* =====================================================
+       COUNTER ANIMATION
+    ===================================================== */
+
+    const counters =
+        document.querySelectorAll("[data-count]");
+
+
+    const counterObserver =
+        new IntersectionObserver(
+            function (entries) {
+
+                entries.forEach(function (entry) {
+
+                    if (!entry.isIntersecting) {
+                        return;
+                    }
+
+                    const counter = entry.target;
+
+                    const target =
+                        parseFloat(
+                            counter.dataset.count
+                        );
+
+                    const duration = 1800;
+
+                    const startTime = performance.now();
+
+
+                    function updateCounter(currentTime) {
+
+                        const progress =
+                            Math.min(
+                                (currentTime - startTime) /
+                                duration,
+                                1
+                            );
+
+                        const eased =
+                            1 - Math.pow(1 - progress, 3);
+
+                        const current =
+                            target * eased;
+
+
+                        if (target % 1 !== 0) {
+
+                            counter.textContent =
+                                current.toFixed(1);
+
+                        } else {
+
+                            counter.textContent =
+                                Math.floor(current).toLocaleString();
+
+                        }
+
+
+                        if (progress < 1) {
+
+                            requestAnimationFrame(
+                                updateCounter
+                            );
+
+                        } else {
+
+                            counter.textContent =
+                                target % 1 !== 0
+                                    ? target.toFixed(1)
+                                    : target.toLocaleString();
+
+                        }
+
+                    }
+
+
+                    requestAnimationFrame(
+                        updateCounter
+                    );
+
+                    counterObserver.unobserve(counter);
+
+                });
+
+            },
+            {
+                threshold: 0.6
+            }
+        );
+
+
+    counters.forEach(function (counter) {
+
+        counterObserver.observe(counter);
+
+    });
+
+
+    /* =====================================================
+       GALLERY LIGHTBOX
+    ===================================================== */
+
+    const galleryItems =
+        document.querySelectorAll(".gallery-item img");
+
+    const lightbox =
+        document.getElementById("lightbox");
+
+    const lightboxImage =
+        document.getElementById("lightboxImage");
+
+    const closeLightbox =
+        document.getElementById("closeLightbox");
+
+
+    galleryItems.forEach(function (image) {
+
+        image.addEventListener("click", function () {
+
+            lightboxImage.src = image.src;
+
+            lightbox.classList.add("active");
+
+            document.body.style.overflow = "hidden";
+
+        });
+
+    });
+
+
+    function closeGallery() {
+
+        lightbox.classList.remove("active");
+
+        document.body.style.overflow = "";
+
+    }
+
+
+    closeLightbox.addEventListener(
+        "click",
+        closeGallery
+    );
+
+
+    lightbox.addEventListener(
+        "click",
+        function (event) {
+
+            if (event.target === lightbox) {
+
+                closeGallery();
+
+            }
+
+        }
+    );
+
+
+    document.addEventListener(
+        "keydown",
+        function (event) {
+
+            if (event.key === "Escape") {
+
+                closeGallery();
+
+            }
+
+        }
+    );
+
+
+
+</script>
+
+<script>
+document.addEventListener("DOMContentLoaded", () => {
+
+    const counters = document.querySelectorAll(".counter");
+
+    counters.forEach(counter => {
+
+        const target = parseFloat(counter.dataset.target);
+        const suffix = counter.dataset.suffix || "";
+
+        let current = 0;
+        const duration = 1800;
+        const startTime = performance.now();
+
+        function updateCounter(currentTime) {
+
+            const progress = Math.min(
+                (currentTime - startTime) / duration,
+                1
+            );
+
+            // Smooth animation
+            const ease = 1 - Math.pow(1 - progress, 3);
+
+            current = target * ease;
+
+            // Keep decimal for values like 3.5
+            if (target % 1 !== 0) {
+                counter.textContent = current.toFixed(1) + suffix;
+            } else {
+                counter.textContent =
+                    Math.floor(current) + suffix;
+            }
+
+            if (progress < 1) {
+                requestAnimationFrame(updateCounter);
+            } else {
+                counter.textContent = target + suffix;
+            }
+        }
+
+        requestAnimationFrame(updateCounter);
+
+    });
+
+});
+</script>
+
+
+</body>
+</html>
+

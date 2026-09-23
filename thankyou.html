@@ -1,0 +1,475 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <meta name="robots" content="noindex, nofollow">
+
+  <title>Thank You | Trinetra Realty</title>
+
+  <style>
+    /* ================================
+       RESET
+    ================================= */
+    * {
+      margin: 0;
+      padding: 0;
+      box-sizing: border-box;
+    }
+
+    html {
+      scroll-behavior: smooth;
+    }
+
+    body {
+      font-family: Arial, Helvetica, sans-serif;
+      background: #f7f5ef;
+      color: #171717;
+      min-height: 100vh;
+      overflow: hidden;
+    }
+
+
+    /* ================================
+       PAGE
+    ================================= */
+    .thank-you-page {
+      min-height: 100vh;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      padding: 30px;
+      position: relative;
+      overflow: hidden;
+    }
+
+
+    /* ================================
+       BACKGROUND
+    ================================= */
+    .background-circle {
+      position: absolute;
+      border-radius: 50%;
+      pointer-events: none;
+      z-index: 0;
+    }
+
+    .circle-one {
+      width: 450px;
+      height: 450px;
+      background: rgba(201, 162, 74, 0.08);
+      top: -180px;
+      left: -150px;
+      animation: floatOne 8s ease-in-out infinite;
+    }
+
+    .circle-two {
+      width: 550px;
+      height: 550px;
+      background: rgba(201, 162, 74, 0.06);
+      bottom: -250px;
+      right: -200px;
+      animation: floatTwo 10s ease-in-out infinite;
+    }
+
+
+    /* ================================
+       CARD
+    ================================= */
+    .thank-card {
+      width: 100%;
+      max-width: 650px;
+      background: rgba(255, 255, 255, 0.96);
+      border: 1px solid #e7e2d7;
+      border-radius: 28px;
+      padding: 60px 45px;
+      text-align: center;
+      position: relative;
+      z-index: 2;
+
+      box-shadow:
+        0 25px 80px rgba(20, 20, 20, 0.10);
+
+      animation: cardIn 0.9s ease forwards;
+    }
+
+
+    /* ================================
+       LOGO / BRAND
+    ================================= */
+    .brand {
+      margin-bottom: 35px;
+    }
+
+    .brand-name {
+      font-size: 30px;
+      font-weight: 800;
+      letter-spacing: 4px;
+      text-transform: uppercase;
+    }
+
+    .brand-line {
+      width: 55px;
+      height: 2px;
+      background: #c9a24a;
+      margin: 10px auto;
+    }
+
+    .brand-tagline {
+      font-size: 11px;
+      letter-spacing: 2px;
+      color: #777;
+      text-transform: uppercase;
+    }
+
+
+    /* ================================
+       SUCCESS ICON
+    ================================= */
+    .success-icon {
+      width: 100px;
+      height: 100px;
+      border-radius: 50%;
+      margin: 0 auto 30px;
+
+      display: flex;
+      align-items: center;
+      justify-content: center;
+
+      background: #f7f5ef;
+      border: 2px solid #c9a24a;
+
+      position: relative;
+
+      animation: iconPop 0.7s 0.3s ease both;
+    }
+
+    .success-icon::before {
+      content: "";
+      position: absolute;
+      inset: -8px;
+      border: 1px solid rgba(201, 162, 74, 0.35);
+      border-radius: 50%;
+      animation: pulse 2s ease-in-out infinite;
+    }
+
+    .check {
+      width: 42px;
+      height: 22px;
+      border-left: 4px solid #c9a24a;
+      border-bottom: 4px solid #c9a24a;
+      transform: rotate(-45deg) scale(0);
+      animation: checkDraw 0.5s 0.9s ease forwards;
+    }
+
+
+    /* ================================
+       CONTENT
+    ================================= */
+    .kicker {
+      color: #9f7a2e;
+      font-size: 12px;
+      font-weight: 700;
+      letter-spacing: 3px;
+      text-transform: uppercase;
+      margin-bottom: 12px;
+    }
+
+    h1 {
+      font-size: clamp(36px, 6vw, 58px);
+      line-height: 1.05;
+      margin-bottom: 20px;
+      font-weight: 800;
+      letter-spacing: -1.5px;
+    }
+
+    h1 span {
+      color: #9f7a2e;
+    }
+
+    .message {
+      max-width: 500px;
+      margin: 0 auto;
+      color: #6d6d6d;
+      font-size: 16px;
+      line-height: 1.8;
+    }
+
+
+    /* ================================
+       INFO BOX
+    ================================= */
+    .info-box {
+      margin: 30px auto;
+      max-width: 480px;
+      padding: 18px 20px;
+
+      background: #f7f5ef;
+      border: 1px solid #e7e2d7;
+      border-radius: 14px;
+
+      color: #555;
+      font-size: 14px;
+      line-height: 1.6;
+    }
+
+
+    /* ================================
+       BUTTON
+    ================================= */
+    .home-btn {
+      display: inline-flex;
+      align-items: center;
+      justify-content: center;
+
+      min-width: 190px;
+      padding: 15px 28px;
+
+      background: #171717;
+      color: #fff;
+
+      text-decoration: none;
+      font-size: 13px;
+      font-weight: 700;
+      letter-spacing: 1px;
+
+      border-radius: 8px;
+
+      transition:
+        transform 0.3s ease,
+        background 0.3s ease,
+        box-shadow 0.3s ease;
+    }
+
+    .home-btn:hover {
+      background: #9f7a2e;
+      transform: translateY(-3px);
+      box-shadow: 0 12px 30px rgba(0, 0, 0, 0.15);
+    }
+
+
+    /* ================================
+       FOOTER
+    ================================= */
+    .footer-text {
+      margin-top: 35px;
+      font-size: 12px;
+      color: #999;
+    }
+
+
+    /* ================================
+       ANIMATIONS
+    ================================= */
+    @keyframes cardIn {
+      from {
+        opacity: 0;
+        transform: translateY(40px) scale(0.97);
+      }
+
+      to {
+        opacity: 1;
+        transform: translateY(0) scale(1);
+      }
+    }
+
+    @keyframes iconPop {
+      from {
+        opacity: 0;
+        transform: scale(0.4);
+      }
+
+      to {
+        opacity: 1;
+        transform: scale(1);
+      }
+    }
+
+    @keyframes checkDraw {
+      to {
+        transform: rotate(-45deg) scale(1);
+      }
+    }
+
+    @keyframes pulse {
+      0% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+
+      50% {
+        transform: scale(1.08);
+        opacity: 0.2;
+      }
+
+      100% {
+        transform: scale(0.95);
+        opacity: 0.8;
+      }
+    }
+
+    @keyframes floatOne {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+
+      50% {
+        transform: translate(30px, 25px);
+      }
+    }
+
+    @keyframes floatTwo {
+      0%, 100% {
+        transform: translate(0, 0);
+      }
+
+      50% {
+        transform: translate(-30px, -20px);
+      }
+    }
+
+
+    /* ================================
+       MOBILE
+    ================================= */
+    @media (max-width: 600px) {
+
+      .thank-you-page {
+        padding: 18px;
+      }
+
+      .thank-card {
+        padding: 45px 24px;
+        border-radius: 22px;
+      }
+
+      .brand-name {
+        font-size: 24px;
+      }
+
+      .success-icon {
+        width: 85px;
+        height: 85px;
+      }
+
+      .message {
+        font-size: 14px;
+      }
+
+      .info-box {
+        font-size: 13px;
+      }
+
+      .home-btn {
+        width: 100%;
+      }
+    }
+
+
+    /* ================================
+       REDUCED MOTION
+    ================================= */
+    @media (prefers-reduced-motion: reduce) {
+
+      *,
+      *::before,
+      *::after {
+        animation-duration: 0.01ms !important;
+        animation-iteration-count: 1 !important;
+        scroll-behavior: auto !important;
+      }
+
+    }
+  </style>
+</head>
+
+
+<body>
+
+  <main class="thank-you-page">
+
+
+    <!-- <a href="index.html"> -->
+    <!-- Animated background -->
+    <div class="background-circle circle-one"></div>
+    <div class="background-circle circle-two"></div>
+
+
+    <section class="thank-card">
+
+      <!-- Brand -->
+      <div class="brand">
+
+        <div class="brand-name">
+          Trinetra Realty
+        </div>
+
+        <div class="brand-line"></div>
+
+        <div class="brand-tagline">
+          Real Estate • Investment • Lifestyle
+        </div>
+
+      </div>
+
+
+      <!-- Success Icon -->
+      <div class="success-icon">
+        <div class="check"></div>
+      </div>
+
+
+      <!-- Content -->
+      <div class="kicker">
+        Enquiry Received
+      </div>
+
+      <h1>
+        Thank <span>You!</span>
+      </h1>
+
+      <p class="message">
+        Thank you for contacting Trinetra Realty.
+        Your property enquiry has been successfully submitted.
+        Our team will review your requirements and get in touch with you shortly.
+      </p>
+
+
+      <!-- Information -->
+      <div class="info-box">
+        <strong>What's next?</strong><br>
+        One of our property experts will contact you soon
+        regarding your requirement.
+      </div>
+
+
+      <!-- Home Button -->
+      <a href="index.html" class="home-btn">
+        BACK TO HOME
+      </a>
+
+
+      <div class="footer-text">
+        © 2026 Trinetra Realty. All Rights Reserved.
+      </div>
+
+    </section>
+
+  </main>
+
+
+  <!-- Optional automatic redirect -->
+  <script>
+
+    // Redirect to homepage after 15 seconds
+    setTimeout(function () {
+      window.location.href = "index.html";
+    }, 3000);
+
+  </script>
+
+</body>
+</html>
